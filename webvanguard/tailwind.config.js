@@ -14,8 +14,8 @@ module.exports = {
         'section-number': '#2a2a2a',
       },
       fontFamily: {
-        display: ['system-ui', 'sans-serif'],
-        // Keep default sans as Tailwind's default (system fonts)
+        display: ['var(--font-clash-display)', 'sans-serif'],
+        sans: ['var(--font-inter)', 'sans-serif'],
       },
     },
   },

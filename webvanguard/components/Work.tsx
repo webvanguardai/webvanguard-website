@@ -44,8 +44,12 @@ export default function Work() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: item * 0.1 }}
                 whileHover={{ y: -10 }}
-                className="card-outline h-80"
-              ></motion.div>
+                className="card-outline h-80 flex items-center justify-center"
+              >
+                <span className="text-gray-500 font-display text-xl tracking-wider">
+                  PROJECT 0{item}
+                </span>
+              </motion.div>
             ))}
           </div>
         </motion.div>

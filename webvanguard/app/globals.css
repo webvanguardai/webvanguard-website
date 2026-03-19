@@ -13,7 +13,7 @@
 
 @layer components {
   .section-number {
-    @apply fixed left-6 top-1/2 -translate-y-1/2 text-[10vw] font-display font-bold leading-none text-section-number opacity-50 select-none pointer-events-none z-0;
+    @apply fixed left-6 top-1/2 -translate-y-1/2 text-[12vw] font-display font-bold leading-none text-section-number opacity-50 select-none pointer-events-none z-0;
   }
 
   .btn-primary {
