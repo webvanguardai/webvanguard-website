@@ -27,10 +27,10 @@
 - [x] Integración en footer/contacto
 
 ## Phase 5: Pending (Next)
+- [x] Página de brief template descargable (PDF print-friendly)
+- [x] Admin panel autenticado (login estático) para gestionar bookings
 - [ ] Conectar fuentes reales a /metrics (YouTube Data API v3, Sheets/Notion para leads)
 - [ ] Automatizar generación de métricas semanales (script que actualice /metrics data)
-- [ ] Crear dashboard interno con autenticación (proteger ruta /admin)
-- [ ] Página de brief template descargable (PDF generado con datos del ICP)
 - [ ] Blog / recursos (first article: "Why your premium website underperforms")
 - [ ] A/B testing: variante de hero con números vs sin números
 - [ ] Dominio personalizado: webvanguard.ai o similar (configurar DNS y Vercel)
