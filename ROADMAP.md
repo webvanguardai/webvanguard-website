@@ -29,7 +29,7 @@
 ## Phase 5: Pending (Next)
 - [x] Página de brief template descargable (PDF print-friendly)
 - [x] Admin panel autenticado (login estático) para gestionar bookings
-- [ ] Conectar fuentes reales a /metrics (YouTube Data API v3, Sheets/Notion para leads)
+- [x] Conectar fuentes reales a /metrics (YouTube Data API v3, Sheets/Notion para leads) – codigo listo, credenciales pendientes
 - [ ] Automatizar generación de métricas semanales (script que actualice /metrics data)
 - [ ] Blog / recursos (first article: "Why your premium website underperforms")
 - [ ] A/B testing: variante de hero con números vs sin números
