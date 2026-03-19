@@ -30,7 +30,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed mb-12 max-w-2xl"
           >
-            We build sophisticated digital experiences that elevate brands and drive results.
+            Elevate your brand.
           </motion.p>
           
           <motion.div
@@ -39,7 +39,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
             <button className="btn-primary text-lg group">
-              <span>Start Your Project</span>
+              <span>Let's Talk</span>
               <svg 
                 className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
                 fill="none" 
