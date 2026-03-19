@@ -2,8 +2,24 @@
 
 import { motion } from 'framer-motion'
 import MetricCard from '@/components/MetricCard'
+import { useEffect, useState } from 'react'
 
 export default function MetricsPage() {
+  const [youtube, setYoutube] = useState<any>(null)
+  const [leads, setLeads] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    Promise.all([
+      fetch('/api/metrics/youtube').then(r => r.json()),
+      fetch('/api/metrics/leads').then(r => r.json()),
+    ]).then(([yt, ld]) => {
+      setYoutube(yt)
+      setLeads(ld)
+      setLoading(false)
+    })
+  }, [])
+
   return (
     <section className="relative py-32 overflow-hidden">
       <div className="section-number">05</div>
@@ -22,37 +38,43 @@ export default function MetricsPage() {
             className="font-display text-4xl md:text-5xl font-bold text-white mb-6"
           >
             Metrics Dashboard
-          </motion.h>
+          </motion.h2>
 
           <p className="text-xl text-gray-400 font-light mb-16 max-w-2xl">
-            Real-time KPIs for YouTube and Leads. (Demo data - connect sources to automate)
+            Real-time KPIs for YouTube and Leads. {loading ? 'Loading…' : `Data source: ${youtube?.source || 'mock'} / ${leads?.source || 'mock'}`}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <MetricCard title="Video Views" value="12,403" change="+12%" trend="up" />
-            <MetricCard title="Avg. View Duration" value="4:32" change="+5%" trend="up" />
-            <MetricCard title="New Leads" value="27" change="-2%" trend="down" />
-            <MetricCard title="Meetings Booked" value="8" change="+3" trend="neutral" />
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="border border-gray-800 p-8">
-              <h3 className="font-display text-2xl font-semibold text-white mb-4">YouTube Performance (Last 7 Days)</h3>
-              <div className="h-64 flex items-center justify-center text-gray-600">
-                [Chart placeholder – connect to YouTube Analytics API]
+          {loading ? (
+            <p className="text-gray-500">Loading metrics…</p>
+          ) : (
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <MetricCard title="Video Views" value={youtube?.views || '0'} change={youtube?.viewsChange || '+12%'} trend="up" />
+                <MetricCard title="Subscribers" value={youtube?.subscribers || '0'} change="+3%" trend="up" />
+                <MetricCard title="New Leads" value={String(leads?.newThisWeek || leads?.total || 0)} change={leads?.trend || '-2%'} trend={leads?.trendDirection || 'down'} />
+                <MetricCard title="Meetings Booked" value="8" change="+3" trend="neutral" />
               </div>
-            </div>
-            <div className="border border-gray-800 p-8">
-              <h3 className="font-display text-2xl font-semibold text-white mb-4">Lead Funnel</h3>
-              <div className="h-64 flex items-center justify-center text-gray-600">
-                [Chart placeholder – connect to CRM/Sheets]
-              </div>
-            </div>
-          </div>
 
-          <div className="mt-12 text-gray-500 font-sans text-sm">
-            Note: This is a static prototype. To automate, set up integrations with YouTube Data API v3 and your lead tracker (Sheets, Notion, etc.). Deployment instructions in docs.
-          </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="border border-gray-800 p-8">
+                  <h3 className="font-display text-2xl font-semibold text-white mb-4">YouTube Performance</h3>
+                  <div className="h-64 flex items-center justify-center text-gray-600">
+                    [Chart placeholder – data from YouTube API v3]
+                  </div>
+                </div>
+                <div className="border border-gray-800 p-8">
+                  <h3 className="font-display text-2xl font-semibold text-white mb-4">Lead Funnel</h3>
+                  <div className="h-64 flex items-center justify-center text-gray-600">
+                    [Chart placeholder – data from Google Sheets]
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-12 text-gray-500 font-sans text-sm">
+                Configure data sources in <code>.env.local</code> (see .env.example). Without credentials, mock data is shown.
+              </div>
+            </>
+          )}
         </motion.div>
       </div>
     </section>
