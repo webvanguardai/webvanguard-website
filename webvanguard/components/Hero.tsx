@@ -191,7 +191,7 @@ export default function Hero() {
           className="section-label mb-10 flex items-center"
         >
           <span className="inline-block w-16 h-px bg-accent mr-4" />
-          <span>Dubai&apos;s digital partner</span>
+          <span>AI-Powered Web Agency</span>
         </motion.p>
 
         {/* Main headline */}
@@ -285,7 +285,7 @@ export default function Hero() {
           {[
             { value: '3x', label: 'More enquiries' },
             { value: '<48h', label: 'First draft ready' },
-            { value: '98%', label: 'Client satisfaction' },
+            { value: '100%', label: 'Client satisfaction' },
             { value: '0', label: 'Upfront cost' },
           ].map((stat, i) => (
             <motion.div
