@@ -45,7 +45,7 @@ export default function Header() {
             </a>
           ))}
           <a href="#contact" className="btn-primary text-xs">
-            Start a project
+            Get a free proposal
           </a>
         </nav>
 
@@ -100,7 +100,7 @@ export default function Header() {
                 onClick={() => setIsOpen(false)}
                 className="btn-primary mt-4"
               >
-                Start a project
+                Get a free proposal
               </motion.a>
             </nav>
           </motion.div>

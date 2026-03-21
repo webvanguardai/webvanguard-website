@@ -2,14 +2,14 @@
 
 export default function Marquee() {
   const items = [
-    'Web Design',
-    'Development',
-    'SEO',
-    'AI Strategy',
-    'Brand Identity',
-    'UI/UX',
-    'Analytics',
-    'Conversion',
+    'More Customers',
+    'Better Image',
+    'Higher Revenue',
+    'Stronger Brand',
+    'Google Visibility',
+    'Professional Website',
+    'Business Growth',
+    'Competitive Edge',
   ]
 
   return (

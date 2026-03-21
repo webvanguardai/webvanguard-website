@@ -5,23 +5,23 @@ import { motion } from 'framer-motion'
 const steps = [
   {
     number: '01',
-    title: 'Discovery',
-    description: 'Deep-dive into your business, market, and competitors. AI accelerates weeks of research into hours.',
+    title: 'We Listen',
+    description: 'Tell us about your business, your customers, and your goals. We study your market and your competitors so we know exactly what you need.',
   },
   {
     number: '02',
-    title: 'Strategy',
-    description: 'Architecture, content strategy, conversion goals. Every pixel has a purpose, every page has an ROI.',
+    title: 'We Plan',
+    description: 'We create a clear strategy: what your site needs to say, how it should look, and how it will bring you more business.',
   },
   {
     number: '03',
-    title: 'Design & Build',
-    description: 'Custom design and cutting-edge development. Fast, responsive, built to outperform.',
+    title: 'We Build',
+    description: 'Your site goes from concept to reality. You see the first draft in under 48 hours. Revisions until you love it.',
   },
   {
     number: '04',
-    title: 'Launch & Scale',
-    description: 'Deploy, optimize, dominate search. Then iterate based on real performance data.',
+    title: 'You Grow',
+    description: 'Your website goes live. Customers start finding you. We keep optimizing so the results keep coming.',
   },
 ]
 
@@ -45,11 +45,11 @@ export default function Process() {
         >
           <p className="section-label mb-6">
             <span className="inline-block w-8 h-px bg-accent mr-3 align-middle" />
-            How we work
+            How it works
           </p>
           <h2 className="font-display font-black text-heading text-text-primary max-w-3xl">
-            Idea to live site<span className="text-accent">.</span><br />
-            In days, not months.
+            From first call to live site<span className="text-accent">.</span><br />
+            Simple, fast, no surprises.
           </h2>
         </motion.div>
 
@@ -79,7 +79,7 @@ export default function Process() {
           ))}
         </div>
 
-        {/* AI indicator */}
+        {/* Speed indicator */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -92,7 +92,7 @@ export default function Process() {
             <div className="w-3 h-3 rounded-full bg-accent absolute top-0 left-0 animate-ping" />
           </div>
           <p className="text-text-secondary text-sm font-body">
-            <span className="text-accent font-semibold">AI-powered</span> — delivering in days what others take weeks.
+            Most projects go <span className="text-accent font-semibold">from zero to live in under two weeks</span>.
           </p>
         </motion.div>
       </div>

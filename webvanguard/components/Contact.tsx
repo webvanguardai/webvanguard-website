@@ -18,12 +18,12 @@ export default function Contact() {
               Let&apos;s talk
             </p>
             <h2 className="font-display font-black text-mega text-text-primary max-w-4xl">
-              Ready<span className="text-accent">?</span>
+              Ready to get more customers<span className="text-accent">?</span>
             </h2>
             <p className="text-text-secondary text-lg md:text-xl mt-6 leading-relaxed max-w-xl">
-              Tell us about your project. First strategy call is free.
+              Tell us about your business. We&apos;ll show you what we can do — no commitment, no jargon, no surprises.
               <br />
-              <span className="text-text-primary font-semibold">No fluff, just results.</span>
+              <span className="text-text-primary font-semibold">First consultation is free.</span>
             </p>
           </motion.div>
 
@@ -55,11 +55,11 @@ export default function Contact() {
             </a>
 
             <div className="card">
-              <p className="text-[11px] text-text-muted uppercase tracking-wider font-body mb-3">Location</p>
+              <p className="text-[11px] text-text-muted uppercase tracking-wider font-body mb-3">Based in</p>
               <p className="text-text-primary font-display font-bold text-lg">
                 Dubai, UAE
               </p>
-              <p className="text-text-muted text-sm mt-4">Serving clients globally</p>
+              <p className="text-text-muted text-sm mt-4">Working with businesses worldwide</p>
             </div>
           </motion.div>
 
@@ -71,7 +71,7 @@ export default function Contact() {
             className="mt-10"
           >
             <a href="mailto:hello@webvanguard.ai" className="btn-primary">
-              <span>Start your project</span>
+              <span>Get your free proposal</span>
               <svg className="w-4 h-4 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

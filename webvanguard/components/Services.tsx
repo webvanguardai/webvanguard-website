@@ -5,27 +5,27 @@ import { motion } from 'framer-motion'
 const services = [
   {
     number: '01',
-    title: 'Web Design & Development',
-    description: 'High-performance websites that look incredible and convert visitors into customers.',
-    features: ['Custom Design', 'Next.js / React', 'Mobile-First', 'CMS Integration'],
+    title: 'Professional Website',
+    description: 'A website that represents your business 24/7. Looks premium, works on every device, and turns visitors into paying customers.',
+    features: ['Custom Design', 'Mobile-Ready', 'Fast Loading', 'Easy to Update'],
   },
   {
     number: '02',
-    title: 'SEO & AI Optimization',
-    description: 'AI-driven strategies that put your business at the top of Google. Period.',
-    features: ['Technical SEO', 'AI Content', 'Analytics', 'Rankings'],
+    title: 'Get Found on Google',
+    description: 'What\'s the point of a great website if nobody finds it? We make sure your customers find you first, not your competition.',
+    features: ['Google Rankings', 'Local Search', 'Maps Listing', 'More Traffic'],
   },
   {
     number: '03',
-    title: 'Brand Identity',
-    description: 'Visual identity that screams premium and makes your competitors look outdated.',
-    features: ['Logo Design', 'Brand Guidelines', 'Typography', 'Color Systems'],
+    title: 'Brand & Visual Identity',
+    description: 'First impressions close deals. We build a visual identity that makes your business look established, trusted, and premium.',
+    features: ['Logo', 'Brand Colors', 'Business Cards', 'Social Media Kit'],
   },
   {
     number: '04',
-    title: 'Digital Strategy',
-    description: 'Data-driven plans to dominate your market. No guesswork, just results.',
-    features: ['Market Research', 'Competitor Analysis', 'Growth Roadmap', 'Tracking'],
+    title: 'Growth & Analytics',
+    description: 'Know exactly where your customers come from, what they want, and how to get more of them. Real data, real growth.',
+    features: ['Visitor Tracking', 'Monthly Reports', 'Conversion Goals', 'ROI Insights'],
   },
 ]
 
@@ -42,11 +42,11 @@ export default function Services() {
         >
           <p className="section-label mb-6">
             <span className="inline-block w-8 h-px bg-accent mr-3 align-middle" />
-            What we do
+            What we do for you
           </p>
-          <h2 className="font-display font-black text-heading text-text-primary max-w-3xl">
-            Four services.<br />
-            One obsession: <span className="text-accent">your growth.</span>
+          <h2 className="font-display font-black text-heading text-text-primary max-w-4xl">
+            Everything your business needs<br />
+            to <span className="text-accent">win online.</span>
           </h2>
         </motion.div>
 

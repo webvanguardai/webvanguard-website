@@ -9,11 +9,11 @@ export default function Footer() {
       <div className="py-16 bg-bg-card">
         <div className="max-w-[90rem] mx-auto px-6 md:px-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <h3 className="font-display font-black text-3xl md:text-4xl text-text-primary">
-            Let&apos;s build something<br />
-            <span className="text-accent">extraordinary.</span>
+            Your competitors already<br />
+            have a website<span className="text-accent">.</span>
           </h3>
           <a href="#contact" className="btn-primary">
-            <span>Get in touch</span>
+            <span>Get yours now</span>
             <svg className="w-4 h-4 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -30,7 +30,7 @@ export default function Footer() {
                 Web<span className="text-accent">V</span>anguard
               </span>
             </Link>
-            <span className="text-text-muted text-xs">AI-Powered Web Agency</span>
+            <span className="text-text-muted text-xs">Dubai&apos;s Digital Partner</span>
           </div>
 
           <nav className="flex gap-6">
