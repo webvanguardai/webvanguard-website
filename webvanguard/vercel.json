@@ -1,3 +1,4 @@
 {
-  "project": "webvanguardai-2631s-projects/webvanguard-website"
+  "project": "webvanguardai-2631s-projects/webvanguard-website",
+  "alias": ["webvanguard-website.vercel.app", "webvanguard.vercel.app"]
 }

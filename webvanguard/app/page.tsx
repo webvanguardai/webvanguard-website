@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero'
+import Marquee from '@/components/Marquee'
 import Services from '@/components/Services'
 import Work from '@/components/Work'
 import Process from '@/components/Process'
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Marquee />
       <Services />
       <Work />
       <Process />

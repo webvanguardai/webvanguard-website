@@ -4,52 +4,65 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-end pb-20 md:pb-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
+    <section className="relative min-h-screen flex flex-col justify-end overflow-hidden noise">
+      {/* Giant background text */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
+        <span className="font-display font-black text-[20vw] text-border/50 leading-none whitespace-nowrap">
+          WV
+        </span>
+      </div>
+
+      {/* Accent line */}
+      <motion.div
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute top-0 left-[8%] w-px h-full bg-gradient-to-b from-transparent via-accent/30 to-transparent origin-top"
+      />
+
+      <div className="max-w-[90rem] mx-auto px-6 md:px-12 w-full pb-16 md:pb-24">
         {/* Label */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="section-label mb-6"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="section-label mb-8"
         >
-          AI-Powered Web Design Agency
+          <span className="inline-block w-8 h-px bg-accent mr-3 align-middle" />
+          AI-Powered Web Agency
         </motion.p>
 
         {/* Main headline */}
         <motion.h1
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-display font-black text-hero text-text-primary max-w-5xl"
+          transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          className="font-display font-black text-mega text-text-primary"
         >
-          We build websites
+          We don&apos;t build
           <br />
-          that <span className="text-accent">convert.</span>
+          websites<span className="text-accent">.</span>
         </motion.h1>
 
-        {/* Subtitle */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="mt-8 text-lg md:text-xl text-text-secondary font-body max-w-xl leading-relaxed"
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="font-display font-black text-hero text-text-muted mt-2"
         >
-          Strategy. Design. Development. SEO.
-          <br />
-          Everything your business needs to dominate online.
+          We build <span className="text-text-primary">revenue machines</span><span className="text-accent">.</span>
         </motion.p>
 
         {/* CTAs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.9 }}
-          className="mt-10 flex flex-col sm:flex-row gap-4"
+          transition={{ duration: 0.6, delay: 1.1 }}
+          className="mt-12 flex flex-col sm:flex-row gap-4"
         >
           <a href="#contact" className="btn-primary">
-            Start a project
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span>Start a project</span>
+            <svg className="w-4 h-4 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
@@ -62,26 +75,25 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
+          transition={{ duration: 0.8, delay: 1.4 }}
           className="mt-20 pt-8 border-t border-border grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           {[
-            { value: '50+', label: 'Projects delivered' },
-            { value: '98%', label: 'Client satisfaction' },
-            { value: '3x', label: 'Average ROI increase' },
-            { value: '24h', label: 'First draft delivery' },
+            { value: '50+', label: 'Projects' },
+            { value: '98%', label: 'Satisfaction' },
+            { value: '3x', label: 'ROI Increase' },
+            { value: '<24h', label: 'First Draft' },
           ].map((stat) => (
-            <div key={stat.label}>
-              <p className="font-display font-bold text-2xl md:text-3xl text-text-primary">{stat.value}</p>
-              <p className="text-sm text-text-muted mt-1 font-body">{stat.label}</p>
+            <div key={stat.label} className="group">
+              <p className="font-display font-black text-3xl md:text-4xl text-text-primary group-hover:text-accent transition-colors duration-300">{stat.value}</p>
+              <p className="text-xs text-text-muted mt-1 font-body uppercase tracking-wider">{stat.label}</p>
             </div>
           ))}
         </motion.div>
       </div>
 
-      {/* Background gradient */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent/5 to-transparent pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-border" />
+      {/* Bottom gradient line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
     </section>
   )
 }
