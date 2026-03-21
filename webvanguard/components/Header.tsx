@@ -1,53 +1,111 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-import { useState } from 'react'
+
+const navLinks = [
+  { label: 'Services', href: '#services' },
+  { label: 'Work', href: '#work' },
+  { label: 'Process', href: '#process' },
+  { label: 'Contact', href: '#contact' },
+]
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const links = [
-    { href: '/', label: 'Home' },
-    { href: '/services', label: 'Services' },
-    { href: '/work', label: 'Work' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/contact', label: 'Contact' },
-  ]
+  const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-900 bg-black/90 backdrop-blur">
-      <div className="w-full max-w-7xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
-        <Link href="/" className="font-display text-xl font-bold text-white tracking-tight">
-          WV
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'bg-bg/90 backdrop-blur-md border-b border-border' : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
+        <Link href="/" className="relative z-50">
+          <span className="font-display font-bold text-xl tracking-tight text-text-primary">
+            Web<span className="text-accent">V</span>anguard
+          </span>
         </Link>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {links.map(l => (
-            <Link key={l.href} href={l.href} className="text-gray-400 hover:text-accent transition-colors text-sm uppercase tracking-wider">
-              {l.label}
-            </Link>
+          {navLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-300 uppercase tracking-wider font-body"
+            >
+              {link.label}
+            </a>
           ))}
+          <a href="#contact" className="btn-primary text-xs">
+            Start a project
+          </a>
         </nav>
 
-        {/* Mobile menu button */}
-        <button className="md:hidden text-white" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden relative z-50 w-8 h-8 flex flex-col justify-center items-center gap-1.5"
+          aria-label="Toggle menu"
+        >
+          <motion.span
+            animate={isOpen ? { rotate: 45, y: 5 } : { rotate: 0, y: 0 }}
+            className="block w-6 h-px bg-text-primary origin-center"
+          />
+          <motion.span
+            animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+            className="block w-6 h-px bg-text-primary"
+          />
+          <motion.span
+            animate={isOpen ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }}
+            className="block w-6 h-px bg-text-primary origin-center"
+          />
         </button>
       </div>
 
-      {/* Mobile menu */}
-      {menuOpen && (
-        <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="md:hidden border-t border-gray-900 bg-black">
-          <div className="px-6 py-4 space-y-4">
-            {links.map(l => (
-              <Link key={l.href} href={l.href} className="block text-gray-400 hover:text-accent" onClick={() => setMenuOpen(false)}>
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 bg-bg z-40 flex items-center justify-center"
+          >
+            <nav className="flex flex-col items-center gap-8">
+              {navLinks.map((link, i) => (
+                <motion.a
+                  key={link.label}
+                  href={link.href}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                  onClick={() => setIsOpen(false)}
+                  className="text-3xl font-display font-bold text-text-primary hover:text-accent transition-colors"
+                >
+                  {link.label}
+                </motion.a>
+              ))}
+              <motion.a
+                href="#contact"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                onClick={() => setIsOpen(false)}
+                className="btn-primary mt-4"
+              >
+                Start a project
+              </motion.a>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   )
 }

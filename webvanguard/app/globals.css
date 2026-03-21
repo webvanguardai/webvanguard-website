@@ -4,24 +4,69 @@
 
 @layer base {
   :root {
-    --background: #0a0a0a;
-    --accent: #1e3a5f;
-    --accent-hover: #c5a059;
-    --section-number: #2a2a2a;
+    --font-display: 'Inter Tight', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: #050505;
+    color: #f5f5f5;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: #c8ff00;
+    color: #050505;
   }
 }
 
 @layer components {
-  .section-number {
-    @apply fixed left-6 top-1/2 -translate-y-1/2 text-[12vw] font-display font-bold leading-none text-section-number opacity-50 select-none pointer-events-none z-0;
-  }
-
   .btn-primary {
-    @apply inline-flex items-center gap-2 px-6 py-3 bg-accent text-white font-sans font-medium transition-all duration-300 hover:bg-accent-hover hover:gap-3;
+    @apply inline-flex items-center gap-2 px-7 py-3.5 bg-accent text-bg font-body font-semibold text-sm uppercase tracking-wider transition-all duration-300;
+  }
+  .btn-primary:hover {
+    @apply bg-white text-bg;
+    transform: translateY(-1px);
   }
 
-  .card-outline {
-    @apply border border-gray-700 bg-transparent p-8 transition-all duration-300 hover:border-accent hover:bg-accent/10;
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 border border-border-hover text-text-primary font-body font-medium text-sm uppercase tracking-wider transition-all duration-300;
+  }
+  .btn-outline:hover {
+    @apply border-accent text-accent;
+    transform: translateY(-1px);
+  }
+
+  .card {
+    @apply border border-border bg-bg-card p-8 transition-all duration-600;
+  }
+  .card:hover {
+    @apply border-border-hover;
+  }
+
+  .section-label {
+    @apply text-xs uppercase tracking-[0.3em] text-text-muted font-body font-medium;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-white;
+  }
+
+  .line-divider {
+    @apply w-full h-px bg-border;
   }
 }
 

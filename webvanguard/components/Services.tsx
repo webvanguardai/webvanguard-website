@@ -1,56 +1,80 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import SectionNumber from './SectionNumber'
 
 const services = [
-  'Web Development',
-  'UI/UX Design',
-  'Brand Strategy',
-  'Digital Consultancy',
+  {
+    number: '01',
+    title: 'Web Design & Development',
+    description: 'High-performance websites built with modern tech. Fast, responsive, optimized for conversion.',
+    features: ['Custom Design', 'Next.js / React', 'Mobile-First', 'CMS Integration'],
+  },
+  {
+    number: '02',
+    title: 'SEO & AI Optimization',
+    description: 'AI-driven SEO strategies that put your business at the top. Technical SEO, content strategy, analytics.',
+    features: ['Technical SEO', 'AI Content', 'Analytics Setup', 'Search Rankings'],
+  },
+  {
+    number: '03',
+    title: 'Brand Identity',
+    description: 'Cohesive visual identity that communicates trust and premium quality to your target audience.',
+    features: ['Logo Design', 'Brand Guidelines', 'Typography', 'Color Systems'],
+  },
+  {
+    number: '04',
+    title: 'Digital Strategy',
+    description: 'Data-driven strategies to grow your online presence and outperform competitors.',
+    features: ['Market Research', 'Competitor Analysis', 'Growth Roadmap', 'Performance Tracking'],
+  },
 ]
 
 export default function Services() {
   return (
-    <section className="relative py-32 overflow-hidden">
-      <SectionNumber number="02" />
-      
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12">
+    <section id="services" className="py-section">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.6 }}
         >
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="font-display text-4xl md:text-5xl font-bold text-white mb-16"
-          >
-            Services
-          </motion.h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
-            {services.map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`group p-8 md:p-10 transition-all duration-300 ${
-                  index < services.length - 1 ? 'lg:border-r border-gray-800' : ''
-                }`}
-              >
-                <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-white group-hover:text-accent transition-colors duration-300">
-                  {service}
-                </h3>
-              </motion.div>
-            ))}
-          </div>
+          <p className="section-label mb-4">What we do</p>
+          <h2 className="font-display font-bold text-heading text-text-primary max-w-2xl">
+            Everything you need to win online.
+          </h2>
         </motion.div>
+
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-px bg-border">
+          {services.map((service, i) => (
+            <motion.div
+              key={service.number}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="bg-bg p-8 md:p-12 group hover:bg-bg-card transition-colors duration-600"
+            >
+              <span className="text-xs text-text-muted font-body tracking-wider">{service.number}</span>
+              <h3 className="font-display font-bold text-xl md:text-2xl text-text-primary mt-3 group-hover:text-accent transition-colors duration-600">
+                {service.title}
+              </h3>
+              <p className="text-text-secondary text-sm leading-relaxed mt-4 max-w-sm">
+                {service.description}
+              </p>
+              <div className="flex flex-wrap gap-2 mt-6">
+                {service.features.map((feature) => (
+                  <span
+                    key={feature}
+                    className="text-xs text-text-muted border border-border px-3 py-1 font-body"
+                  >
+                    {feature}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   )

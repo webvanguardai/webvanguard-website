@@ -1,19 +1,33 @@
 import type { Metadata, Viewport } from 'next'
+import { Inter, Inter_Tight } from 'next/font/google'
 import Header from '@/components/Header'
 import './globals.css'
 
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+})
+
+const interTight = Inter_Tight({
+  subsets: ['latin'],
+  variable: '--font-display',
+  weight: ['400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'WebVanguard - Digital Excellence',
-  description: 'WebVanguard is a premium digital agency delivering innovative web solutions with precision and creativity.',
-  keywords: ['WebVanguard', 'digital agency', 'web development', 'design', 'innovation'],
+  title: 'WebVanguard — AI-Powered Web Design Agency',
+  description: 'We design and build high-performance websites for businesses in Dubai and beyond. Strategy, design, development, SEO — all powered by AI.',
+  keywords: ['web design dubai', 'ai web agency', 'web development', 'seo dubai', 'digital agency'],
   authors: [{ name: 'WebVanguard' }],
   creator: 'WebVanguard',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://webvanguard.com',
-    title: 'WebVanguard - Digital Excellence',
-    description: 'WebVanguard is a premium digital agency delivering innovative web solutions with precision and creativity.',
+    url: 'https://webvanguard.ai',
+    title: 'WebVanguard — AI-Powered Web Design Agency',
+    description: 'We design and build high-performance websites for businesses in Dubai and beyond.',
     siteName: 'WebVanguard',
   },
   robots: {
@@ -25,7 +39,6 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
 }
 
 export default function RootLayout({
@@ -34,13 +47,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-      </head>
-      <body className="antialiased bg-background text-white min-h-screen font-sans">
+    <html lang="en" className={`${inter.variable} ${interTight.variable}`}>
+      <body>
         <Header />
         {children}
       </body>
