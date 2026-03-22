@@ -196,7 +196,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="font-display font-black text-mega text-text-primary leading-[0.85]"
           >
-            <GlitchText>Your business</GlitchText>
+            <GlitchText>Most Dubai</GlitchText>
           </motion.h1>
         </div>
         <div className="overflow-hidden">
@@ -206,7 +206,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
             className="font-serif italic font-black text-mega text-text-primary leading-[0.85]"
           >
-            deserves more
+            businesses are
           </motion.h1>
         </div>
         <div className="overflow-hidden mt-1">
@@ -216,12 +216,13 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="font-display font-black text-mega leading-[0.85]"
           >
-            <span className="text-accent">clients</span>
+            <span className="text-accent">invisible</span>
             <motion.span
               className="text-accent inline-block"
               animate={{ scale: [1, 1.4, 1] }}
               transition={{ duration: 0.5, delay: 2 }}
             >.</motion.span>
+            <span className="text-text-primary"> Yours won&apos;t.</span>
           </motion.h1>
         </div>
 
@@ -277,10 +278,10 @@ export default function Hero() {
           className="mt-24 pt-8 border-t border-accent/10 grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           {[
-            { value: '3x', label: 'More enquiries' },
-            { value: '<48h', label: 'First draft ready' },
-            { value: '100%', label: 'Client satisfaction' },
-            { value: '0', label: 'Upfront cost' },
+            { value: '6', label: 'Projects live' },
+            { value: 'Dubai', label: 'Our market' },
+            { value: '48h', label: 'First draft' },
+            { value: 'AED 1,500', label: 'Starting from' },
           ].map((stat, i) => (
             <motion.div
               key={stat.label}

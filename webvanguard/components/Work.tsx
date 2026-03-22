@@ -10,7 +10,7 @@ const projects = [
     location: 'Dubai Marina',
     description: 'A dark editorial website for a luxury spa in Dubai Marina. Gold palette, animated treatment showcase, and a gallery designed to turn browsers into bookings.',
     url: 'https://lumiere-wellness.vercel.app',
-    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://lumiere-wellness.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://lumiere-wellness.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg',
     tags: ['Spa & Wellness', 'Luxury', 'Dubai Marina'],
     accent: '#C9A96E',
     bg: '#0A0806',
@@ -23,7 +23,7 @@ const projects = [
     location: 'DIFC, Dubai',
     description: 'Premium real estate agency site. Navy & gold identity, featured property listings, Golden Visa advisory services.',
     url: 'https://apex-properties.vercel.app',
-    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://apex-properties.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://apex-properties.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg',
     tags: ['Real Estate', 'Investment', 'DIFC'],
     accent: '#C9A96E',
     bg: '#0A1628',
@@ -36,7 +36,7 @@ const projects = [
     location: 'Dubai Design District',
     description: 'Warm minimalist café site. Terracotta palette, interactive menu with AED pricing, and a story that turns visitors into regulars.',
     url: 'https://qahwa-house.vercel.app',
-    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://qahwa-house.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://qahwa-house.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg',
     tags: ['Food & Beverage', 'Café', 'D3'],
     accent: '#C4622D',
     bg: '#1A110A',
@@ -49,7 +49,7 @@ const projects = [
     location: 'DIFC, Dubai',
     description: 'Bold masculine identity for a luxury barbershop. Crimson & chrome, service cards with AED pricing, gallery and instant booking.',
     url: 'https://zafran-barber.vercel.app',
-    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://zafran-barber.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://zafran-barber.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg',
     tags: ['Grooming', 'Lifestyle', 'DIFC'],
     accent: '#B41E1E',
     bg: '#0A0A0A',
@@ -62,7 +62,7 @@ const projects = [
     location: 'Dubai',
     description: 'Electric editorial portfolio for a photography studio. Cyan & black aesthetic, 6 service packages, curated gallery.',
     url: 'https://lumina-lens-six.vercel.app',
-    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://lumina-lens-six.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://lumina-lens-six.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg',
     tags: ['Photography', 'Editorial', 'Creative'],
     accent: '#00C9B8',
     bg: '#08080F',
@@ -75,7 +75,7 @@ const projects = [
     location: 'DIFC, Dubai',
     description: 'Heritage-rich restaurant site. Deep emerald & gold, full menu by course, chef story, and a reservation flow designed to fill tables.',
     url: 'https://levant-co.vercel.app',
-    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://levant-co.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://levant-co.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg',
     tags: ['Restaurant', 'Fine Dining', 'DIFC'],
     accent: '#B5973A',
     bg: '#0A0D08',
@@ -85,10 +85,7 @@ const projects = [
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
   return (
-    <motion.a
-      href={project.url}
-      target="_blank"
-      rel="noopener noreferrer"
+    <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
@@ -104,7 +101,6 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           background: project.bg,
         }}
       >
-        {/* Real screenshot */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={project.thumbnail}
@@ -112,7 +108,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
         />
-        {/* Dark overlay for readability */}
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
         {/* Accent tint on hover */}
         <div
@@ -122,57 +118,57 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
         {/* Corner brackets */}
         <div className="absolute top-5 left-5 w-10 h-10 border-l border-t transition-all duration-500 opacity-0 group-hover:opacity-100" style={{ borderColor: `${project.accent}60` }} />
         <div className="absolute bottom-5 right-5 w-10 h-10 border-r border-b transition-all duration-500 opacity-0 group-hover:opacity-100" style={{ borderColor: `${project.accent}60` }} />
-        {/* Hover: view site badge */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <span
-            className="flex items-center gap-2 px-5 py-2.5 text-[10px] uppercase tracking-[0.2em] font-semibold border backdrop-blur-sm"
-            style={{
-              color: '#fff',
-              borderColor: `${project.accent}60`,
-              background: `rgba(0,0,0,0.6)`,
-            }}
-          >
-            View Live Site
-            <svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
-            </svg>
+        {/* Label badge */}
+        <div className="absolute top-5 left-5">
+          <span className="font-display font-black text-4xl md:text-5xl leading-none" style={{ color: `${project.accent}20` }}>
+            {project.label}
           </span>
         </div>
       </div>
 
-      {/* Info */}
-      <div className="p-6 md:p-8 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-        <div className="flex-1">
-          <p className="text-[10px] uppercase tracking-[0.25em] mb-1.5" style={{ color: `${project.accent}80` }}>
-            {project.label} — {project.industry}
-          </p>
-          <h3 className="font-display font-bold text-xl md:text-2xl text-text-primary group-hover:text-accent transition-colors duration-400 mb-2">
-            {project.name}
-          </h3>
-          <p className="text-text-secondary text-sm leading-relaxed max-w-lg">{project.description}</p>
-        </div>
-        <div className="flex flex-col items-start md:items-end gap-3 flex-shrink-0">
-          <div className="flex flex-wrap gap-2">
-            {project.tags.map(tag => (
-              <span
-                key={tag}
-                className="text-[9px] uppercase tracking-widest px-2.5 py-1 border"
-                style={{ color: `${project.accent}70`, borderColor: `${project.accent}25` }}
-              >
-                {tag}
-              </span>
-            ))}
+      {/* Info — always visible */}
+      <div className="p-6 md:p-7">
+        <div className="flex items-start justify-between gap-4 mb-3">
+          <div className="flex-1">
+            <p className="text-[10px] uppercase tracking-[0.25em] mb-1.5" style={{ color: `${project.accent}80` }}>
+              {project.label} — {project.industry}
+            </p>
+            <h3 className="font-display font-bold text-xl md:text-2xl text-text-primary group-hover:text-accent transition-colors duration-300">
+              {project.name}
+            </h3>
           </div>
-          <span
-            className="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-wider font-medium transition-all duration-300"
-            style={{ color: `${project.accent}70` }}
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-current animate-pulse" />
-            Live
-          </span>
+          {project.featured && (
+            <div className="flex flex-wrap gap-2 flex-shrink-0">
+              {project.tags.map(tag => (
+                <span
+                  key={tag}
+                  className="text-[9px] uppercase tracking-widest px-2.5 py-1 border"
+                  style={{ color: `${project.accent}70`, borderColor: `${project.accent}25` }}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
+        <p className="text-text-secondary text-sm leading-relaxed line-clamp-1 mb-4">
+          {project.description}
+        </p>
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] font-semibold transition-all duration-300 hover:gap-3"
+          style={{ color: `${project.accent}90` }}
+          onClick={e => e.stopPropagation()}
+        >
+          View Live
+          <svg width="10" height="10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
       </div>
-    </motion.a>
+    </motion.div>
   )
 }
 

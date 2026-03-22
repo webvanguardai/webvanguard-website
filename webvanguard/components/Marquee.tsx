@@ -1,7 +1,7 @@
 'use client'
 
 export default function Marquee() {
-  const items = ['Design', 'Strategy', 'SEO', 'Branding', 'Growth', 'Analytics']
+  const items = ['Design', 'Strategy', 'SEO', 'Branding', 'Growth', 'Analytics', "DUBAI'S MOST AMBITIOUS BRANDS", 'WE BUILD WEBSITES THAT SELL', 'FROM BRIEF TO LIVE IN 48H']
 
   return (
     <div className="py-8 overflow-hidden relative" style={{ borderTop: '1px solid rgba(212,149,107,0.08)', borderBottom: '1px solid rgba(212,149,107,0.08)' }}>
