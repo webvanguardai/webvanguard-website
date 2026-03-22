@@ -11,6 +11,8 @@ const projects = [
     location: 'Dubai Marina',
     url: 'https://lumiere-wellness.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://lumiere-wellness.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#D4AF37',
+    bg: '#0A0A0A',
   },
   {
     label: '02',
@@ -19,6 +21,8 @@ const projects = [
     location: 'DIFC',
     url: 'https://apex-properties.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://apex-properties.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#3B82F6',
+    bg: '#0A0A0A',
   },
   {
     label: '03',
@@ -27,6 +31,8 @@ const projects = [
     location: 'D3',
     url: 'https://qahwa-house.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://qahwa-house.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#C4956A',
+    bg: '#0D0A08',
   },
   {
     label: '04',
@@ -35,6 +41,8 @@ const projects = [
     location: 'DIFC',
     url: 'https://zafran-barber.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://zafran-barber.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#E8C872',
+    bg: '#0A0A0A',
   },
   {
     label: '05',
@@ -43,6 +51,8 @@ const projects = [
     location: 'Dubai',
     url: 'https://lumina-lens-six.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://lumina-lens-six.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#E0E0E0',
+    bg: '#0A0A0A',
   },
   {
     label: '06',
@@ -51,38 +61,42 @@ const projects = [
     location: 'DIFC',
     url: 'https://levant-co.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://levant-co.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#C9956B',
+    bg: '#0D0A08',
   },
   {
     label: '07',
     name: 'Solara Music',
     industry: 'Electronic Music & DJ',
     location: 'Dubai',
-    description: 'Dark editorial website for a Dubai-based electronic music producer. Full-bleed identity, release showcase, live performance history, and booking system.',
     url: 'https://solara-music-chi.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://solara-music-chi.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
-    tags: ['Music', 'Artist', 'Events'],
     accent: '#7B68EE',
     bg: '#08080F',
-    featured: false,
   },
   {
     label: '08',
     name: 'Céleste Events',
     industry: 'Luxury Event Design',
     location: 'Dubai',
-    description: 'Cinematic events company website for Dubai luxury weddings and brand activations. Rose gold palette, portfolio gallery, service showcase, and high-end enquiry flow.',
     url: 'https://celeste-events.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://celeste-events.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
-    tags: ['Events', 'Luxury', 'Weddings'],
     accent: '#C9956B',
     bg: '#0D0A08',
-    featured: false,
   },
 ]
 
-function ProjectRow({ project, index }: { project: typeof projects[0]; index: number }) {
-  const [hovered, setHovered] = useState(false)
-
+function ProjectRow({
+  project,
+  index,
+  onHover,
+  onLeave,
+}: {
+  project: typeof projects[0]
+  index: number
+  onHover: () => void
+  onLeave: () => void
+}) {
   return (
     <motion.a
       href={project.url}
@@ -92,9 +106,9 @@ function ProjectRow({ project, index }: { project: typeof projects[0]; index: nu
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.5, delay: index * 0.06 }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      className="group block border-b border-border py-6 md:py-8 relative overflow-hidden"
+      onMouseEnter={onHover}
+      onMouseLeave={onLeave}
+      className="group block border-b border-border py-6 md:py-8 relative"
     >
       <div className="flex items-center gap-4 md:gap-8">
         {/* Number */}
@@ -107,7 +121,7 @@ function ProjectRow({ project, index }: { project: typeof projects[0]; index: nu
           {project.name}
         </h3>
 
-        {/* Industry + Location — hidden on mobile to save space */}
+        {/* Industry + Location — hidden on mobile */}
         <div className="hidden md:flex items-center gap-6 shrink-0">
           <span className="text-sm text-text-secondary font-body">
             {project.industry}
@@ -130,32 +144,13 @@ function ProjectRow({ project, index }: { project: typeof projects[0]; index: nu
         <span className="text-text-muted text-xs">·</span>
         <span className="text-xs text-text-muted">{project.location}</span>
       </div>
-
-      {/* Hover thumbnail — desktop only */}
-      <AnimatePresence>
-        {hovered && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-            className="hidden md:block absolute right-32 top-1/2 -translate-y-1/2 w-[300px] h-[188px] z-20 pointer-events-none overflow-hidden shadow-2xl border border-border"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={project.thumbnail}
-              alt={`${project.name} preview`}
-              className="w-full object-cover"
-              style={{ marginTop: '-50px', height: 'calc(100% + 50px)' }}
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
     </motion.a>
   )
 }
 
 export default function Work() {
+  const [hoveredProject, setHoveredProject] = useState<typeof projects[0] | null>(null)
+
   return (
     <section id="work" className="py-section">
       <div className="max-w-[90rem] mx-auto px-6 md:px-12">
@@ -177,7 +172,13 @@ export default function Work() {
         {/* Project list */}
         <div className="border-t border-border">
           {projects.map((project, i) => (
-            <ProjectRow key={project.label} project={project} index={i} />
+            <ProjectRow
+              key={project.label}
+              project={project}
+              index={i}
+              onHover={() => setHoveredProject(project)}
+              onLeave={() => setHoveredProject(null)}
+            />
           ))}
         </div>
 
@@ -193,6 +194,48 @@ export default function Work() {
           <a href="#contact" className="text-accent hover:underline underline-offset-4 font-semibold">Let&apos;s talk →</a>
         </motion.p>
       </div>
+
+      {/* Floating hover preview — desktop only */}
+      <AnimatePresence>
+        {hoveredProject && (
+          <motion.div
+            key={hoveredProject.label}
+            initial={{ opacity: 0, x: 20, scale: 0.96 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            exit={{ opacity: 0, x: 20, scale: 0.96 }}
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            className="fixed right-8 top-1/2 -translate-y-1/2 w-72 z-50 pointer-events-none hidden md:block"
+          >
+            <div
+              className="overflow-hidden shadow-2xl rounded-lg"
+              style={{ border: `1px solid ${hoveredProject.accent}40` }}
+            >
+              {/* Thumbnail with clip to hide client nav */}
+              <div className="relative overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={hoveredProject.thumbnail}
+                  alt={hoveredProject.name}
+                  className="absolute left-0 right-0 w-full object-cover"
+                  style={{ top: '-68px', height: 'calc(100% + 68px)' }}
+                />
+              </div>
+              {/* Caption */}
+              <div
+                className="px-4 py-3"
+                style={{ background: hoveredProject.bg }}
+              >
+                <p className="font-display font-bold text-sm" style={{ color: hoveredProject.accent }}>
+                  {hoveredProject.name}
+                </p>
+                <p className="text-xs mt-0.5" style={{ color: `${hoveredProject.accent}70` }}>
+                  {hoveredProject.industry} · {hoveredProject.location}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   )
 }
