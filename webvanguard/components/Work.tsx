@@ -10,7 +10,7 @@ const projects = [
     location: 'Dubai Marina',
     description: 'A dark editorial website for a luxury spa in Dubai Marina. Gold palette, animated treatment showcase, and a gallery designed to turn browsers into bookings.',
     url: 'https://lumiere-wellness.vercel.app',
-    thumbnail: 'https://api.microlink.io/?url=https://lumiere-wellness.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg',
+    thumbnail: 'https://api.microlink.io/?url=https://lumiere-wellness.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     tags: ['Spa & Wellness', 'Luxury', 'Dubai Marina'],
     accent: '#C9A96E',
     bg: '#0A0806',
@@ -105,7 +105,8 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
         <img
           src={project.thumbnail}
           alt={`${project.name} website screenshot`}
-          className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+          className="absolute left-0 right-0 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          style={{ top: '-68px', height: 'calc(100% + 68px)', objectPosition: 'top' }}
           loading="lazy"
         />
         {/* Dark overlay */}
