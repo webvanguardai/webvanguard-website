@@ -26,12 +26,13 @@
 6. ⬜ Repeat. Never stop. Target: 6 sites this week.
 
 ## Client Sites Pipeline
-- ✅ **Lumière Wellness Studio** — luxury spa Dubai Marina → https://lumiere-wellness.vercel.app | repo: webvanguardai/lumiere-wellness
-- ⬜ Site 02 — pending
-- ⬜ Site 03 — pending
-- ⬜ Site 04 — pending
-- ⬜ Site 05 — pending
-- ⬜ Site 06 — pending
+- ✅ **01 Lumière Wellness Studio** — luxury spa Dubai Marina → https://lumiere-wellness.vercel.app | proposal: webvanguardai.github.io/proposal-lumiere-wellness
+- ✅ **02 Apex Properties Dubai** — luxury real estate → https://apex-properties.vercel.app | proposal: webvanguardai.github.io/proposal-apex-properties
+- ✅ **03 Qahwa House** — specialty coffee roastery → https://qahwa-house.vercel.app | proposal: webvanguardai.github.io/proposal-qahwa-house
+- ✅ **04 Zafran Barber** — premium barbershop DIFC → https://zafran-barber.vercel.app | proposal: webvanguardai.github.io/proposal-zafran-barber
+- ✅ **05 Lumina Lens Studio** — photography studio → https://lumina-lens-six.vercel.app | proposal: webvanguardai.github.io/proposal-lumina-lens
+- ✅ **06 Levant & Co.** — Lebanese fine dining → https://levant-co.vercel.app | proposal: webvanguardai.github.io/proposal-levant-co
+- Portfolio: https://webvanguard.vercel.app (all 6 live)
 
 ## Standard Deliverables (every client site)
 Each site must include ALL of the following before deploy:
