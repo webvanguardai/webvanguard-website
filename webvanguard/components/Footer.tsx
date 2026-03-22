@@ -7,18 +7,23 @@ export default function Footer() {
   return (
     <footer>
       {/* Big CTA */}
-      <div className="bg-bg-dark text-text-on-dark py-20 md:py-32">
-        <div className="max-w-[90rem] mx-auto px-6 md:px-12 text-center">
+      <div className="bg-bg-dark text-text-on-dark py-20 md:py-32 relative overflow-hidden">
+        {/* Warm ambient glow */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-accent/[0.04] rounded-full blur-3xl" />
+        </div>
+
+        <div className="max-w-[90rem] mx-auto px-6 md:px-12 text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="font-display font-black text-3xl md:text-6xl text-white leading-tight max-w-4xl mx-auto uppercase">
+            <h3 className="font-display font-black text-3xl md:text-6xl text-[#F4F1EC] leading-tight max-w-4xl mx-auto uppercase">
               Your competitors already have a website<span className="text-accent">.</span>
             </h3>
-            <p className="text-white/60 text-base mt-6 max-w-md mx-auto">
+            <p className="text-[#F4F1EC]/50 text-base mt-6 max-w-md mx-auto">
               Every day without one is a day your customers choose someone else.
             </p>
             <div className="mt-8">
