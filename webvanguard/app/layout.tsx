@@ -97,7 +97,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#0A0A0A',
+  viewportFit: 'cover',
+  themeColor: '#FFFFFF',
 }
 
 const jsonLd = {
@@ -147,14 +148,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${interTight.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${interTight.variable} ${playfair.variable} [--sat:env(safe-area-inset-top)]`}>
       <head>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="noise overflow-x-hidden">
+      <body className="overflow-x-hidden">
         <Header />
         {children}
       </body>
