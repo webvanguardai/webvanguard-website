@@ -1,22 +1,55 @@
 'use client'
 
 export default function Marquee() {
-  const items = ['DESIGN', 'STRATEGY', 'SEO', 'BRANDING', 'GROWTH', 'RESULTS']
+  const topItems = [
+    'DUBAI',
+    '2026',
+    '6 CLIENTS',
+    'WE BUILD WHAT CONVERTS',
+    'FROM AED 1,500',
+    'ZERO RISK',
+    'SEE IT BEFORE YOU PAY',
+  ]
+
+  const bottomItems = [
+    'WEB DESIGN',
+    'SEO',
+    'BRANDING',
+    'GROWTH',
+    'YOUR CITY',
+    'YOUR CLIENTS',
+    'YOUR REVENUE',
+    'OUR CRAFT',
+  ]
 
   return (
-    <div className="py-8 overflow-hidden bg-bg-dark relative">
-      {/* Subtle warm gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-bg-dark via-[#221f1b] to-bg-dark opacity-60 pointer-events-none" />
-
-      <div className="marquee flex whitespace-nowrap relative z-10">
-        {[...items, ...items, ...items, ...items].map((item, i) => (
-          <span key={i} className="flex items-center shrink-0">
-            <span className="font-display font-black text-5xl md:text-8xl uppercase px-4 md:px-8 cursor-default text-[#F4F1EC]">
-              {item}
+    <div className="overflow-hidden bg-bg-dark relative select-none">
+      {/* Top strip — scrolls LEFT (slow) */}
+      <div className="border-b border-[#F4F1EC]/10">
+        <div className="marquee-left flex whitespace-nowrap py-3">
+          {[...topItems, ...topItems, ...topItems, ...topItems].map((item, i) => (
+            <span key={i} className="flex items-center shrink-0">
+              <span className="font-body text-sm uppercase tracking-[0.25em] px-4 text-[#F4F1EC]/80">
+                {item}
+              </span>
+              <span className="text-accent text-[8px] mx-1 opacity-60">◆</span>
             </span>
-            <span className="text-accent text-2xl mx-2">●</span>
-          </span>
-        ))}
+          ))}
+        </div>
+      </div>
+
+      {/* Bottom strip — scrolls RIGHT (slightly faster) */}
+      <div>
+        <div className="marquee-right flex whitespace-nowrap py-3">
+          {[...bottomItems, ...bottomItems, ...bottomItems, ...bottomItems].map((item, i) => (
+            <span key={i} className="flex items-center shrink-0">
+              <span className="font-body text-xs uppercase tracking-[0.35em] px-4 text-[#F4F1EC]/50">
+                {item}
+              </span>
+              <span className="text-[#FF3B00] text-[6px] mx-1 opacity-40">/</span>
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   )

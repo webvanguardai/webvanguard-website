@@ -64,14 +64,22 @@
   }
 
   /* ====== MARQUEE ====== */
-  @keyframes marquee {
+  @keyframes marquee-left {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
-  .marquee {
-    animation: marquee 25s linear infinite;
+  @keyframes marquee-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
   }
-  .marquee:hover {
+  .marquee-left {
+    animation: marquee-left 40s linear infinite;
+  }
+  .marquee-right {
+    animation: marquee-right 32s linear infinite;
+  }
+  .marquee-left:hover,
+  .marquee-right:hover {
     animation-play-state: paused;
   }
 
