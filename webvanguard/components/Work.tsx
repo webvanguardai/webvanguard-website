@@ -97,7 +97,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
       <div
         className="relative overflow-hidden"
         style={{
-          aspectRatio: project.featured ? '16/7' : '16/10',
+          aspectRatio: project.featured ? '16/9' : '4/3',
           background: project.bg,
         }}
       >

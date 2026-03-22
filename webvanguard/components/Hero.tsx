@@ -214,7 +214,7 @@ export default function Hero() {
             initial={{ y: '110%', rotate: 2 }}
             animate={{ y: 0, rotate: 0 }}
             transition={{ duration: 1, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display font-black text-mega leading-[0.85]"
+            className="font-display font-black text-mega leading-[0.88]"
           >
             <span className="text-accent">invisible</span>
             <motion.span
@@ -222,7 +222,16 @@ export default function Hero() {
               animate={{ scale: [1, 1.4, 1] }}
               transition={{ duration: 0.5, delay: 2 }}
             >.</motion.span>
-            <span className="text-text-primary"> Yours won&apos;t.</span>
+          </motion.h1>
+        </div>
+        <div className="overflow-hidden mt-1">
+          <motion.h1
+            initial={{ y: '110%', rotate: 2 }}
+            animate={{ y: 0, rotate: 0 }}
+            transition={{ duration: 1, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            className="font-display font-black text-mega leading-[0.88] text-text-primary"
+          >
+            Yours won&apos;t.
           </motion.h1>
         </div>
 
