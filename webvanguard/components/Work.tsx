@@ -44,7 +44,7 @@ const projects = [
     industry: 'Premium Photography',
     label: '05',
     description: 'Dubai\'s most progressive photography studio. Electric cyan & black editorial aesthetic. 6 service categories with AED pricing, full gallery, client testimonials, and advanced Framer Motion animations.',
-    url: 'https://lumina-lens-six.vercel.app',
+    url: 'https://lumina-lens-studio.vercel.app',
     tags: ['Web Design', 'Next.js', 'Photography'],
     live: true,
   },
