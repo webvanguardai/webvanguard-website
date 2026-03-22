@@ -28,7 +28,7 @@ function GridBackground() {
       const cols = Math.ceil(canvas.width / cellSize) + 1
       const rows = Math.ceil(canvas.height / cellSize) + 1
 
-      ctx.strokeStyle = 'rgba(200, 255, 0, 0.04)'
+      ctx.strokeStyle = 'rgba(255, 79, 64, 0.04)'
       ctx.lineWidth = 0.5
       for (let i = 0; i <= cols; i++) {
         const x = i * cellSize
@@ -54,13 +54,13 @@ function GridBackground() {
           const radius = 1 + pulse * 1.2
           ctx.beginPath()
           ctx.arc(x, y, radius, 0, Math.PI * 2)
-          ctx.fillStyle = `rgba(200, 255, 0, ${alpha})`
+          ctx.fillStyle = `rgba(255, 79, 64, ${alpha})`
           ctx.fill()
         }
       }
 
       const highlightCol = Math.floor((time * 0.3) % cols)
-      ctx.strokeStyle = 'rgba(200, 255, 0, 0.08)'
+      ctx.strokeStyle = 'rgba(255, 79, 64, 0.08)'
       ctx.lineWidth = 1
       ctx.beginPath()
       ctx.moveTo(highlightCol * cellSize, 0)
@@ -75,7 +75,7 @@ function GridBackground() {
 
       ctx.beginPath()
       ctx.arc(highlightCol * cellSize, highlightRow * cellSize, 4, 0, Math.PI * 2)
-      ctx.fillStyle = 'rgba(200, 255, 0, 0.4)'
+      ctx.fillStyle = 'rgba(255, 79, 64, 0.4)'
       ctx.fill()
 
       time++
