@@ -39,6 +39,24 @@ const projects = [
     tags: ['Web Design', 'Next.js', 'Barbershop'],
     live: true,
   },
+  {
+    name: 'Lumina Lens Studio',
+    industry: 'Premium Photography',
+    label: '05',
+    description: 'Dubai\'s most progressive photography studio. Electric cyan & black editorial aesthetic. 6 service categories with AED pricing, full gallery, client testimonials, and advanced Framer Motion animations.',
+    url: 'https://lumina-lens-six.vercel.app',
+    tags: ['Web Design', 'Next.js', 'Photography'],
+    live: true,
+  },
+  {
+    name: 'Levant & Co.',
+    industry: 'Lebanese Fine Dining',
+    label: '06',
+    description: 'Authentic Lebanese cuisine in DIFC. Deep emerald & gold heritage identity. Full 80+ item menu by course, chef story, gallery, reservation system, and Restaurant schema.org markup.',
+    url: 'https://levant-co.vercel.app',
+    tags: ['Web Design', 'Next.js', 'Hospitality'],
+    live: true,
+  },
 ]
 
 export default function Work() {
