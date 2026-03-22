@@ -52,20 +52,20 @@ export default function Header() {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden relative z-50 w-8 h-8 flex flex-col justify-center items-center gap-1.5"
+          className="md:hidden relative z-50 w-10 h-10 flex flex-col justify-center items-center gap-[6px]"
           aria-label="Toggle menu"
         >
           <motion.span
-            animate={isOpen ? { rotate: 45, y: 5 } : { rotate: 0, y: 0 }}
-            className="block w-6 h-px bg-text-primary origin-center"
+            animate={isOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
+            className="block w-6 h-[1.5px] bg-text-primary origin-center transition-colors"
           />
           <motion.span
-            animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="block w-6 h-px bg-text-primary"
+            animate={isOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
+            className="block w-6 h-[1.5px] bg-text-primary"
           />
           <motion.span
-            animate={isOpen ? { rotate: -45, y: -5 } : { rotate: 0, y: 0 }}
-            className="block w-6 h-px bg-text-primary origin-center"
+            animate={isOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
+            className="block w-6 h-[1.5px] bg-text-primary origin-center transition-colors"
           />
         </button>
       </div>

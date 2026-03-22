@@ -1,132 +1,7 @@
 'use client'
 
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion'
-import { useEffect, useState, useRef } from 'react'
-
-function GridBackground() {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-
-  useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
-
-    let animationId: number
-    let time = 0
-
-    const resize = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-    }
-    resize()
-    window.addEventListener('resize', resize)
-
-    const draw = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
-      const cellSize = 80
-      const cols = Math.ceil(canvas.width / cellSize) + 1
-      const rows = Math.ceil(canvas.height / cellSize) + 1
-
-      // Grid lines
-      ctx.strokeStyle = 'rgba(212, 149, 107, 0.03)'
-      ctx.lineWidth = 0.5
-      for (let i = 0; i <= cols; i++) {
-        ctx.beginPath()
-        ctx.moveTo(i * cellSize, 0)
-        ctx.lineTo(i * cellSize, canvas.height)
-        ctx.stroke()
-      }
-      for (let j = 0; j <= rows; j++) {
-        ctx.beginPath()
-        ctx.moveTo(0, j * cellSize)
-        ctx.lineTo(canvas.width, j * cellSize)
-        ctx.stroke()
-      }
-
-      // Pulsing dots at intersections
-      for (let i = 0; i <= cols; i++) {
-        for (let j = 0; j <= rows; j++) {
-          const pulse = Math.sin(time * 0.02 + i * 0.5 + j * 0.3) * 0.5 + 0.5
-          const alpha = pulse * 0.15
-          const radius = 1 + pulse * 1.5
-          ctx.beginPath()
-          ctx.arc(i * cellSize, j * cellSize, radius, 0, Math.PI * 2)
-          ctx.fillStyle = `rgba(212, 149, 107, ${alpha})`
-          ctx.fill()
-        }
-      }
-
-      // Scanning highlight
-      const highlightCol = Math.floor((time * 0.3) % cols)
-      ctx.strokeStyle = 'rgba(212, 149, 107, 0.06)'
-      ctx.lineWidth = 1
-      ctx.beginPath()
-      ctx.moveTo(highlightCol * cellSize, 0)
-      ctx.lineTo(highlightCol * cellSize, canvas.height)
-      ctx.stroke()
-
-      const highlightRow = Math.floor((time * 0.2) % rows)
-      ctx.beginPath()
-      ctx.moveTo(0, highlightRow * cellSize)
-      ctx.lineTo(canvas.width, highlightRow * cellSize)
-      ctx.stroke()
-
-      // Bright intersection dot
-      ctx.beginPath()
-      ctx.arc(highlightCol * cellSize, highlightRow * cellSize, 5, 0, Math.PI * 2)
-      ctx.fillStyle = 'rgba(212, 149, 107, 0.5)'
-      ctx.fill()
-
-      time++
-      animationId = requestAnimationFrame(draw)
-    }
-    draw()
-    return () => {
-      cancelAnimationFrame(animationId)
-      window.removeEventListener('resize', resize)
-    }
-  }, [])
-
-  return (
-    <>
-      <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
-      {/* Corner brackets */}
-      <div className="absolute top-6 left-6 w-20 h-20 border-l-2 border-t-2 border-accent/20" />
-      <div className="absolute top-6 right-6 w-20 h-20 border-r-2 border-t-2 border-accent/20" />
-      <div className="absolute bottom-6 left-6 w-20 h-20 border-l-2 border-b-2 border-accent/20" />
-      <div className="absolute bottom-6 right-6 w-20 h-20 border-r-2 border-b-2 border-accent/20" />
-    </>
-  )
-}
-
-function GlitchText({ children, className }: { children: string; className?: string }) {
-  const [isGlitching, setIsGlitching] = useState(false)
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsGlitching(true)
-      setTimeout(() => setIsGlitching(false), 120)
-    }, 3000 + Math.random() * 2000)
-    return () => clearInterval(interval)
-  }, [])
-
-  return (
-    <span className={`relative inline-block ${className}`}>
-      {children}
-      {isGlitching && (
-        <>
-          <span className="absolute top-0 left-0 text-accent/70" style={{ clipPath: 'inset(15% 0 65% 0)', transform: 'translateX(4px) skewX(-2deg)' }}>
-            {children}
-          </span>
-          <span className="absolute top-0 left-0 text-text-primary/50" style={{ clipPath: 'inset(55% 0 15% 0)', transform: 'translateX(-4px) skewX(1deg)' }}>
-            {children}
-          </span>
-        </>
-      )}
-    </span>
-  )
-}
+import { useEffect } from 'react'
 
 export default function Hero() {
   const mouseX = useMotionValue(0)
@@ -147,34 +22,15 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-      <GridBackground />
-
-      {/* Giant decorative circle */}
-      <div className="absolute -right-[20vw] top-1/2 -translate-y-1/2 w-[70vw] h-[70vw] rounded-full pointer-events-none" style={{
-        border: '1px solid rgba(212, 149, 107, 0.06)',
-      }} />
-      <div className="absolute -right-[25vw] top-1/2 -translate-y-1/2 w-[80vw] h-[80vw] rounded-full pointer-events-none" style={{
-        border: '1px solid rgba(212, 149, 107, 0.03)',
-      }} />
-
-      {/* WV watermark with parallax */}
+      {/* WV watermark with parallax — sole background element */}
       <motion.div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
         style={{ rotateX, rotateY, perspective: 1000 }}
       >
-        <span className="font-serif font-black text-[35vw] leading-none whitespace-nowrap italic" style={{ color: 'rgba(212, 149, 107, 0.03)' }}>
+        <span className="font-serif font-black text-[35vw] leading-none whitespace-nowrap italic" style={{ color: 'rgba(212, 149, 107, 0.025)' }}>
           WV
         </span>
       </motion.div>
-
-      {/* Vertical accent lines */}
-      <motion.div
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 1 }}
-        transition={{ duration: 1.5, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute top-0 left-[15%] w-px h-full origin-top"
-        style={{ background: 'linear-gradient(to bottom, rgba(212,149,107,0.2), rgba(212,149,107,0.05), transparent)' }}
-      />
 
       <div className="max-w-[90rem] mx-auto px-6 md:px-12 w-full relative z-10">
         {/* Label */}
@@ -194,9 +50,9 @@ export default function Hero() {
             initial={{ y: '110%', rotate: 2 }}
             animate={{ y: 0, rotate: 0 }}
             transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display font-black text-mega text-text-primary leading-[0.85]"
+            className="font-display font-bold text-mega text-text-primary leading-[0.85]"
           >
-            <GlitchText>Most Dubai</GlitchText>
+            Most Dubai
           </motion.h1>
         </div>
         <div className="overflow-hidden">
@@ -204,7 +60,7 @@ export default function Hero() {
             initial={{ y: '110%', rotate: 2 }}
             animate={{ y: 0, rotate: 0 }}
             transition={{ duration: 1, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
-            className="font-serif italic font-black text-mega text-text-primary leading-[0.85]"
+            className="font-serif italic font-semibold text-mega text-text-primary leading-[0.85]"
           >
             businesses are
           </motion.h1>
@@ -219,7 +75,7 @@ export default function Hero() {
             <span className="text-accent">invisible</span>
             <motion.span
               className="text-accent inline-block"
-              animate={{ scale: [1, 1.4, 1] }}
+              animate={{ scale: [1, 1.3, 1] }}
               transition={{ duration: 0.5, delay: 2 }}
             >.</motion.span>
           </motion.h1>
@@ -229,7 +85,7 @@ export default function Hero() {
             initial={{ y: '110%', rotate: 2 }}
             animate={{ y: 0, rotate: 0 }}
             transition={{ duration: 1, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display font-black text-mega leading-[0.88] text-text-primary"
+            className="font-display font-bold text-mega leading-[0.88] text-text-primary"
           >
             Yours won&apos;t.
           </motion.h1>
@@ -299,7 +155,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.9 + i * 0.1 }}
             >
-              <p className="font-display font-black text-4xl md:text-5xl text-text-primary group-hover:text-accent transition-colors duration-300">
+              <p className="font-display font-bold text-3xl md:text-4xl text-text-primary group-hover:text-accent transition-colors duration-300">
                 {stat.value}
               </p>
               <p className="text-xs text-text-muted mt-2 font-body uppercase tracking-wider">{stat.label}</p>

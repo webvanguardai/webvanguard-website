@@ -41,7 +41,7 @@ export default function WhyUs() {
               <span className="inline-block w-16 h-px bg-accent/50 mr-4 align-middle" />
               Why Web Vanguard
             </p>
-            <h2 className="font-display font-black text-heading text-text-primary">
+            <h2 className="font-display font-bold text-heading text-text-primary">
               Not another<br />
               <span className="font-serif italic text-accent">agency.</span>
             </h2>
@@ -52,7 +52,7 @@ export default function WhyUs() {
         </motion.div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
           {differentiators.map((item, i) => (
             <motion.div
               key={item.number}

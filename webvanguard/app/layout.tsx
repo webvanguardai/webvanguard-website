@@ -154,7 +154,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="noise">
+      <body className="noise overflow-x-hidden">
         <Header />
         {children}
       </body>

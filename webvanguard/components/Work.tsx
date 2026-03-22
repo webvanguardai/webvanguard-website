@@ -95,20 +95,20 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
     >
       {/* Thumbnail */}
       <div
-        className="relative overflow-hidden"
-        style={{
-          aspectRatio: project.featured ? '16/9' : '4/3',
-          background: project.bg,
-        }}
+        className={`relative overflow-hidden ${project.featured ? 'aspect-[4/3] md:aspect-[16/9]' : 'aspect-[16/10] md:aspect-[4/3]'}`}
+        style={{ background: project.bg }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={project.thumbnail}
-          alt={`${project.name} website screenshot`}
-          className="absolute left-0 right-0 w-full object-cover transition-transform duration-700 group-hover:scale-105"
-          style={{ top: '-68px', height: 'calc(100% + 68px)', objectPosition: 'top' }}
-          loading="lazy"
-        />
+        {/* Wrapper clips the top of the screenshot to hide client nav */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={project.thumbnail}
+            alt={`${project.name} website screenshot`}
+            className="absolute inset-x-0 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            style={{ top: '-80px', height: 'calc(100% + 80px)' }}
+            loading="lazy"
+          />
+        </div>
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
         {/* Accent tint on hover */}
@@ -194,7 +194,7 @@ export default function Work() {
             Selected work
           </p>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
-            <h2 className="md:col-span-7 font-display font-black text-heading text-text-primary">
+            <h2 className="md:col-span-7 font-display font-bold text-heading text-text-primary">
               Businesses that<span className="text-accent">.</span><br />
               <span className="font-serif italic text-accent">stand out online</span><span className="text-accent">.</span>
             </h2>

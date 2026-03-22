@@ -26,13 +26,13 @@ module.exports = {
         serif: ['var(--font-serif)', 'Georgia', 'serif'],
       },
       fontSize: {
-        'mega': ['clamp(3rem, 10vw, 12rem)', { lineHeight: '0.88', letterSpacing: '-0.04em' }],
+        'mega': ['clamp(2.4rem, 9vw, 12rem)', { lineHeight: '0.88', letterSpacing: '-0.04em' }],
         'hero': ['clamp(2.25rem, 7vw, 7rem)', { lineHeight: '0.9', letterSpacing: '-0.03em' }],
         'heading': ['clamp(2rem, 4.5vw, 4.5rem)', { lineHeight: '0.95', letterSpacing: '-0.03em' }],
         'subheading': ['clamp(1.15rem, 2vw, 1.75rem)', { lineHeight: '1.3' }],
       },
       spacing: {
-        'section': 'clamp(6rem, 15vw, 12rem)',
+        'section': 'clamp(7rem, 16vw, 14rem)',
       },
     },
   },

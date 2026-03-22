@@ -36,9 +36,8 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="py-section relative">
-      {/* Decorative circles */}
-      <div className="absolute top-32 -left-32 w-[500px] h-[500px] rounded-full pointer-events-none" style={{ border: '1px solid rgba(212,149,107,0.04)' }} />
-      <div className="absolute bottom-32 -right-32 w-[400px] h-[400px] rounded-full pointer-events-none" style={{ border: '1px solid rgba(212,149,107,0.03)' }} />
+      {/* Subtle decorative circle */}
+      <div className="hidden md:block absolute top-32 -right-32 w-[400px] h-[400px] rounded-full pointer-events-none" style={{ border: '1px solid rgba(212,149,107,0.03)' }} />
 
       <div className="max-w-[90rem] mx-auto px-6 md:px-12">
         {/* Header */}
@@ -54,9 +53,9 @@ export default function Services() {
             What we do
           </p>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
-            <h2 className="md:col-span-8 font-display font-black text-heading text-text-primary">
+            <h2 className="md:col-span-8 font-display font-bold text-heading text-text-primary">
               Everything your business needs to{' '}
-              <span className="font-serif italic text-accent">dominate</span> online.
+              <span className="font-serif italic text-accent">grow</span> online.
             </h2>
             <p className="md:col-span-3 md:col-start-10 text-text-secondary text-sm leading-relaxed">
               No jargon. No fluff. Four pillars that turn your online presence into a revenue engine.
@@ -73,7 +72,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className={`group relative border border-border hover:border-accent/20 bg-bg-card/50 hover:bg-bg-card transition-all duration-500 overflow-hidden ${i % 2 === 0 ? 'md:mr-[4%]' : 'md:ml-[4%]'}`}
+              className={`group relative border border-border hover:border-accent/20 bg-bg-card/30 hover:bg-bg-card/60 transition-all duration-500 overflow-hidden ${i % 2 === 0 ? 'md:mr-[3%]' : 'md:ml-[3%]'}`}
             >
               {/* Accent bar left */}
               <div className="absolute left-0 top-0 w-[3px] h-0 bg-accent group-hover:h-full transition-all duration-700" />
