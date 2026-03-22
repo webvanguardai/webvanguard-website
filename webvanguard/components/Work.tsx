@@ -12,7 +12,15 @@ const projects = [
     tags: ['Web Design', 'Next.js', 'Branding'],
     live: true,
   },
-  { name: 'Coming Soon', industry: 'Real Estate', label: '02', description: 'Premium property development digital presence.', url: '#', tags: ['Web Design', 'SEO'], live: false },
+  {
+    name: 'Apex Properties Dubai',
+    industry: 'Luxury Real Estate',
+    label: '02',
+    description: 'Premium real estate agency website for Dubai\'s luxury property market. Navy & gold identity, property listings grid, investment advisory services, multilingual client focus.',
+    url: 'https://apex-properties.vercel.app',
+    tags: ['Web Design', 'Next.js', 'Real Estate'],
+    live: true,
+  },
   { name: 'Coming Soon', industry: 'Professional Services', label: '03', description: 'Elevating a professional services firm in Dubai.', url: '#', tags: ['Web Design', 'CRO'], live: false },
 ]
 

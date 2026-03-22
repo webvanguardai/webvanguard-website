@@ -21,10 +21,114 @@
 1. ✅ Portfolio website v3 live (copper palette)
 2. ⬜ Buy domain webvanguard.ai (Cloudflare)
 3. ⬜ Set up email hello@webvanguard.ai (Zoho free)
-4. ⬜ Find businesses in Dubai WITHOUT websites
-5. ⬜ Build demo site for first potential client → deploy to Vercel → share link
-6. ⬜ Client accepts → update with real data → add to portfolio
-7. ⬜ Repeat. Never stop.
+4. ✅ Build demo sites for potential clients → deploy to Vercel → share link
+5. ⬜ Client accepts → update with real data → add to portfolio
+6. ⬜ Repeat. Never stop. Target: 6 sites this week.
+
+## Client Sites Pipeline
+- ✅ **Lumière Wellness Studio** — luxury spa Dubai Marina → https://lumiere-wellness.vercel.app | repo: webvanguardai/lumiere-wellness
+- ⬜ Site 02 — pending
+- ⬜ Site 03 — pending
+- ⬜ Site 04 — pending
+- ⬜ Site 05 — pending
+- ⬜ Site 06 — pending
+
+## Standard Deliverables (every client site)
+Each site must include ALL of the following before deploy:
+- ✅ Responsive design (mobile-first)
+- ✅ Functional contact form (Formspree — no backend needed)
+- ✅ WhatsApp floating button (click-to-chat)
+- ✅ Google Maps embed (for physical businesses)
+- ✅ Full SEO: title, meta description, canonical, keywords (Dubai-local)
+- ✅ AI SEO: llms.txt file + structured data JSON-LD (schema.org LocalBusiness)
+- ✅ OpenGraph tags (og:title, og:description, og:image, og:url)
+- ✅ Twitter/X card meta tags
+- ✅ Favicon (generated or SVG)
+- ✅ Google Analytics GA4 embed (gtag.js)
+- ✅ robots.txt + sitemap.xml
+- ✅ All Unsplash URLs verified 200 before deploy (no 404s)
+- ✅ next.config.mjs with images.remotePatterns for unsplash
+
+## Pricing Strategy
+| Plan | Price (AED) | What's included |
+|------|-------------|-----------------|
+| Launch | 2,500 | Web + form + WhatsApp + SEO basic |
+| Growth | 4,500 | All + Analytics + 3 months support |
+| Premium | 8,000+ | All + content strategy + Google Ads setup |
+
+## Sales Pitch
+"We already built your website. You just need to put your name on it."
+- Show them the demo live URL
+- Explain: form captures leads → goes to their email
+- Explain: WhatsApp button → direct customer contact
+- Explain: SEO → Google will find them
+- Focus on RESULTS not tech: "more clients, not just a website"
+
+## CRM — Lead Tracker
+- App: /home/javibeat/.openclaw/workspace/crm/ → deploy: webvanguard-crm.vercel.app
+- Stack: Next.js 14 + JSON file storage (no DB needed to start) — mobile-friendly
+- Lead levels: 🔴 Cold (no reply / not contacted) | 🟡 Warm (showed interest) | 🟢 Hot (ready to buy)
+- Fields per lead: name, business, sector, phone, email, IG/WhatsApp, demo URL, proposal URL, level, status, last contact date, notes, source (how found), assigned plan, price quoted
+- Status flow: New → Contacted → Replied → Negotiating → Closed / Discarded
+- Reminder logic: Cold = follow up in 14 days | Warm = 7 days | Hot = 48h
+- Pricing table per lead (shown in CRM and proposal page):
+
+### Pricing Table (AED)
+| Plan | Price | What's included |
+|------|-------|-----------------|
+| Starter | 1,500 | 1-page landing, WhatsApp button, SEO básico, mobile responsive |
+| Launch | 2,500 | Multi-page web, contact form, WhatsApp, SEO completo, GA4 |
+| Growth | 4,500 | Launch + blog, 3 months support, Analytics setup, OG/AI SEO |
+| Premium | 8,000+ | Growth + Google Ads setup, content strategy, monthly reporting |
+
+- Build AFTER client-02 is done
+
+## Sales Strategy — Goal: 1 closed client/month minimum
+
+### Lead Sources (ranked by effort/return)
+1. **Google Maps** — search "[sector] Dubai" → find businesses with no website or bad one → note name + WhatsApp
+2. **Instagram** — search Dubai location tags for businesses with low web presence (link in bio = linktree or nothing)
+3. **Walking/driving** — physical businesses in JBR, Marina, Downtown, Jumeirah without visible web
+4. **Facebook Groups** — Dubai business groups, expat groups, people asking for recommendations
+
+### Outreach Script (WhatsApp — English)
+> Hi [Name], I came across [Business Name] and love what you do. I actually built a website concept for you — would love to show you. No strings attached, just want your opinion: [proposal URL]
+
+- Short, personal, no hard sell
+- Lead with the demo — they see it before they say no
+- Follow up once after 5 days if no reply
+
+### Conversion Strategy
+- Show demo first, pitch second
+- Never talk tech — talk results: "more bookings", "customers find you on Google", "looks professional on WhatsApp"
+- Anchor price with Premium first, then offer Launch as "the smart start"
+- Offer: pay 50% now, 50% when live with their real data
+
+### Metrics to track (monthly)
+- Leads found
+- Proposals sent
+- Replies received
+- Demos viewed (track with a simple page view counter)
+- Closed deals
+- Revenue AED
+
+## Proposal Page (per client)
+Each client gets a personalized proposal page hosted on GitHub Pages:
+- Repo: github.com/webvanguardai/proposal-[client-slug]
+- Live: webvanguardai.github.io/proposal-[client-slug]
+- Tech: pure HTML/CSS/JS — no framework, instant load
+- Content: client name, web preview/link, what's included, price breakdown, CTA (WhatsApp/email)
+- Style: dark, editorial, matches Web Vanguard brand
+- Reference: https://javibeat.github.io/anablog/ (Javi's example)
+- The proposal page links TO the demo site
+- Delivery flow: send proposal URL → client sees personalized pitch → clicks through to demo → books call or pays
+
+## Tech Stack per client site
+- Next.js 14 + Tailwind CSS + TypeScript + Framer Motion
+- Deploy: Vercel (auto-deploy from GitHub)
+- Forms: Formspree (free tier)
+- Analytics: GA4
+- Repo: github.com/webvanguardai/[client-slug]
 
 ## Working style
 - Claude Code (terminal) handles heavy work: code, deploys, design decisions
