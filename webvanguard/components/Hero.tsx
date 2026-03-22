@@ -28,39 +28,38 @@ function GridBackground() {
       const cols = Math.ceil(canvas.width / cellSize) + 1
       const rows = Math.ceil(canvas.height / cellSize) + 1
 
-      ctx.strokeStyle = 'rgba(232, 224, 212, 0.04)'
+      // Grid lines
+      ctx.strokeStyle = 'rgba(212, 149, 107, 0.03)'
       ctx.lineWidth = 0.5
       for (let i = 0; i <= cols; i++) {
-        const x = i * cellSize
         ctx.beginPath()
-        ctx.moveTo(x, 0)
-        ctx.lineTo(x, canvas.height)
+        ctx.moveTo(i * cellSize, 0)
+        ctx.lineTo(i * cellSize, canvas.height)
         ctx.stroke()
       }
       for (let j = 0; j <= rows; j++) {
-        const y = j * cellSize
         ctx.beginPath()
-        ctx.moveTo(0, y)
-        ctx.lineTo(canvas.width, y)
+        ctx.moveTo(0, j * cellSize)
+        ctx.lineTo(canvas.width, j * cellSize)
         ctx.stroke()
       }
 
+      // Pulsing dots at intersections
       for (let i = 0; i <= cols; i++) {
         for (let j = 0; j <= rows; j++) {
-          const x = i * cellSize
-          const y = j * cellSize
           const pulse = Math.sin(time * 0.02 + i * 0.5 + j * 0.3) * 0.5 + 0.5
-          const alpha = pulse * 0.12
-          const radius = 1 + pulse * 1.2
+          const alpha = pulse * 0.15
+          const radius = 1 + pulse * 1.5
           ctx.beginPath()
-          ctx.arc(x, y, radius, 0, Math.PI * 2)
-          ctx.fillStyle = `rgba(232, 224, 212, ${alpha})`
+          ctx.arc(i * cellSize, j * cellSize, radius, 0, Math.PI * 2)
+          ctx.fillStyle = `rgba(212, 149, 107, ${alpha})`
           ctx.fill()
         }
       }
 
+      // Scanning highlight
       const highlightCol = Math.floor((time * 0.3) % cols)
-      ctx.strokeStyle = 'rgba(232, 224, 212, 0.08)'
+      ctx.strokeStyle = 'rgba(212, 149, 107, 0.06)'
       ctx.lineWidth = 1
       ctx.beginPath()
       ctx.moveTo(highlightCol * cellSize, 0)
@@ -73,9 +72,10 @@ function GridBackground() {
       ctx.lineTo(canvas.width, highlightRow * cellSize)
       ctx.stroke()
 
+      // Bright intersection dot
       ctx.beginPath()
-      ctx.arc(highlightCol * cellSize, highlightRow * cellSize, 4, 0, Math.PI * 2)
-      ctx.fillStyle = 'rgba(232, 224, 212, 0.4)'
+      ctx.arc(highlightCol * cellSize, highlightRow * cellSize, 5, 0, Math.PI * 2)
+      ctx.fillStyle = 'rgba(212, 149, 107, 0.5)'
       ctx.fill()
 
       time++
@@ -91,6 +91,7 @@ function GridBackground() {
   return (
     <>
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
+      {/* Corner brackets */}
       <div className="absolute top-6 left-6 w-20 h-20 border-l-2 border-t-2 border-accent/20" />
       <div className="absolute top-6 right-6 w-20 h-20 border-r-2 border-t-2 border-accent/20" />
       <div className="absolute bottom-6 left-6 w-20 h-20 border-l-2 border-b-2 border-accent/20" />
@@ -148,12 +149,20 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       <GridBackground />
 
-      {/* Giant background text with parallax */}
+      {/* Giant decorative circle */}
+      <div className="absolute -right-[20vw] top-1/2 -translate-y-1/2 w-[70vw] h-[70vw] rounded-full pointer-events-none" style={{
+        border: '1px solid rgba(212, 149, 107, 0.06)',
+      }} />
+      <div className="absolute -right-[25vw] top-1/2 -translate-y-1/2 w-[80vw] h-[80vw] rounded-full pointer-events-none" style={{
+        border: '1px solid rgba(212, 149, 107, 0.03)',
+      }} />
+
+      {/* WV watermark with parallax */}
       <motion.div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
         style={{ rotateX, rotateY, perspective: 1000 }}
       >
-        <span className="font-serif font-black text-[32vw] text-border/15 leading-none whitespace-nowrap italic">
+        <span className="font-serif font-black text-[35vw] leading-none whitespace-nowrap italic" style={{ color: 'rgba(212, 149, 107, 0.03)' }}>
           WV
         </span>
       </motion.div>
@@ -163,13 +172,8 @@ export default function Hero() {
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 1 }}
         transition={{ duration: 1.5, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute top-0 left-[15%] w-px h-full bg-gradient-to-b from-accent/30 via-accent/10 to-transparent origin-top"
-      />
-      <motion.div
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 1 }}
-        transition={{ duration: 1.2, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute top-0 right-[10%] w-px h-3/4 bg-gradient-to-b from-accent/15 to-transparent origin-top"
+        className="absolute top-0 left-[15%] w-px h-full origin-top"
+        style={{ background: 'linear-gradient(to bottom, rgba(212,149,107,0.2), rgba(212,149,107,0.05), transparent)' }}
       />
 
       <div className="max-w-[90rem] mx-auto px-6 md:px-12 w-full relative z-10">
@@ -184,7 +188,7 @@ export default function Hero() {
           <span>AI-Powered Web Agency</span>
         </motion.p>
 
-        {/* Main headline — serif/sans mix */}
+        {/* Main headline */}
         <div className="overflow-hidden">
           <motion.h1
             initial={{ y: '110%', rotate: 2 }}
@@ -221,7 +225,7 @@ export default function Hero() {
           </motion.h1>
         </div>
 
-        {/* Subline — offset to the right for asymmetry */}
+        {/* Subline — offset */}
         <div className="overflow-hidden mt-10 md:ml-[20%]">
           <motion.p
             initial={{ y: '100%' }}
@@ -231,7 +235,7 @@ export default function Hero() {
           >
             We create websites that <span className="text-text-primary font-semibold">attract customers</span>,{' '}
             <span className="text-text-primary font-semibold">build trust</span>, and{' '}
-            <span className="text-text-primary font-semibold relative">
+            <span className="text-accent font-semibold relative">
               grow your revenue
               <motion.span
                 className="absolute bottom-0 left-0 h-[2px] bg-accent"
@@ -244,7 +248,7 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        {/* CTAs — also offset */}
+        {/* CTAs */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -265,12 +269,12 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Stats strip */}
+        {/* Stats */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.7 }}
-          className="mt-24 pt-8 border-t border-border grid grid-cols-2 md:grid-cols-4 gap-8"
+          className="mt-24 pt-8 border-t border-accent/10 grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           {[
             { value: '3x', label: 'More enquiries' },
@@ -294,8 +298,8 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Bottom gradient line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
+      {/* Bottom line */}
+      <div className="absolute bottom-0 left-0 right-0 hr-glow" />
     </section>
   )
 }

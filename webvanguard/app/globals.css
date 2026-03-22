@@ -22,15 +22,15 @@
   }
 
   body {
-    background: #050505;
-    color: #f5f5f5;
+    background: #0A0A0A;
+    color: #F2F2F2;
     font-family: var(--font-body);
     overflow-x: hidden;
   }
 
   ::selection {
-    background: #E8E0D4;
-    color: #050505;
+    background: #D4956B;
+    color: #0A0A0A;
   }
 }
 
@@ -41,7 +41,8 @@
   }
   .btn-primary::before {
     content: '';
-    @apply absolute inset-0 bg-bg transition-transform duration-500 -z-10;
+    @apply absolute inset-0 transition-transform duration-500 -z-10;
+    background: #0A0A0A;
     transform: scaleX(0);
     transform-origin: right;
   }
@@ -50,47 +51,27 @@
     transform-origin: left;
   }
   .btn-primary:hover {
-    @apply text-accent;
-    box-shadow: inset 0 0 0 1px #E8E0D4;
+    color: #D4956B;
+    box-shadow: inset 0 0 0 2px #D4956B;
     transform: translateY(-2px);
   }
 
   .btn-outline {
-    @apply inline-flex items-center gap-3 px-8 py-4 border border-accent/30 text-accent font-body font-bold text-sm uppercase tracking-widest transition-all duration-300;
+    @apply inline-flex items-center gap-3 px-8 py-4 font-body font-bold text-sm uppercase tracking-widest transition-all duration-300;
+    color: #D4956B;
+    border: 2px solid rgba(212, 149, 107, 0.4);
   }
   .btn-outline:hover {
-    @apply bg-accent text-bg;
+    background: #D4956B;
+    color: #0A0A0A;
+    border-color: #D4956B;
     transform: translateY(-2px);
   }
 
-  /* ====== CARDS ====== */
-  .card-elevated {
-    @apply border border-border bg-bg-card transition-all duration-500 relative overflow-hidden;
-  }
-  .card-elevated::before {
-    content: '';
-    @apply absolute inset-0 opacity-0 transition-opacity duration-500;
-    background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(232,224,212,0.04), transparent 40%);
-  }
-  .card-elevated:hover::before {
-    @apply opacity-100;
-  }
-  .card-elevated:hover {
-    @apply border-accent/20;
-    transform: translateY(-2px);
-  }
-
-  /* ====== LABELS ====== */
+  /* ====== SECTION LABEL ====== */
   .section-label {
-    @apply text-xs uppercase tracking-[0.3em] text-accent font-body font-semibold;
-  }
-
-  .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent via-white to-accent;
-  }
-
-  .line-divider {
-    @apply w-full h-px bg-border;
+    @apply text-xs uppercase tracking-[0.3em] font-body font-semibold;
+    color: #D4956B;
   }
 
   /* ====== MARQUEE ====== */
@@ -103,21 +84,22 @@
     100% { transform: translateX(0); }
   }
   .marquee {
-    animation: marquee 25s linear infinite;
+    animation: marquee 30s linear infinite;
   }
   .marquee-reverse {
-    animation: marquee-reverse 30s linear infinite;
+    animation: marquee-reverse 35s linear infinite;
   }
   .marquee:hover, .marquee-reverse:hover {
     animation-play-state: paused;
   }
 
-  /* ====== GLOW ====== */
-  .glow {
-    box-shadow: 0 0 60px rgba(232, 224, 212, 0.08), 0 0 120px rgba(232, 224, 212, 0.03);
+  /* ====== HR GLOW ====== */
+  .hr-glow {
+    @apply w-full h-px;
+    background: linear-gradient(90deg, transparent 5%, rgba(212,149,107,0.4) 50%, transparent 95%);
   }
 
-  /* ====== NOISE TEXTURE ====== */
+  /* ====== NOISE ====== */
   .noise::after {
     content: '';
     position: fixed;
@@ -127,20 +109,8 @@
     height: 100%;
     pointer-events: none;
     z-index: 9999;
-    opacity: 0.025;
+    opacity: 0.02;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
-
-  /* ====== SMOOTH REVEAL ====== */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* ====== HORIZONTAL RULE WITH GLOW ====== */
-  .hr-glow {
-    @apply w-full h-px;
-    background: linear-gradient(90deg, transparent, rgba(232,224,212,0.3), transparent);
   }
 }
 
