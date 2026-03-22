@@ -73,8 +73,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-              className="group relative border border-border hover:border-accent/20 bg-bg-card/50 hover:bg-bg-card transition-all duration-500 overflow-hidden"
-              style={{ marginLeft: i % 2 !== 0 ? '4%' : '0', marginRight: i % 2 === 0 ? '4%' : '0' }}
+              className={`group relative border border-border hover:border-accent/20 bg-bg-card/50 hover:bg-bg-card transition-all duration-500 overflow-hidden ${i % 2 === 0 ? 'md:mr-[4%]' : 'md:ml-[4%]'}`}
             >
               {/* Accent bar left */}
               <div className="absolute left-0 top-0 w-[3px] h-0 bg-accent group-hover:h-full transition-all duration-700" />

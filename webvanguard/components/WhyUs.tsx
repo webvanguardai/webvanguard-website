@@ -67,9 +67,9 @@ export default function WhyUs() {
 
               {/* Large number */}
               <p
-                className="font-display font-black leading-none mb-8 transition-colors duration-500"
+                className="font-display font-black leading-none mb-6 transition-colors duration-500"
                 style={{
-                  fontSize: 'clamp(4rem, 8vw, 7rem)',
+                  fontSize: 'clamp(3rem, 6vw, 5.5rem)',
                   WebkitTextStroke: '1px rgba(212,149,107,0.18)',
                   color: 'transparent',
                 }}

@@ -128,7 +128,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
 
       {/* Info — always visible */}
       <div className="p-6 md:p-7">
-        <div className="flex items-start justify-between gap-4 mb-3">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
           <div className="flex-1">
             <p className="text-[10px] uppercase tracking-[0.25em] mb-1.5" style={{ color: `${project.accent}80` }}>
               {project.label} — {project.industry}

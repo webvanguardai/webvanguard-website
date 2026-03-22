@@ -227,7 +227,7 @@ export default function Hero() {
         </div>
 
         {/* Subline — offset */}
-        <div className="overflow-hidden mt-10 md:ml-[20%]">
+        <div className="overflow-hidden mt-10">
           <motion.p
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
@@ -254,7 +254,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.4 }}
-          className="mt-12 flex flex-col sm:flex-row gap-4 md:ml-[20%]"
+          className="mt-12 flex flex-col sm:flex-row gap-4"
         >
           <a href="#contact" className="btn-primary group">
             <span>Get a free proposal</span>
