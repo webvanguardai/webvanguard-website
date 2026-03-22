@@ -30,6 +30,15 @@ const projects = [
     tags: ['Web Design', 'Next.js', 'Food & Beverage'],
     live: true,
   },
+  {
+    name: 'Zafran Barber',
+    industry: 'Premium Men\'s Grooming',
+    label: '04',
+    description: 'Luxury barbershop website for Dubai\'s most discerning clientele. Dark masculine identity with crimson red & chrome accents. 6 service cards with AED pricing, testimonials, gallery, and functional booking form.',
+    url: 'https://zafran-barber.vercel.app',
+    tags: ['Web Design', 'Next.js', 'Barbershop'],
+    live: true,
+  },
 ]
 
 export default function Work() {
