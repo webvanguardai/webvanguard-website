@@ -39,17 +39,20 @@
   }
   .btn-primary::before {
     content: '';
-    @apply absolute inset-0 bg-white transition-transform duration-500;
+    @apply absolute inset-0 bg-bg transition-transform duration-500;
     transform: translateX(-101%);
   }
   .btn-primary:hover::before {
     transform: translateX(0);
   }
-  .btn-primary span, .btn-primary svg {
+  .btn-primary span, .btn-primary svg, .btn-primary {
+    @apply relative;
+  }
+  .btn-primary > * {
     @apply relative z-10;
   }
   .btn-primary:hover {
-    @apply text-bg;
+    @apply text-accent;
     transform: translateY(-2px);
   }
 
