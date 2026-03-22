@@ -52,6 +52,22 @@ const projects = [
     url: 'https://levant-co.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://levant-co.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
   },
+  {
+    label: '07',
+    name: 'SOLARA',
+    industry: 'Music Artist',
+    location: 'Dubai',
+    url: 'https://solara-music-chi.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://solara-music-chi.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+  },
+  {
+    label: '08',
+    name: 'Céleste Events',
+    industry: 'Event Design',
+    location: 'Dubai Design District',
+    url: 'https://celeste-events.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://celeste-events.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+  },
 ]
 
 function ProjectRow({ project, index }: { project: typeof projects[0]; index: number }) {
@@ -143,8 +159,8 @@ export default function Work() {
         >
           <p className="section-label mb-4">Selected work</p>
           <h2 className="font-display font-black text-heading text-text-primary uppercase">
-            Six businesses.<br />
-            <span className="font-serif italic text-accent normal-case">Six identities.</span>
+            Eight businesses.<br />
+            <span className="font-serif italic text-accent normal-case">Eight identities.</span>
           </h2>
         </motion.div>
 
