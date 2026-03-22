@@ -21,7 +21,15 @@ const projects = [
     tags: ['Web Design', 'Next.js', 'Real Estate'],
     live: true,
   },
-  { name: 'Coming Soon', industry: 'Professional Services', label: '03', description: 'Elevating a professional services firm in Dubai.', url: '#', tags: ['Web Design', 'CRO'], live: false },
+  {
+    name: 'Qahwa House',
+    industry: 'Specialty Coffee Roastery',
+    label: '03',
+    description: 'Warm minimalist website for a specialty coffee roastery in Dubai Design District. Terracotta & cream identity, interactive menu, gallery, and full SEO. Completely different energy from the previous two.',
+    url: 'https://qahwa-house.vercel.app',
+    tags: ['Web Design', 'Next.js', 'Food & Beverage'],
+    live: true,
+  },
 ]
 
 export default function Work() {
