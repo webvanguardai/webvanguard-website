@@ -17,17 +17,17 @@ const interTight = Inter_Tight({
 })
 
 export const metadata: Metadata = {
-  title: 'WebVanguard — AI-Powered Web Design Agency',
-  description: 'We design and build high-performance websites for businesses in Dubai and beyond. Strategy, design, development, SEO — all powered by AI.',
-  keywords: ['web design dubai', 'ai web agency', 'web development', 'seo dubai', 'digital agency'],
+  title: 'WebVanguard — Get More Customers With a Website That Works',
+  description: 'We create professional websites that attract customers, build trust, and grow your revenue. Based in Dubai, working worldwide.',
+  keywords: ['web design dubai', 'business website dubai', 'get more customers online', 'seo dubai', 'professional website'],
   authors: [{ name: 'WebVanguard' }],
   creator: 'WebVanguard',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://webvanguard.ai',
-    title: 'WebVanguard — AI-Powered Web Design Agency',
-    description: 'We design and build high-performance websites for businesses in Dubai and beyond.',
+    title: 'WebVanguard — Get More Customers With a Website That Works',
+    description: 'We create professional websites that attract customers, build trust, and grow your revenue.',
     siteName: 'WebVanguard',
   },
   robots: {

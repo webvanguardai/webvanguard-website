@@ -28,9 +28,18 @@ const steps = [
 export default function Process() {
   return (
     <section id="process" className="py-section bg-bg-card relative overflow-hidden">
+      {/* Animated background grid (subtle) */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        backgroundImage: `
+          linear-gradient(rgba(200,255,0,0.02) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(200,255,0,0.02) 1px, transparent 1px)
+        `,
+        backgroundSize: '120px 120px',
+      }} />
+
       {/* Giant background number */}
       <div className="absolute -right-20 top-1/2 -translate-y-1/2 pointer-events-none select-none">
-        <span className="font-display font-black text-[30vw] text-border/30 leading-none">
+        <span className="font-display font-black text-[30vw] text-border/20 leading-none">
           04
         </span>
       </div>
@@ -44,7 +53,7 @@ export default function Process() {
           className="mb-20"
         >
           <p className="section-label mb-6">
-            <span className="inline-block w-8 h-px bg-accent mr-3 align-middle" />
+            <span className="inline-block w-12 h-px bg-accent mr-4 align-middle" />
             How it works
           </p>
           <h2 className="font-display font-black text-heading text-text-primary max-w-3xl">
@@ -61,15 +70,20 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] }}
-              className="relative p-8 border-l border-border first:border-l-0 group"
+              className="relative p-8 md:p-10 border-l border-border first:border-l-0 group"
             >
               {/* Top accent bar on hover */}
-              <div className="absolute top-0 left-0 w-full h-px bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-600 origin-left" />
+              <div className="absolute top-0 left-0 w-full h-[2px] bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-600 origin-left" />
 
-              <span className="font-display font-black text-7xl text-border group-hover:text-accent/30 transition-colors duration-500 leading-none">
+              {/* Connector line between steps */}
+              {i < steps.length - 1 && (
+                <div className="hidden lg:block absolute top-16 -right-px w-8 h-px bg-border" />
+              )}
+
+              <span className="font-display font-black text-7xl md:text-8xl text-border/40 group-hover:text-accent/20 transition-colors duration-500 leading-none block">
                 {step.number}
               </span>
-              <h3 className="font-display font-bold text-xl text-text-primary mt-6 group-hover:text-accent transition-colors duration-300">
+              <h3 className="font-display font-bold text-xl md:text-2xl text-text-primary mt-6 group-hover:text-accent transition-colors duration-300">
                 {step.title}
               </h3>
               <p className="text-text-secondary text-sm leading-relaxed mt-3">
