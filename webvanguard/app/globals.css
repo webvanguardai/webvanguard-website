@@ -34,25 +34,22 @@
 }
 
 @layer components {
+  /* ====== BUTTONS ====== */
   .btn-primary {
-    @apply inline-flex items-center gap-3 px-8 py-4 bg-accent text-bg font-body font-bold text-sm uppercase tracking-widest transition-all duration-300 relative overflow-hidden;
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 bg-accent text-bg font-body font-bold text-sm uppercase tracking-widest transition-all duration-300 relative overflow-hidden isolate;
   }
   .btn-primary::before {
     content: '';
-    @apply absolute inset-0 bg-bg transition-transform duration-500;
-    transform: translateX(-101%);
+    @apply absolute inset-0 bg-bg transition-transform duration-500 -z-10;
+    transform: scaleX(0);
+    transform-origin: right;
   }
   .btn-primary:hover::before {
-    transform: translateX(0);
-  }
-  .btn-primary span, .btn-primary svg, .btn-primary {
-    @apply relative;
-  }
-  .btn-primary > * {
-    @apply relative z-10;
+    transform: scaleX(1);
+    transform-origin: left;
   }
   .btn-primary:hover {
-    @apply text-accent;
+    @apply text-accent border border-accent;
     transform: translateY(-2px);
   }
 
@@ -64,14 +61,7 @@
     transform: translateY(-2px);
   }
 
-  .card {
-    @apply border border-border bg-bg-card p-8 transition-all duration-500;
-  }
-  .card:hover {
-    @apply border-accent bg-bg-elevated;
-    transform: translateY(-4px);
-  }
-
+  /* ====== LABELS ====== */
   .section-label {
     @apply text-xs uppercase tracking-[0.3em] text-accent font-body font-semibold;
   }
@@ -84,24 +74,31 @@
     @apply w-full h-px bg-border;
   }
 
-  /* Marquee */
+  /* ====== MARQUEE ====== */
   @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
-  .marquee {
-    animation: marquee 20s linear infinite;
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
   }
-  .marquee:hover {
+  .marquee {
+    animation: marquee 25s linear infinite;
+  }
+  .marquee-reverse {
+    animation: marquee-reverse 30s linear infinite;
+  }
+  .marquee:hover, .marquee-reverse:hover {
     animation-play-state: paused;
   }
 
-  /* Glow effect */
+  /* ====== GLOW ====== */
   .glow {
     box-shadow: 0 0 40px rgba(200, 255, 0, 0.15), 0 0 80px rgba(200, 255, 0, 0.05);
   }
 
-  /* Noise texture overlay */
+  /* ====== NOISE TEXTURE ====== */
   .noise::after {
     content: '';
     position: fixed;

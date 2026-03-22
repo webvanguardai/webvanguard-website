@@ -285,7 +285,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.9 + i * 0.1 }}
             >
-              <p className="font-serif italic font-black text-4xl md:text-5xl text-text-primary group-hover:text-accent transition-colors duration-300">
+              <p className="font-display font-black text-4xl md:text-5xl text-text-primary group-hover:text-accent transition-colors duration-300">
                 {stat.value}
               </p>
               <p className="text-xs text-text-muted mt-2 font-body uppercase tracking-wider">{stat.label}</p>

@@ -27,7 +27,7 @@ export default function Header() {
         scrolled ? 'bg-bg/90 backdrop-blur-md border-b border-border' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
+      <div className="max-w-[90rem] mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
         <Link href="/" className="relative z-50">
           <span className="font-display font-bold text-xl tracking-tight text-text-primary">
             Web<span className="text-accent">V</span>anguard
@@ -45,7 +45,7 @@ export default function Header() {
             </a>
           ))}
           <a href="#contact" className="btn-primary text-xs">
-            Get a free proposal
+            <span>Get a free proposal</span>
           </a>
         </nav>
 
@@ -100,7 +100,7 @@ export default function Header() {
                 onClick={() => setIsOpen(false)}
                 className="btn-primary mt-4"
               >
-                Get a free proposal
+                <span>Get a free proposal</span>
               </motion.a>
             </nav>
           </motion.div>
