@@ -22,8 +22,8 @@
   }
 
   body {
-    background: #FFFFFF;
-    color: #000000;
+    background: #F4F1EC;
+    color: #1A1814;
     font-family: var(--font-body);
     overflow-x: hidden;
     padding-top: constant(safe-area-inset-top);

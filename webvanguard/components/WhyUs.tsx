@@ -10,7 +10,7 @@ const statements = [
 
 export default function WhyUs() {
   return (
-    <section className="py-section bg-text-primary text-white">
+    <section className="py-section bg-bg-dark text-text-on-dark">
       <div className="max-w-[90rem] mx-auto px-6 md:px-12">
         <motion.p
           initial={{ opacity: 0 }}

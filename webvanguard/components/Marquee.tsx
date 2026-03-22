@@ -4,7 +4,7 @@ export default function Marquee() {
   const items = ['DESIGN', 'STRATEGY', 'SEO', 'BRANDING', 'GROWTH', 'RESULTS']
 
   return (
-    <div className="py-6 overflow-hidden border-t border-b border-border">
+    <div className="py-6 overflow-hidden bg-bg-dark text-text-on-dark">
       <div className="marquee flex whitespace-nowrap">
         {[...items, ...items, ...items, ...items].map((item, i) => (
           <span key={i} className="flex items-center shrink-0">

@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer>
       {/* Big CTA */}
-      <div className="bg-text-primary text-white py-20 md:py-32">
+      <div className="bg-bg-dark text-text-on-dark py-20 md:py-32">
         <div className="max-w-[90rem] mx-auto px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

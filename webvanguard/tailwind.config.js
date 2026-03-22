@@ -8,17 +8,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: '#FFFFFF',
-        'bg-card': '#F8F8F8',
-        'bg-elevated': '#F0F0F0',
+        bg: '#F4F1EC',          // warm off-white / recycled paper
+        'bg-card': '#EDE9E2',   // slightly darker warm card
+        'bg-elevated': '#E6E1D8', // elevated surfaces
+        'bg-dark': '#1C1A17',   // dark sections (not pure black)
+        'bg-dark-card': '#252220', // dark cards
         accent: '#FF3B00',
         'accent-dim': '#E03500',
         'accent-light': '#FF5C2B',
-        'text-primary': '#000000',
-        'text-secondary': '#555555',
-        'text-muted': '#999999',
-        border: '#E0E0E0',
-        'border-hover': '#BBBBBB',
+        'text-primary': '#1A1814',   // near-black with warmth (not pure #000)
+        'text-secondary': '#5A5650',
+        'text-muted': '#9A9690',
+        'text-on-dark': '#F4F1EC',   // light text for dark sections
+        'text-on-dark-muted': '#8A8680',
+        border: '#D8D3CB',
+        'border-dark': '#302E2A',
+        'border-hover': '#B8B3AA',
       },
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', 'sans-serif'],

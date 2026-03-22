@@ -24,7 +24,7 @@ export default function Header() {
     <header
       style={{ top: 'env(safe-area-inset-top)' }}
       className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 backdrop-blur-xl border-b border-border' : 'bg-transparent'
+        scrolled ? 'bg-bg/95 backdrop-blur-xl border-b border-border' : 'bg-transparent'
       }`}
     >
       <div className="max-w-[90rem] mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
@@ -76,7 +76,7 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-white z-40 flex items-center justify-center"
+            className="fixed inset-0 bg-bg z-40 flex items-center justify-center"
           >
             <nav className="flex flex-col items-center gap-8">
               {navLinks.map((link, i) => (
