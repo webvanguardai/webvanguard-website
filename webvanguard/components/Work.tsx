@@ -3,9 +3,17 @@
 import { motion } from 'framer-motion'
 
 const projects = [
-  { name: 'Coming Soon', industry: 'Restaurant & Hospitality', label: '01' },
-  { name: 'Coming Soon', industry: 'Real Estate', label: '02' },
-  { name: 'Coming Soon', industry: 'Professional Services', label: '03' },
+  {
+    name: 'Lumière Wellness Studio',
+    industry: 'Luxury Spa & Beauty',
+    label: '01',
+    description: 'A dark editorial luxury spa website for Dubai Marina. Dark gold aesthetic, Framer Motion animations, and bespoke treatment showcase.',
+    url: 'https://lumiere-wellness.vercel.app',
+    tags: ['Web Design', 'Next.js', 'Branding'],
+    live: true,
+  },
+  { name: 'Coming Soon', industry: 'Real Estate', label: '02', description: 'Premium property development digital presence.', url: '#', tags: ['Web Design', 'SEO'], live: false },
+  { name: 'Coming Soon', industry: 'Professional Services', label: '03', description: 'Elevating a professional services firm in Dubai.', url: '#', tags: ['Web Design', 'CRO'], live: false },
 ]
 
 export default function Work() {
@@ -47,14 +55,19 @@ export default function Work() {
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Image area */}
               <div className="aspect-[16/10] md:aspect-auto relative overflow-hidden" style={{
-                background: 'linear-gradient(135deg, rgba(212,149,107,0.08) 0%, rgba(10,10,10,1) 70%)',
+                background: 'linear-gradient(135deg, rgba(201,169,110,0.12) 0%, rgba(10,8,6,1) 70%)',
               }}>
-                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-serif italic font-black text-[15rem] leading-none select-none" style={{ color: 'rgba(212,149,107,0.06)' }}>
+                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-serif italic font-black text-[15rem] leading-none select-none" style={{ color: 'rgba(201,169,110,0.06)' }}>
                   01
                 </span>
+                {/* Lumière brand text in the image */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
+                  <span className="font-serif text-4xl font-black text-[#C9A96E]/30 tracking-wide">Lumière</span>
+                  <span className="text-[9px] tracking-[0.4em] uppercase text-[#C9A96E]/20">Wellness Studio · Dubai Marina</span>
+                </div>
                 {/* Grid overlay */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" style={{
-                  backgroundImage: 'linear-gradient(rgba(212,149,107,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(212,149,107,0.03) 1px, transparent 1px)',
+                  backgroundImage: 'linear-gradient(rgba(201,169,110,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,169,110,0.04) 1px, transparent 1px)',
                   backgroundSize: '40px 40px',
                 }} />
                 <div className="absolute top-6 left-6 w-12 h-12 border-l-2 border-t-2 border-accent/0 group-hover:border-accent/20 transition-all duration-500" />
@@ -63,19 +76,32 @@ export default function Work() {
               {/* Info */}
               <div className="p-8 md:p-12 flex flex-col justify-between">
                 <div>
-                  <p className="section-label mb-4">Featured Project</p>
+                  <p className="section-label mb-4">Featured Project · Live</p>
                   <h3 className="font-display font-bold text-3xl md:text-4xl text-text-primary group-hover:text-accent transition-colors duration-500">
-                    Coming Soon
+                    Lumière Wellness Studio
                   </h3>
-                  <p className="font-serif italic text-text-muted mt-2">Restaurant & Hospitality</p>
+                  <p className="font-serif italic text-text-muted mt-2">Luxury Spa & Beauty · Dubai Marina</p>
                   <p className="text-text-secondary text-sm mt-6 leading-relaxed">
-                    Our first showcase project. A complete digital presence for a Dubai-based hospitality business.
+                    A dark editorial luxury website for a premium spa brand in Dubai Marina. Bespoke design with gold accent palette, Framer Motion animations, and a complete treatment showcase across 6 service categories.
                   </p>
                 </div>
-                <div className="mt-8 flex items-center gap-4">
-                  <span className="text-[10px] text-accent/60 border border-accent/15 px-3 py-1.5 uppercase tracking-wider">Web Design</span>
-                  <span className="text-[10px] text-accent/60 border border-accent/15 px-3 py-1.5 uppercase tracking-wider">SEO</span>
-                  <span className="text-[10px] text-accent/60 border border-accent/15 px-3 py-1.5 uppercase tracking-wider">Branding</span>
+                <div className="mt-8">
+                  <div className="flex items-center gap-3 flex-wrap mb-4">
+                    <span className="text-[10px] text-accent/60 border border-accent/15 px-3 py-1.5 uppercase tracking-wider">Next.js 14</span>
+                    <span className="text-[10px] text-accent/60 border border-accent/15 px-3 py-1.5 uppercase tracking-wider">Tailwind CSS</span>
+                    <span className="text-[10px] text-accent/60 border border-accent/15 px-3 py-1.5 uppercase tracking-wider">Framer Motion</span>
+                  </div>
+                  <a
+                    href="https://lumiere-wellness.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[11px] uppercase tracking-wider text-accent/70 hover:text-accent transition-colors"
+                  >
+                    View Live Site
+                    <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7v10" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
