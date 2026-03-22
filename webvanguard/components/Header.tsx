@@ -24,27 +24,28 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-bg/90 backdrop-blur-md border-b border-border' : 'bg-transparent'
+        scrolled ? 'bg-bg/80 backdrop-blur-xl border-b border-border/50' : 'bg-transparent'
       }`}
     >
       <div className="max-w-[90rem] mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
         <Link href="/" className="relative z-50">
           <span className="font-display font-bold text-xl tracking-tight text-text-primary">
-            Web<span className="text-accent">V</span>anguard
+            Web<span className="font-serif italic text-accent">V</span>anguard
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-300 uppercase tracking-wider font-body"
+              className="text-[13px] text-text-secondary hover:text-accent transition-colors duration-300 uppercase tracking-wider font-body relative group"
             >
               {link.label}
+              <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent group-hover:w-full transition-all duration-300" />
             </a>
           ))}
-          <a href="#contact" className="btn-primary text-xs">
+          <a href="#contact" className="btn-primary text-xs !py-3 !px-6">
             <span>Get a free proposal</span>
           </a>
         </nav>
@@ -87,7 +88,7 @@ export default function Header() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
                   onClick={() => setIsOpen(false)}
-                  className="text-3xl font-display font-bold text-text-primary hover:text-accent transition-colors"
+                  className="text-4xl font-display font-bold text-text-primary hover:text-accent transition-colors"
                 >
                   {link.label}
                 </motion.a>

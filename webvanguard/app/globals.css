@@ -6,6 +6,7 @@
   :root {
     --font-display: 'Inter Tight', system-ui, sans-serif;
     --font-body: 'Inter', system-ui, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
   }
 
   * {
@@ -49,15 +50,33 @@
     transform-origin: left;
   }
   .btn-primary:hover {
-    @apply text-accent border border-accent;
+    @apply text-accent;
+    box-shadow: inset 0 0 0 1px #E8E0D4;
     transform: translateY(-2px);
   }
 
   .btn-outline {
-    @apply inline-flex items-center gap-3 px-8 py-4 border-2 border-text-primary text-text-primary font-body font-bold text-sm uppercase tracking-widest transition-all duration-300;
+    @apply inline-flex items-center gap-3 px-8 py-4 border border-accent/30 text-accent font-body font-bold text-sm uppercase tracking-widest transition-all duration-300;
   }
   .btn-outline:hover {
-    @apply bg-text-primary text-bg;
+    @apply bg-accent text-bg;
+    transform: translateY(-2px);
+  }
+
+  /* ====== CARDS ====== */
+  .card-elevated {
+    @apply border border-border bg-bg-card transition-all duration-500 relative overflow-hidden;
+  }
+  .card-elevated::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-500;
+    background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(232,224,212,0.04), transparent 40%);
+  }
+  .card-elevated:hover::before {
+    @apply opacity-100;
+  }
+  .card-elevated:hover {
+    @apply border-accent/20;
     transform: translateY(-2px);
   }
 
@@ -95,7 +114,7 @@
 
   /* ====== GLOW ====== */
   .glow {
-    box-shadow: 0 0 40px rgba(200, 255, 0, 0.15), 0 0 80px rgba(200, 255, 0, 0.05);
+    box-shadow: 0 0 60px rgba(232, 224, 212, 0.08), 0 0 120px rgba(232, 224, 212, 0.03);
   }
 
   /* ====== NOISE TEXTURE ====== */
@@ -108,8 +127,20 @@
     height: 100%;
     pointer-events: none;
     z-index: 9999;
-    opacity: 0.03;
+    opacity: 0.025;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ====== SMOOTH REVEAL ====== */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ====== HORIZONTAL RULE WITH GLOW ====== */
+  .hr-glow {
+    @apply w-full h-px;
+    background: linear-gradient(90deg, transparent, rgba(232,224,212,0.3), transparent);
   }
 }
 
