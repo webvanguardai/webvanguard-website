@@ -10,6 +10,7 @@ const projects = [
     location: 'Dubai Marina',
     description: 'A dark editorial website for a luxury spa in Dubai Marina. Gold palette, animated treatment showcase, and a gallery designed to turn browsers into bookings.',
     url: 'https://lumiere-wellness.vercel.app',
+    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://lumiere-wellness.vercel.app',
     tags: ['Spa & Wellness', 'Luxury', 'Dubai Marina'],
     accent: '#C9A96E',
     bg: '#0A0806',
@@ -22,6 +23,7 @@ const projects = [
     location: 'DIFC, Dubai',
     description: 'Premium real estate agency site. Navy & gold identity, featured property listings, Golden Visa advisory services.',
     url: 'https://apex-properties.vercel.app',
+    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://apex-properties.vercel.app',
     tags: ['Real Estate', 'Investment', 'DIFC'],
     accent: '#C9A96E',
     bg: '#0A1628',
@@ -34,6 +36,7 @@ const projects = [
     location: 'Dubai Design District',
     description: 'Warm minimalist café site. Terracotta palette, interactive menu with AED pricing, and a story that turns visitors into regulars.',
     url: 'https://qahwa-house.vercel.app',
+    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://qahwa-house.vercel.app',
     tags: ['Food & Beverage', 'Café', 'D3'],
     accent: '#C4622D',
     bg: '#1A110A',
@@ -46,6 +49,7 @@ const projects = [
     location: 'DIFC, Dubai',
     description: 'Bold masculine identity for a luxury barbershop. Crimson & chrome, service cards with AED pricing, gallery and instant booking.',
     url: 'https://zafran-barber.vercel.app',
+    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://zafran-barber.vercel.app',
     tags: ['Grooming', 'Lifestyle', 'DIFC'],
     accent: '#B41E1E',
     bg: '#0A0A0A',
@@ -58,6 +62,7 @@ const projects = [
     location: 'Dubai',
     description: 'Electric editorial portfolio for a photography studio. Cyan & black aesthetic, 6 service packages, curated gallery.',
     url: 'https://lumina-lens-six.vercel.app',
+    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://lumina-lens-six.vercel.app',
     tags: ['Photography', 'Editorial', 'Creative'],
     accent: '#00C9B8',
     bg: '#08080F',
@@ -70,6 +75,7 @@ const projects = [
     location: 'DIFC, Dubai',
     description: 'Heritage-rich restaurant site. Deep emerald & gold, full menu by course, chef story, and a reservation flow designed to fill tables.',
     url: 'https://levant-co.vercel.app',
+    thumbnail: 'https://image.thum.io/get/width/1200/crop/800/https://levant-co.vercel.app',
     tags: ['Restaurant', 'Fine Dining', 'DIFC'],
     accent: '#B5973A',
     bg: '#0A0D08',
@@ -98,61 +104,32 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           background: project.bg,
         }}
       >
-        {/* Gradient overlay */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `radial-gradient(ellipse at 30% 50%, ${project.accent}18 0%, transparent 65%)`,
-          }}
+        {/* Real screenshot */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={project.thumbnail}
+          alt={`${project.name} website screenshot`}
+          className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
         />
-        {/* Grid lines */}
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+        {/* Accent tint on hover */}
         <div
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-          style={{
-            backgroundImage: `linear-gradient(${project.accent}08 1px, transparent 1px), linear-gradient(90deg, ${project.accent}08 1px, transparent 1px)`,
-            backgroundSize: '40px 40px',
-          }}
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          style={{ background: `${project.accent}10` }}
         />
         {/* Corner brackets */}
-        <div className="absolute top-5 left-5 w-10 h-10 border-l border-t transition-all duration-500 opacity-0 group-hover:opacity-100" style={{ borderColor: `${project.accent}40` }} />
-        <div className="absolute bottom-5 right-5 w-10 h-10 border-r border-b transition-all duration-500 opacity-0 group-hover:opacity-100" style={{ borderColor: `${project.accent}40` }} />
-        {/* Large label */}
-        <span
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-serif font-black leading-none select-none pointer-events-none"
-          style={{
-            fontSize: project.featured ? '18rem' : '11rem',
-            color: `${project.accent}07`,
-            fontStyle: 'italic',
-          }}
-        >
-          {project.label}
-        </span>
-        {/* Brand name centered */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none">
-          <span
-            className="font-serif font-black tracking-wide transition-opacity duration-300 group-hover:opacity-60"
-            style={{
-              fontSize: project.featured ? '2.5rem' : '1.6rem',
-              color: `${project.accent}50`,
-            }}
-          >
-            {project.name}
-          </span>
-          <span
-            className="text-[9px] tracking-[0.4em] uppercase transition-opacity duration-300 group-hover:opacity-40"
-            style={{ color: `${project.accent}35` }}
-          >
-            {project.industry} · {project.location}
-          </span>
-        </div>
+        <div className="absolute top-5 left-5 w-10 h-10 border-l border-t transition-all duration-500 opacity-0 group-hover:opacity-100" style={{ borderColor: `${project.accent}60` }} />
+        <div className="absolute bottom-5 right-5 w-10 h-10 border-r border-b transition-all duration-500 opacity-0 group-hover:opacity-100" style={{ borderColor: `${project.accent}60` }} />
         {/* Hover: view site badge */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <span
-            className="flex items-center gap-2 px-4 py-2 text-[10px] uppercase tracking-[0.2em] font-medium border backdrop-blur-sm"
+            className="flex items-center gap-2 px-5 py-2.5 text-[10px] uppercase tracking-[0.2em] font-semibold border backdrop-blur-sm"
             style={{
-              color: project.accent,
-              borderColor: `${project.accent}40`,
-              background: `${project.bg}CC`,
+              color: '#fff',
+              borderColor: `${project.accent}60`,
+              background: `rgba(0,0,0,0.6)`,
             }}
           >
             View Live Site
