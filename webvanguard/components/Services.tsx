@@ -47,7 +47,7 @@ export default function Services() {
             </p>
             <h2 className="font-display font-black text-heading text-text-primary max-w-4xl">
               Everything your business needs<br />
-              to <span className="text-accent">win online.</span>
+              to <span className="text-accent font-serif italic">win online.</span>
             </h2>
           </div>
           <p className="text-text-muted text-sm max-w-xs font-body">

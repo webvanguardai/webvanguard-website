@@ -28,8 +28,7 @@ function GridBackground() {
       const cols = Math.ceil(canvas.width / cellSize) + 1
       const rows = Math.ceil(canvas.height / cellSize) + 1
 
-      // Grid lines
-      ctx.strokeStyle = 'rgba(200, 255, 0, 0.06)'
+      ctx.strokeStyle = 'rgba(200, 255, 0, 0.04)'
       ctx.lineWidth = 0.5
       for (let i = 0; i <= cols; i++) {
         const x = i * cellSize
@@ -46,14 +45,13 @@ function GridBackground() {
         ctx.stroke()
       }
 
-      // Pulsing dots at intersections
       for (let i = 0; i <= cols; i++) {
         for (let j = 0; j <= rows; j++) {
           const x = i * cellSize
           const y = j * cellSize
           const pulse = Math.sin(time * 0.02 + i * 0.5 + j * 0.3) * 0.5 + 0.5
-          const alpha = pulse * 0.15
-          const radius = 1 + pulse * 1.5
+          const alpha = pulse * 0.12
+          const radius = 1 + pulse * 1.2
           ctx.beginPath()
           ctx.arc(x, y, radius, 0, Math.PI * 2)
           ctx.fillStyle = `rgba(200, 255, 0, ${alpha})`
@@ -61,30 +59,23 @@ function GridBackground() {
         }
       }
 
-      // Traveling highlight columns
       const highlightCol = Math.floor((time * 0.3) % cols)
-      ctx.strokeStyle = 'rgba(200, 255, 0, 0.12)'
+      ctx.strokeStyle = 'rgba(200, 255, 0, 0.08)'
       ctx.lineWidth = 1
       ctx.beginPath()
       ctx.moveTo(highlightCol * cellSize, 0)
       ctx.lineTo(highlightCol * cellSize, canvas.height)
       ctx.stroke()
 
-      // Traveling highlight row
       const highlightRow = Math.floor((time * 0.2) % rows)
       ctx.beginPath()
       ctx.moveTo(0, highlightRow * cellSize)
       ctx.lineTo(canvas.width, highlightRow * cellSize)
       ctx.stroke()
 
-      // Bright dot at intersection of highlights
       ctx.beginPath()
       ctx.arc(highlightCol * cellSize, highlightRow * cellSize, 4, 0, Math.PI * 2)
-      ctx.fillStyle = 'rgba(200, 255, 0, 0.5)'
-      ctx.fill()
-      ctx.beginPath()
-      ctx.arc(highlightCol * cellSize, highlightRow * cellSize, 12, 0, Math.PI * 2)
-      ctx.fillStyle = 'rgba(200, 255, 0, 0.08)'
+      ctx.fillStyle = 'rgba(200, 255, 0, 0.4)'
       ctx.fill()
 
       time++
@@ -100,7 +91,6 @@ function GridBackground() {
   return (
     <>
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
-      {/* Corner brackets */}
       <div className="absolute top-6 left-6 w-20 h-20 border-l-2 border-t-2 border-accent/20" />
       <div className="absolute top-6 right-6 w-20 h-20 border-r-2 border-t-2 border-accent/20" />
       <div className="absolute bottom-6 left-6 w-20 h-20 border-l-2 border-b-2 border-accent/20" />
@@ -163,12 +153,12 @@ export default function Hero() {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none"
         style={{ rotateX, rotateY, perspective: 1000 }}
       >
-        <span className="font-display font-black text-[28vw] text-border/20 leading-none whitespace-nowrap">
+        <span className="font-serif font-black text-[32vw] text-border/15 leading-none whitespace-nowrap italic">
           WV
         </span>
       </motion.div>
 
-      {/* Diagonal accent slash */}
+      {/* Vertical accent lines */}
       <motion.div
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 1 }}
@@ -194,13 +184,13 @@ export default function Hero() {
           <span>AI-Powered Web Agency</span>
         </motion.p>
 
-        {/* Main headline */}
+        {/* Main headline — serif/sans mix */}
         <div className="overflow-hidden">
           <motion.h1
             initial={{ y: '110%', rotate: 2 }}
             animate={{ y: 0, rotate: 0 }}
             transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display font-black text-mega text-text-primary leading-[0.9]"
+            className="font-display font-black text-mega text-text-primary leading-[0.85]"
           >
             <GlitchText>Your business</GlitchText>
           </motion.h1>
@@ -210,7 +200,7 @@ export default function Hero() {
             initial={{ y: '110%', rotate: 2 }}
             animate={{ y: 0, rotate: 0 }}
             transition={{ duration: 1, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display font-black text-mega text-text-primary leading-[0.9]"
+            className="font-serif italic font-black text-mega text-text-primary leading-[0.85]"
           >
             deserves more
           </motion.h1>
@@ -220,7 +210,7 @@ export default function Hero() {
             initial={{ y: '110%', rotate: 2 }}
             animate={{ y: 0, rotate: 0 }}
             transition={{ duration: 1, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display font-black text-mega leading-[0.9]"
+            className="font-display font-black text-mega leading-[0.85]"
           >
             <span className="text-accent">clients</span>
             <motion.span
@@ -231,13 +221,13 @@ export default function Hero() {
           </motion.h1>
         </div>
 
-        {/* Subline */}
-        <div className="overflow-hidden mt-8">
+        {/* Subline — offset to the right for asymmetry */}
+        <div className="overflow-hidden mt-10 md:ml-[20%]">
           <motion.p
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
             transition={{ duration: 0.8, delay: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-text-secondary text-lg md:text-xl max-w-lg leading-relaxed"
+            className="text-text-secondary text-lg md:text-xl max-w-md leading-relaxed"
           >
             We create websites that <span className="text-text-primary font-semibold">attract customers</span>,{' '}
             <span className="text-text-primary font-semibold">build trust</span>, and{' '}
@@ -254,16 +244,16 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        {/* CTAs */}
+        {/* CTAs — also offset */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.4 }}
-          className="mt-12 flex flex-col sm:flex-row gap-4"
+          className="mt-12 flex flex-col sm:flex-row gap-4 md:ml-[20%]"
         >
           <a href="#contact" className="btn-primary group">
             <span>Get a free proposal</span>
-            <svg className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
@@ -280,7 +270,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.7 }}
-          className="mt-20 pt-8 border-t border-border grid grid-cols-2 md:grid-cols-4 gap-8"
+          className="mt-24 pt-8 border-t border-border grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           {[
             { value: '3x', label: 'More enquiries' },
@@ -295,10 +285,10 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.9 + i * 0.1 }}
             >
-              <p className="font-display font-black text-3xl md:text-4xl text-text-primary group-hover:text-accent transition-colors duration-300">
+              <p className="font-serif italic font-black text-4xl md:text-5xl text-text-primary group-hover:text-accent transition-colors duration-300">
                 {stat.value}
               </p>
-              <p className="text-xs text-text-muted mt-1 font-body uppercase tracking-wider">{stat.label}</p>
+              <p className="text-xs text-text-muted mt-2 font-body uppercase tracking-wider">{stat.label}</p>
             </motion.div>
           ))}
         </motion.div>

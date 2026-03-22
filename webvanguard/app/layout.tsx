@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Inter_Tight } from 'next/font/google'
+import { Inter, Inter_Tight, Playfair_Display } from 'next/font/google'
 import Header from '@/components/Header'
 import './globals.css'
 
@@ -12,6 +12,13 @@ const inter = Inter({
 const interTight = Inter_Tight({
   subsets: ['latin'],
   variable: '--font-display',
+  weight: ['400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-serif',
   weight: ['400', '500', '600', '700', '800', '900'],
   display: 'swap',
 })
@@ -47,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${interTight.variable}`}>
+    <html lang="en" className={`${inter.variable} ${interTight.variable} ${playfair.variable}`}>
       <body>
         <Header />
         {children}

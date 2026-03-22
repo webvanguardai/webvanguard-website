@@ -25,7 +25,7 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             className="font-display font-black text-3xl md:text-5xl text-text-primary leading-tight"
           >
-            Your competitors already<br />
+            Your competitors <span className="font-serif italic">already</span><br />
             have a website<span className="text-accent">.</span>
           </motion.h3>
           <motion.a

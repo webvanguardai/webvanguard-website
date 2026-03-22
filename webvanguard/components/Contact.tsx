@@ -21,7 +21,7 @@ export default function Contact() {
               Let&apos;s talk
             </p>
             <h2 className="font-display font-black text-mega text-text-primary max-w-4xl">
-              Ready to get more customers<span className="text-accent">?</span>
+              Ready to get<br /><span className="font-serif italic">more customers</span><span className="text-accent">?</span>
             </h2>
             <p className="text-text-secondary text-lg md:text-xl mt-6 leading-relaxed max-w-xl">
               Tell us about your business. We&apos;ll show you what we can do — no commitment, no jargon, no surprises.

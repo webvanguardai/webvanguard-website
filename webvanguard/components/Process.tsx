@@ -57,7 +57,7 @@ export default function Process() {
             How it works
           </p>
           <h2 className="font-display font-black text-heading text-text-primary max-w-3xl">
-            From first call to live site<span className="text-accent">.</span><br />
+            From first call to <span className="font-serif italic">live site</span><span className="text-accent">.</span><br />
             Simple, fast, no surprises.
           </h2>
         </motion.div>

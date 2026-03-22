@@ -33,7 +33,7 @@ export default function Work() {
             </p>
             <h2 className="font-display font-black text-heading text-text-primary">
               Real businesses<span className="text-accent">.</span><br />
-              Real results<span className="text-accent">.</span>
+              <span className="font-serif italic">Real results</span><span className="text-accent">.</span>
             </h2>
           </div>
           <p className="text-text-muted text-sm font-body max-w-xs">
