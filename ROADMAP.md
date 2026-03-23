@@ -31,7 +31,7 @@
 - [x] Admin panel autenticado (login estático) para gestionar bookings
 - [x] Conectar fuentes reales a /metrics (YouTube Data API v3, Sheets/Notion para leads) – codigo listo, credenciales pendientes
 - [ ] Automatizar generación de métricas semanales (script que actualice /metrics data)
-- [ ] Blog / recursos (first article: "Why your premium website underperforms")
+- [x] Blog / recursos (first article: "Why your premium website underperforms") — LIVE 2026-03-23
 - [ ] A/B testing: variante de hero con números vs sin números
 - [ ] Dominio personalizado: webvanguard.ai o similar (configurar DNS y Vercel)
 

@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   description: 'Practical web design, SEO, and digital growth insights for business owners in Dubai and the UAE. Learn how to turn your website into a revenue machine.',
   keywords: ['web design blog dubai', 'website tips dubai', 'seo tips dubai', 'digital marketing uae', 'web vanguard blog'],
   alternates: {
-    canonical: 'https://webvanguard.ai/blog',
+    canonical: 'https://webvanguard.co/blog',
   },
   openGraph: {
     title: 'Blog — Web Design Insights | Web Vanguard',
     description: 'Practical insights on web design, SEO, and digital growth for Dubai businesses.',
-    url: 'https://webvanguard.ai/blog',
+    url: 'https://webvanguard.co/blog',
     type: 'website',
   },
 }

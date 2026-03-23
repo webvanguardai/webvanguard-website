@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Web Vanguard' }],
   alternates: {
-    canonical: 'https://webvanguard.ai/blog/why-your-premium-website-underperforms',
+    canonical: 'https://webvanguard.co/blog/why-your-premium-website-underperforms',
   },
   openGraph: {
     title: 'Why Your Premium Website Is Losing You Customers',
     description: 'The brutal truth about why beautiful websites fail to bring in clients — and what actually converts.',
-    url: 'https://webvanguard.ai/blog/why-your-premium-website-underperforms',
+    url: 'https://webvanguard.co/blog/why-your-premium-website-underperforms',
     type: 'article',
     publishedTime: '2026-03-23',
   },
@@ -41,15 +41,15 @@ const jsonLd = {
   author: {
     '@type': 'Organization',
     name: 'Web Vanguard',
-    url: 'https://webvanguard.ai',
+    url: 'https://webvanguard.co',
   },
   publisher: {
     '@type': 'Organization',
     name: 'Web Vanguard',
-    url: 'https://webvanguard.ai',
+    url: 'https://webvanguard.co',
   },
   datePublished: '2026-03-23',
-  url: 'https://webvanguard.ai/blog/why-your-premium-website-underperforms',
+  url: 'https://webvanguard.co/blog/why-your-premium-website-underperforms',
   inLanguage: 'en',
   keywords: 'website conversion, web design dubai, SEO dubai, conversion rate optimization',
 }

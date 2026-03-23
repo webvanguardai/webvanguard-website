@@ -24,7 +24,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://webvanguard.ai'),
+  metadataBase: new URL('https://webvanguard.co'),
   title: {
     default: 'Web Vanguard — Web Design & Digital Growth Agency in Dubai',
     template: '%s | Web Vanguard',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     'google seo dubai',
     'web vanguard',
   ],
-  authors: [{ name: 'Web Vanguard', url: 'https://webvanguard.ai' }],
+  authors: [{ name: 'Web Vanguard', url: 'https://webvanguard.co' }],
   creator: 'Web Vanguard',
   publisher: 'Web Vanguard',
   formatDetection: {
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_AE',
-    url: 'https://webvanguard.ai',
+    url: 'https://webvanguard.co',
     title: 'Web Vanguard — Web Design & Digital Growth Agency in Dubai',
     description: 'We build high-converting websites for businesses in Dubai. Custom design, SEO, branding, and analytics.',
     siteName: 'Web Vanguard',
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://webvanguard.ai',
+    canonical: 'https://webvanguard.co',
   },
   category: 'technology',
 }
@@ -106,11 +106,11 @@ const jsonLd = {
   '@type': 'ProfessionalService',
   name: 'Web Vanguard',
   description: 'Dubai-based web design agency that builds high-converting websites for businesses.',
-  url: 'https://webvanguard.ai',
-  logo: 'https://webvanguard.ai/logo.png',
-  image: 'https://webvanguard.ai/og-image.png',
+  url: 'https://webvanguard.co',
+  logo: 'https://webvanguard.co/logo.png',
+  image: 'https://webvanguard.co/og-image.png',
   telephone: '+971501234567',
-  email: 'hello@webvanguard.ai',
+  email: 'hello@webvanguard.co',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Dubai',
