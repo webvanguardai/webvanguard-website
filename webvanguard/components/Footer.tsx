@@ -57,6 +57,12 @@ export default function Footer() {
                 {item}
               </a>
             ))}
+            <Link
+              href="/blog"
+              className="text-xs text-text-muted hover:text-accent transition-colors font-body uppercase tracking-wider"
+            >
+              Blog
+            </Link>
           </nav>
 
           <p className="text-text-muted text-xs font-body">

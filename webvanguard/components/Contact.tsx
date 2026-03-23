@@ -29,7 +29,7 @@ export default function Contact() {
             </div>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <a href="mailto:hello@webvanguard.ai" className="btn-primary">
+              <a href="mailto:hello@webvanguard.co" className="btn-primary">
                 <span>Get your free proposal</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -50,7 +50,7 @@ export default function Contact() {
             className="md:col-span-4 md:col-start-9 space-y-6"
           >
             {[
-              { label: 'Email', value: 'hello@webvanguard.ai', href: 'mailto:hello@webvanguard.ai' },
+              { label: 'Email', value: 'hello@webvanguard.co', href: 'mailto:hello@webvanguard.co' },
               { label: 'WhatsApp', value: '+971 50 000 0000', href: 'https://wa.me/971500000000' },
               { label: 'Based in', value: 'Dubai, UAE' },
               { label: 'Response time', value: 'Under 2 hours' },
