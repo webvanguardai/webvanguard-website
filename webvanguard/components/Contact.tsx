@@ -35,7 +35,7 @@ export default function Contact() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-              <a href="https://wa.me/971500000000?text=Hi%20Web%20Vanguard%2C%20I%27d%20like%20to%20discuss%20a%20website%20for%20my%20business" target="_blank" rel="noopener noreferrer" className="btn-outline">
+              <a href="https://wa.me/971585324519?text=Hi%20Web%20Vanguard%2C%20I%27d%20like%20to%20discuss%20a%20website%20for%20my%20business" target="_blank" rel="noopener noreferrer" className="btn-outline">
                 <span>WhatsApp us</span>
               </a>
             </div>
@@ -51,7 +51,7 @@ export default function Contact() {
           >
             {[
               { label: 'Email', value: 'hello@webvanguard.co', href: 'mailto:hello@webvanguard.co' },
-              { label: 'WhatsApp', value: '+971 50 000 0000', href: 'https://wa.me/971500000000' },
+              { label: 'WhatsApp', value: '+971 58 532 4519', href: 'https://wa.me/971585324519' },
               { label: 'Based in', value: 'Dubai, UAE' },
               { label: 'Response time', value: 'Under 2 hours' },
             ].map((item) => (
