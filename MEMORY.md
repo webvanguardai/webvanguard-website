@@ -60,6 +60,12 @@ Each site must include ALL of the following before deploy:
 | Growth | 4,500 | All + Analytics + 3 months support |
 | Premium | 8,000+ | All + content strategy + Google Ads setup |
 
+## Outreach Rules — NON NEGOTIABLE
+1. **Demo FIRST, email SECOND** — never send an outreach email without having the specific demo built and live first
+2. **Match the demo to the vertical** — don't send a spa demo to a therapy practice, a barber demo to a restaurant, etc.
+3. **Verify email exists** before sending (test with a check or lookup)
+4. **One follow-up max** — 5 days after no reply, then stop
+
 ## Sales Pitch
 "We already built your website. You just need to put your name on it."
 - Show them the demo live URL

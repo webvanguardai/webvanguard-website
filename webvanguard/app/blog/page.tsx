@@ -20,13 +20,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'how-to-get-more-customers-from-google-in-dubai',
+    title: 'How to Get More Customers From Google in Dubai (Without Paid Ads)',
+    excerpt: "Every day, thousands of people in Dubai search Google for exactly what you sell. Most of them never find you. Here are 5 practical steps to rank on Google and attract customers — without spending on ads.",
+    date: '2026-03-24',
+    readTime: '7 min read',
+    category: 'SEO',
+    featured: true,
+  },
+  {
     slug: '5-dubai-businesses-that-grew-with-seo',
     title: '5 Types of Dubai Businesses That Transformed Their Revenue With SEO (And What They Did)',
     excerpt: "Aesthetic clinics, law firms, real estate agencies, restaurants, and B2B consultancies — these are the Dubai businesses winning with SEO. Here\u2019s exactly what they did and what results they got.",
     date: '2026-03-24',
     readTime: '8 min read',
     category: 'SEO',
-    featured: true,
+    featured: false,
   },
   {
     slug: 'how-much-does-a-website-cost-in-dubai',
