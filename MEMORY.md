@@ -19,7 +19,7 @@
 
 ## Business Plan — Next Steps
 1. ✅ Portfolio website v3 live (copper palette)
-2. ⬜ Buy domain webvanguard.ai (Cloudflare)
+2. ✅ Domain webvanguard.co — LIVE (Cloudflare + Vercel)
 3. ✅ Email hello@webvanguard.co — Zoho Mail configurado (revisar MX records si rebota)
 4. ✅ Build demo sites for potential clients → deploy to Vercel → share link
 5. ⬜ Client accepts → update with real data → add to portfolio

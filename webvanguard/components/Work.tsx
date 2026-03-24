@@ -96,23 +96,13 @@ const projects = [
   },
   {
     label: '10',
-    name: 'MindWave',
+    name: 'Serenity Wellness',
     industry: 'Therapy & Wellness',
     location: 'London, UK',
     url: 'https://mindwave-nu.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://mindwave-nu.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#8FAF9F',
     bg: '#2D4A3E',
-  },
-  {
-    label: '11',
-    name: 'Leila Hariri Dental',
-    industry: 'Holistic Dentistry',
-    location: 'Business Bay, Dubai',
-    url: 'https://leila-hariri-dental.vercel.app',
-    thumbnail: 'https://api.microlink.io/?url=https://leila-hariri-dental.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
-    accent: '#C9A84C',
-    bg: '#1B4D4A',
   },
 ]
 
@@ -194,8 +184,8 @@ export default function Work() {
         >
           <p className="section-label mb-4">Selected work</p>
           <h2 className="font-display font-black text-heading text-text-primary uppercase">
-            Eleven businesses.<br />
-            <span className="font-serif italic text-accent normal-case">Eleven identities.</span>
+            Ten businesses.<br />
+            <span className="font-serif italic text-accent normal-case">Ten identities.</span>
           </h2>
         </motion.div>
 
