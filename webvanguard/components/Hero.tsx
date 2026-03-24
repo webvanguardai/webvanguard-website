@@ -78,7 +78,7 @@ export default function Hero() {
           className="mt-20 pt-8 border-t border-border grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           {[
-            { value: '8', label: 'Projects live' },
+            { value: '9', label: 'Projects live' },
             { value: 'Dubai', label: 'Our market' },
             { value: '48h', label: 'First draft' },
             { value: 'AED 1,500', label: 'Starting from' },

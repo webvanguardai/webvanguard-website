@@ -84,6 +84,16 @@ const projects = [
     accent: '#C9956B',
     bg: '#0D0A08',
   },
+  {
+    label: '09',
+    name: 'Noor Clinic',
+    industry: 'Aesthetic Medicine',
+    location: 'Business Bay',
+    url: 'https://noor-clinic.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://noor-clinic.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#C9A96E',
+    bg: '#0A0A0F',
+  },
 ]
 
 function ProjectRow({
@@ -164,8 +174,8 @@ export default function Work() {
         >
           <p className="section-label mb-4">Selected work</p>
           <h2 className="font-display font-black text-heading text-text-primary uppercase">
-            Eight businesses.<br />
-            <span className="font-serif italic text-accent normal-case">Eight identities.</span>
+            Nine businesses.<br />
+            <span className="font-serif italic text-accent normal-case">Nine identities.</span>
           </h2>
         </motion.div>
 
