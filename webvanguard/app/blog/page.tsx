@@ -20,13 +20,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: '5-dubai-businesses-that-grew-with-seo',
+    title: '5 Types of Dubai Businesses That Transformed Their Revenue With SEO (And What They Did)',
+    excerpt: "Aesthetic clinics, law firms, real estate agencies, restaurants, and B2B consultancies — these are the Dubai businesses winning with SEO. Here\u2019s exactly what they did and what results they got.",
+    date: '2026-03-24',
+    readTime: '8 min read',
+    category: 'SEO',
+    featured: true,
+  },
+  {
     slug: 'how-much-does-a-website-cost-in-dubai',
     title: 'How Much Does a Website Cost in Dubai? (2026 Honest Breakdown)',
     excerpt: "You've gotten quotes ranging from AED 500 to AED 50,000 for the same project. Both feel wrong. Here's what websites actually cost in Dubai — and what each price point really gets you.",
     date: '2026-03-24',
     readTime: '7 min read',
     category: 'Pricing',
-    featured: true,
+    featured: false,
   },
   {
     slug: 'why-your-premium-website-underperforms',
