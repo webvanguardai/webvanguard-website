@@ -45,5 +45,10 @@ nohup cloudflared tunnel --url http://127.0.0.1:3100 --no-autoupdate > /tmp/clou
 - WEB-8: Install Google Analytics (**BLOCKED — needs GA4 ID**)
 - WEB-9: Submit sitemap to Google Search Console
 
+## Workflow
+- Actualizar al **final de cada día** (no en cada tarea, no en heartbeats)
+- No es fuente de verdad — ROADMAP.md manda
+- Si el tunnel no está activo, no importa — el servidor local sigue corriendo
+
 ## Note
 Tunnel URL changes on restart. For permanent access, create a named Cloudflare Tunnel (needs CF account).

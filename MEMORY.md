@@ -8,8 +8,8 @@
 - Preferred communication: **calm but sharp, creative, honest, no bullshit** + a touch of **dry humor** when it fits.
 - Language: **Spanish preferred** by default.
 
-## Web Vanguard — Status (2026-03-22)
-- **Website LIVE:** https://webvanguard.vercel.app
+## Web Vanguard — Status (2026-03-24)
+- **Website LIVE:** https://webvanguard.co (también en webvanguard.vercel.app)
 - **Repo:** github.com/webvanguardai/webvanguard-website
 - **Stack:** Next.js 14, Tailwind CSS, Framer Motion, TypeScript
 - **Deploy:** Vercel (auto-deploy from GitHub)
@@ -20,7 +20,7 @@
 ## Business Plan — Next Steps
 1. ✅ Portfolio website v3 live (copper palette)
 2. ⬜ Buy domain webvanguard.ai (Cloudflare)
-3. ⬜ Set up email hello@webvanguard.ai (Zoho free)
+3. ✅ Email hello@webvanguard.co — Zoho Mail configurado (revisar MX records si rebota)
 4. ✅ Build demo sites for potential clients → deploy to Vercel → share link
 5. ⬜ Client accepts → update with real data → add to portfolio
 6. ⬜ Repeat. Never stop. Target: 6 sites this week.
@@ -32,7 +32,10 @@
 - ✅ **04 Zafran Barber** — premium barbershop DIFC → https://zafran-barber.vercel.app | proposal: webvanguardai.github.io/proposal-zafran-barber
 - ✅ **05 Lumina Lens Studio** — photography studio → https://lumina-lens-six.vercel.app | proposal: webvanguardai.github.io/proposal-lumina-lens
 - ✅ **06 Levant & Co.** — Lebanese fine dining → https://levant-co.vercel.app | proposal: webvanguardai.github.io/proposal-levant-co
-- Portfolio: https://webvanguard.vercel.app (all 6 live)
+- ✅ **07 Solara Music** — Electronic music / DJ Dubai → https://solara-music-chi.vercel.app
+- ✅ **08 Céleste Events** — Luxury event design Dubai → https://celeste-events.vercel.app
+- ✅ **09 Noor Clinic** — Aesthetic medicine Business Bay → https://noor-clinic.vercel.app | repo: github.com/webvanguardai/noor-clinic
+- Portfolio: https://webvanguard.vercel.app (9 projects live)
 
 ## Standard Deliverables (every client site)
 Each site must include ALL of the following before deploy:

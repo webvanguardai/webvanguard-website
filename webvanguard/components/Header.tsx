@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 
 const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Work', href: '#work' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Work', href: '/#work' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact', href: '/#contact' },
 ]
 
 export default function Header() {
@@ -45,7 +45,7 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="btn-primary text-xs !py-3 !px-6">
+          <a href="/#contact" className="btn-primary text-xs !py-3 !px-6">
             <span>Get a proposal</span>
           </a>
         </nav>
@@ -94,7 +94,7 @@ export default function Header() {
                 </motion.a>
               ))}
               <motion.a
-                href="#contact"
+                href="/#contact"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
