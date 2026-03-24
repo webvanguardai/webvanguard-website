@@ -39,3 +39,6 @@ build.log
 .vercel
 .env.local
 .cache
+
+# Client sites (separate repos — not part of main deploy)
+client-sites/
