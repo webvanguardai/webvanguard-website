@@ -2,13 +2,9 @@
 
 export default function Marquee() {
   const topItems = [
-    'DUBAI',
-    '2026',
-    '8 CLIENTS',
-    'WE BUILD WHAT CONVERTS',
-    'FROM AED 1,500',
-    'ZERO RISK',
     'SEE IT BEFORE YOU PAY',
+    'FROM AED 1,500',
+    'RESULTS, NOT PAGES',
   ]
 
   const bottomItems = [

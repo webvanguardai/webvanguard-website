@@ -20,13 +20,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'how-much-does-a-website-cost-in-dubai',
+    title: 'How Much Does a Website Cost in Dubai? (2026 Honest Breakdown)',
+    excerpt: "You've gotten quotes ranging from AED 500 to AED 50,000 for the same project. Both feel wrong. Here's what websites actually cost in Dubai — and what each price point really gets you.",
+    date: '2026-03-24',
+    readTime: '7 min read',
+    category: 'Pricing',
+    featured: true,
+  },
+  {
     slug: 'why-your-premium-website-underperforms',
     title: 'Why Your Premium Website Is Losing You Customers (And How to Fix It)',
     excerpt: "You spent AED 15,000 on a stunning website. It looks great. But it\u2019s not bringing in clients. Here\u2019s the brutal truth about why beautiful websites fail \u2014 and what actually drives conversions.",
     date: '2026-03-23',
     readTime: '6 min read',
     category: 'Conversion',
-    featured: true,
+    featured: false,
   },
 ]
 
@@ -82,7 +91,38 @@ export default function BlogPage() {
             </Link>
           ))}
 
-          {/* Coming soon */}
+          {/* Rest of posts */}
+          <div className="space-y-0">
+            {posts.filter(p => !p.featured).map(post => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group block"
+              >
+                <div className="grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-12 items-center py-8 border-b border-border hover:border-accent transition-colors duration-300">
+                  <span className="font-display font-black text-4xl md:text-5xl text-text-muted/20 group-hover:text-accent/30 transition-colors duration-300 hidden md:block">
+                    {String(posts.filter(p => !p.featured).indexOf(post) + 2).padStart(2, '0')}
+                  </span>
+                  <div>
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-xs tracking-[0.15em] uppercase text-accent font-body border border-accent/30 px-2 py-0.5 rounded-sm">
+                        {post.category}
+                      </span>
+                      <span className="text-xs text-text-muted font-body">{post.date}</span>
+                      <span className="text-text-muted text-xs">·</span>
+                      <span className="text-xs text-text-muted font-body">{post.readTime}</span>
+                    </div>
+                    <h2 className="font-display font-bold text-xl md:text-2xl text-text-primary group-hover:text-accent transition-colors duration-300 uppercase leading-tight">
+                      {post.title}
+                    </h2>
+                  </div>
+                  <span className="text-accent group-hover:translate-x-2 transition-transform duration-300 text-lg shrink-0 hidden md:block">→</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Footer CTA */}
           <div className="mt-16 pt-12 border-t border-border">
             <p className="text-text-muted text-sm font-body text-center">
               More articles coming soon.{' '}

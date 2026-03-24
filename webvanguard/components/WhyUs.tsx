@@ -41,6 +41,16 @@ export default function WhyUs() {
             </motion.h2>
           ))}
         </div>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="mt-12 text-[#F4F1EC]/40 text-sm font-body max-w-md"
+        >
+          Boutique studio led by a full-stack developer & designer based in Dubai. Every project is built by us — not outsourced.
+        </motion.p>
       </div>
     </section>
   )

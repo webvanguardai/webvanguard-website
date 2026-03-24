@@ -11,7 +11,7 @@ const services = [
   {
     number: '02',
     title: 'SEO & Visibility',
-    description: 'Top Google rankings so customers find you first. Local SEO + AI search optimized.',
+    description: 'Top Google rankings so customers find you first. Local SEO, Google Search Console, and AI search optimized.',
   },
   {
     number: '03',
@@ -21,7 +21,7 @@ const services = [
   {
     number: '04',
     title: 'Growth & Analytics',
-    description: 'Know where customers come from. Real data, real tracking, real growth.',
+    description: 'Know where customers come from. GA4, Meta Pixel, heatmaps, conversion tracking. Real data, real growth.',
   },
 ]
 

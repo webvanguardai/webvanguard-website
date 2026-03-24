@@ -29,8 +29,8 @@ export default function Contact() {
             </div>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <a href="mailto:hello@webvanguard.co" className="btn-primary">
-                <span>Get your free proposal</span>
+              <a href="https://wa.me/971585324519?text=Hi%20Web%20Vanguard%2C%20I%27d%20like%20a%20free%20proposal%20for%20my%20business" target="_blank" rel="noopener noreferrer" className="btn-primary">
+                <span>Get a free proposal</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
