@@ -89,8 +89,8 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   const startIndex = (safePage - 1) * POSTS_PER_PAGE
   const pagePosts = posts.slice(startIndex, startIndex + POSTS_PER_PAGE)
 
-  const featuredPost = safePage === 1 ? pagePosts.find((p) => p.featured) : null
-  const regularPosts = pagePosts.filter((p) => !p.featured || safePage !== 1)
+  const featuredPost = null
+  const regularPosts = pagePosts
 
   return (
     <>
@@ -109,39 +109,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
             </p>
           </div>
 
-          {/* Featured post (page 1 only) */}
-          {featuredPost && (
-            <Link
-              key={featuredPost.slug}
-              href={`/blog/${featuredPost.slug}`}
-              className="group block mb-16"
-            >
-              <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start py-12 border-b border-border hover:border-accent transition-colors duration-300">
-                <div>
-                  <div className="flex items-center gap-4 mb-6">
-                    <span className="text-xs tracking-[0.15em] uppercase text-accent font-body border border-accent/30 px-3 py-1 rounded-sm">
-                      {featuredPost.category}
-                    </span>
-                    <span className="text-xs text-text-muted font-body">Featured</span>
-                  </div>
-                  <h2 className="font-display font-black text-3xl md:text-4xl text-text-primary group-hover:text-accent transition-colors duration-300 uppercase leading-tight mb-4">
-                    {featuredPost.title}
-                  </h2>
-                </div>
-                <div>
-                  <p className="text-text-secondary font-body text-base leading-relaxed mb-6">
-                    {featuredPost.excerpt}
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <span className="text-xs text-text-muted font-body">{featuredPost.date}</span>
-                    <span className="text-text-muted">·</span>
-                    <span className="text-xs text-text-muted font-body">{featuredPost.readTime}</span>
-                    <span className="ml-auto text-accent group-hover:translate-x-2 transition-transform duration-300 text-lg">→</span>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          )}
+
 
           {/* Rest of posts */}
           <div className="space-y-0">
@@ -153,7 +121,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
               >
                 <div className="grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-12 items-center py-8 border-b border-border hover:border-accent transition-colors duration-300">
                   <span className="font-display font-black text-4xl md:text-5xl text-text-muted/20 group-hover:text-accent/30 transition-colors duration-300 hidden md:block">
-                    {String(startIndex + idx + (featuredPost ? 2 : 1)).padStart(2, '0')}
+                    {String(startIndex + idx + 1).padStart(2, '0')}
                   </span>
                   <div>
                     <div className="flex items-center gap-3 mb-3">
