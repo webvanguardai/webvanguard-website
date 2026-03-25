@@ -104,6 +104,16 @@ const projects = [
     accent: '#8FAF9F',
     bg: '#2D4A3E',
   },
+  {
+    label: '11',
+    name: 'APEX Training',
+    industry: 'Elite Personal Training',
+    location: 'Dubai Marina',
+    url: 'https://apex-training-rust.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://apex-training-rust.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#D4AF6B',
+    bg: '#0A0A0A',
+  },
 ]
 
 function ProjectRow({
@@ -184,8 +194,8 @@ export default function Work() {
         >
           <p className="section-label mb-4">Selected work</p>
           <h2 className="font-display font-black text-heading text-text-primary uppercase">
-            Ten businesses.<br />
-            <span className="font-serif italic text-accent normal-case">Ten identities.</span>
+            Eleven businesses.<br />
+            <span className="font-serif italic text-accent normal-case">Eleven identities.</span>
           </h2>
         </motion.div>
 

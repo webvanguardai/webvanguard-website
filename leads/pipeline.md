@@ -93,6 +93,32 @@
 
 ---
 
+## Batch 02 — March 25, 2026 (Niche Demos)
+
+### 08 — APEX Training — Personal Trainer (DEMO)
+- **Sector:** Fitness Coaching & Personal Training
+- **Location:** Dubai Marina (multi-location)
+- **Persona:** Alex Carter — Certified PT, 10+ years, 500+ clients transformed
+- **Website:** https://apex-training.vercel.app ✅ (LIVE)
+- **Repo:** https://github.com/webvanguardai/apex-training
+- **Built:** 2026-03-25 (Next.js 14 + Tailwind + Framer Motion)
+- **Purpose:** Niche demo for Personal Trainer / Fitness Coach segment
+- **Features:** 
+  - Sticky nav + hero + stats + about coach + services (AED pricing) + transformations + locations + Google Maps + Formspree booking form + WhatsApp CTA
+  - Premium aesthetic: Black + Gold palette (Nike meets luxury)
+  - JSON-LD LocalBusiness + Person schema (Alex Carter)
+  - Full SEO: keywords, meta, OpenGraph, Twitter cards, robots.txt, sitemap
+  - GA4 ready (G-PLACEHOLDER)
+- **Target Market:** Affluent expats & locals in Dubai Marina, JBR, Downtown
+- **Available For:** Personal trainers, fitness coaches, PT studios in Dubai, Middle East, UK
+- **Status:** ✅ DEMO READY — Can be cloned and customized for real PT clients
+- **Live URL:** https://apex-training.vercel.app
+- **Deployment:** Vercel (alias: apex-training.vercel.app)
+- **GitHub:** Public repo — easy for prospects to see tech stack
+- **Notes:** This demo is perfect for outreach to PT studios, boutique fitness gyms, and independent trainers looking for an elite online presence. The aesthetic is premium and results-focused.
+
+---
+
 ## Email Templates
 
 ### Template A — No website (Instagram only)
