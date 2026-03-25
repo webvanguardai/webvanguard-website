@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'why-dubai-businesses-lose-customers-without-a-website',
+    title: 'Why Dubai Businesses Lose Customers Every Day Without a Website (And Don\'t Even Know It)',
+    excerpt: "Every night, people in Dubai search Google for your service. They find your competitor. Not because your competitor is better — because they have a website and you don't. Here are the 5 problems costing Dubai businesses real money.",
+    date: '2026-03-25',
+    readTime: '7 min read',
+    category: 'Lead Generation',
+  },
+  {
     slug: 'the-dubai-business-website-checklist',
     title: 'The Dubai Business Website Checklist (2026): 15 Things Killing Your Online Revenue',
     excerpt: "Most Dubai business websites are quietly losing money every month. Not because they look bad — because they fail on basics Google and real customers care about. Run through this 15-point checklist to find exactly where the leaks are.",
