@@ -183,11 +183,11 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                     href={safePage - 1 === 1 ? '/blog' : `/blog?page=${safePage - 1}`}
                     className="inline-flex items-center gap-2 px-5 py-3 border border-border text-text-secondary hover:border-accent hover:text-accent transition-all duration-300 text-xs font-body uppercase tracking-widest"
                   >
-                    ← Newer
+                    ← Newer posts
                   </Link>
                 ) : (
                   <span className="inline-flex items-center gap-2 px-5 py-3 border border-border/30 text-text-muted/30 text-xs font-body uppercase tracking-widest cursor-default">
-                    ← Newer
+                    ← Newer posts
                   </span>
                 )}
               </div>
@@ -202,11 +202,11 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                     href={`/blog?page=${safePage + 1}`}
                     className="inline-flex items-center gap-2 px-5 py-3 border border-border text-text-secondary hover:border-accent hover:text-accent transition-all duration-300 text-xs font-body uppercase tracking-widest"
                   >
-                    Older →
+                    Older posts →
                   </Link>
                 ) : (
                   <span className="inline-flex items-center gap-2 px-5 py-3 border border-border/30 text-text-muted/30 text-xs font-body uppercase tracking-widest cursor-default">
-                    Older →
+                    Older posts →
                   </span>
                 )}
               </div>
