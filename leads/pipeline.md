@@ -19,18 +19,20 @@
 - **Demo:** https://qahwa-house.vercel.app
 - **Proposal:** https://webvanguardai.github.io/proposal-gold-box-roastery/
 - **Pain point:** Shopify template with zero local SEO. Searching "specialty coffee Dubai" they don't appear. Missing WhatsApp button — losing impulse customers.
-- **Status:** 🔴 Cold — proposal ready, pending outreach email
-- **Last contact:** —
+- **Status:** 🟡 Warm — email enviado 24 Mar 2026 (Zoho, subject: "Gold Box Roastery — there's more customers waiting for you online")
+- **Last contact:** 2026-03-24
+- **Follow-up due:** 2026-03-31 (7 días si no hay reply)
 
 ### 02 — TouchLife Spa
 - **Sector:** Spa & Wellness
 - **Location:** Dubai Marina
-- **Contact:** Instagram @touchlifespa (need to find email)
+- **Contact:** touchlifespa.dubai@gmail.com
 - **Website:** Instagram only (no website found)
 - **Demo:** https://lumiere-wellness.vercel.app
 - **Pain point:** No website at all. Invisible on Google. Losing every customer who searches "spa Dubai Marina" at night before booking.
-- **Status:** 🔴 Cold
-- **Last contact:** —
+- **Status:** 🟡 Warm — email enviado 24 Mar 2026
+- **Last contact:** 2026-03-24
+- **Follow-up due:** 2026-03-31
 
 ### 03 — Perfet Match Spa Club Marina
 - **Sector:** Spa & Wellness
@@ -45,44 +47,49 @@
 ### 04 — 011 Italian Grooming
 - **Sector:** Premium Barbershop
 - **Location:** DIFC, Dubai
-- **Contact:** https://011italiangrooming.com (check for email)
-- **Website:** EXISTS — check quality
+- **Contact:** info@011italiangrooming.com
+- **Website:** EXISTS
 - **Demo:** https://zafran-barber.vercel.app
-- **Pain point:** TBD — need to audit their site
-- **Status:** 🔴 Cold — needs audit first
-- **Last contact:** —
+- **Pain point:** No local SEO, no online booking visible above fold, no WhatsApp button
+- **Status:** 🟡 Warm — email enviado 24 Mar 2026
+- **Last contact:** 2026-03-24
+- **Follow-up due:** 2026-03-31
 
 ### 05 — Roasters Coffee House
 - **Sector:** Specialty Coffee / Café
 - **Location:** Jumeirah, Dubai
-- **Contact:** roasterscoffee.ae (check for email)
-- **Website:** EXISTS — check quality
+- **Contact:** beans@roasterscoffee.ae
+- **Website:** EXISTS — ranking bien pero sin conversión
 - **Demo:** https://qahwa-house.vercel.app
-- **Pain point:** TBD — need to audit their site
-- **Status:** 🔴 Cold — needs audit first
-- **Last contact:** —
+- **Pain point:** Ranking #1 pero sin WhatsApp, sin booking, sin captura de emails
+- **Status:** 🟡 Warm — email enviado 24 Mar 2026
+- **Last contact:** 2026-03-24
+- **Follow-up due:** 2026-03-31
 
 ### 06 — Leila Hariri Dental Clinic
 - **Sector:** Holistic Dentistry
 - **Location:** Dubai
-- **Website:** leilahariridentalclinic.com — Shopify store, page title literally says "My Store" (not configured). Destroys trust instantly.
-- **Contact:** need to find email from site
-- **Demo:** closest = Noor Clinic (https://noor-clinic.vercel.app) or build custom dental demo
-- **Pain point:** "My Store" as page title = zero credibility. No SEO. Holistic dental clinic in Dubai with a worse web presence than a food truck.
-- **Priority:** 🔥 HIGH — easy win, clear problem, premium sector
-- **Status:** 🔴 Cold
-- **Last contact:** —
+- **Website:** leilahariridentalclinic.com — Shopify, title "My Store"
+- **Contact:** info@lhdm.ae + WhatsApp (enviado por Javi directamente)
+- **Demo:** https://leila-hariri-dental.vercel.app ✅ (Next.js, built 2026-03-24)
+- **Repo:** https://github.com/webvanguardai/leila-hariri-dental
+- **Pain point:** "My Store" como título = cero credibilidad. Sin SEO. Sin WhatsApp.
+- **Priority:** 🔥 HIGH
+- **Status:** 🟡 Warm — enviado por WhatsApp por Javi (2026-03-24/25). Email outreach pendiente a info@lhdm.ae
+- **Last contact:** 2026-03-24 (WhatsApp)
 
 ### 07 — MindWave
 - **Sector:** Therapy, Counselling & Wellness
 - **Location:** UK (mindwave.org.uk)
-- **Website:** mindwave.org.uk — exists but dense text, no clear CTA, likely weak SEO
-- **Contact:** need to find email
-- **Demo:** closest = Lumière Wellness or build custom wellness/therapy demo
-- **Pain point:** wall of text, no structure, probably not converting visitors to bookings
-- **Priority:** Medium — UK market, different vertical
-- **Status:** 🔴 Cold
-- **Last contact:** —
+- **Website:** mindwave.org.uk — dense text, no clear CTA
+- **Contact:** contact@mindwave.org.uk
+- **Demo:** https://mindwave-nu.vercel.app ✅ (Next.js, built 2026-03-24)
+- **Repo:** https://github.com/webvanguardai/mindwave
+- **Pain point:** Wall of text, no primary CTA, weak mobile, losing bookings
+- **Priority:** Medium — UK market
+- **Status:** 🟡 Warm — 2 emails enviados 24 Mar 2026 (segundo con demo correcto)
+- **Last contact:** 2026-03-24
+- **Follow-up due:** 2026-03-31
 
 ---
 

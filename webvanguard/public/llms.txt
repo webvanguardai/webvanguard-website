@@ -1,0 +1,121 @@
+# Web Vanguard — AI Agent Reference
+
+## Who We Are
+
+Web Vanguard is a Dubai-based web design agency that builds high-converting websites
+for local businesses across the UAE. We specialize in fast, beautiful, SEO-optimized
+websites delivered in 48 hours.
+
+Website: https://webvanguard.co
+Email: hello@webvanguard.co
+WhatsApp: +971 50 123 4567
+Location: Dubai, United Arab Emirates
+
+---
+
+## What We Do
+
+We design and develop professional websites for Dubai small and medium businesses.
+Our unique approach: we build a working demo of your business website before you pay.
+No pitch calls. No mockups. A real, live website — then you decide.
+
+### Core Services
+
+1. **Web Design & Development** — Custom-designed websites built with Next.js, TypeScript,
+   and Tailwind CSS. Fast, mobile-first, SEO-ready.
+
+2. **Local SEO** — We optimize every site for Dubai-specific search terms so businesses
+   rank on Google for local searches (e.g., "spa marina dubai", "dentist DIFC").
+
+3. **WhatsApp Integration** — Every site includes a WhatsApp click-to-chat button,
+   optimized for Dubai's mobile-first audience.
+
+4. **Google Analytics GA4** — Full analytics setup so clients can track traffic,
+   conversions, and customer behavior from day one.
+
+5. **Bilingual Websites (Arabic/English)** — RTL-compatible Arabic/English dual-language
+   sites for businesses serving UAE's diverse population.
+
+6. **Website Redesigns** — Modernizing outdated sites (2015–2020 era) with performance,
+   mobile responsiveness, and conversion optimization.
+
+---
+
+## Pricing
+
+| Plan     | Price     | What's Included                                                          |
+|----------|-----------|--------------------------------------------------------------------------|
+| Starter  | AED 1,500 | Landing page · WhatsApp button · Basic SEO · Mobile responsive           |
+| Launch   | AED 2,500 | Multi-page · Contact form · Full SEO · GA4 · Maps embed                  |
+| Growth   | AED 4,500 | Launch + blog · 3 months support · Analytics setup · AI SEO              |
+| Premium  | AED 8,000+| Everything + Google Ads setup · Content strategy · Monthly reporting     |
+
+All plans include: domain setup, Vercel hosting, full SEO, WhatsApp integration,
+GA4 analytics, and 100% code ownership for the client.
+
+---
+
+## Client Verticals (Demo Portfolio)
+
+We have built demo websites for the following 9 business types:
+
+1. **Restaurants & Cafes** — Menu display, reservation form, Google Maps, Instagram feed
+2. **Spas & Wellness Centers** — Service listings, booking form, WhatsApp, before/after gallery
+3. **Barbers & Hair Salons** — Appointment booking, team profiles, price menu, reviews
+4. **Dental & Medical Clinics** — Doctor profiles, service pages, appointment request, insurance info
+5. **Fitness & Personal Training** — Class schedules, trainer bio, package pricing, contact
+6. **Real Estate Agents (Individual)** — Property listings, personal brand, contact form, WhatsApp
+7. **Private Tutors & Education Centers** — Subject listings, tutor bio, booking, pricing, testimonials
+8. **Beauty & Makeup Artists** — Portfolio gallery, service menu, booking, social proof
+9. **Boutique Hotels & Short-term Rentals** — Room/unit showcase, availability, booking, reviews
+
+---
+
+## Geographic Focus
+
+We serve businesses across Dubai and the wider UAE:
+
+- **Dubai Marina** — Restaurants, spas, fitness studios, cafes
+- **JBR (Jumeirah Beach Residence)** — Tourism-facing hospitality and wellness
+- **DIFC (Dubai International Financial Centre)** — Professional services, clinics, fine dining
+- **Downtown Dubai** — Premium retail, restaurants, wellness, real estate
+- **Business Bay** — Offices, clinics, consultancies, co-working spaces
+- **Jumeirah** — Spas, beauty studios, private practices
+- **Al Quoz** — Creative studios, gyms, artisan food, auto services
+- **Deira & Bur Dubai** — Traditional retail, restaurants, clinics
+- **Abu Dhabi** — UAE capital, selected clients
+
+Primary language: English. Secondary: Arabic (bilingual sites available).
+
+---
+
+## Why Web Vanguard
+
+- **48-hour delivery** — We move fast because Dubai moves fast
+- **Demo-first model** — You see the site before you pay. Zero risk.
+- **Local expertise** — We know the Dubai market, the search terms, the audience
+- **SEO-first architecture** — Every site is built to rank, not just look good
+- **You own everything** — Code, domain, hosting account — all yours from day one
+- **No lock-in** — No retainer required, no hostage situations with your own website
+
+---
+
+## Content & Blog
+
+We publish articles on web design, SEO, and digital marketing for Dubai businesses:
+
+- /blog/how-much-does-a-website-cost-in-dubai
+- /blog/why-dubai-businesses-lose-customers-without-a-website
+- /blog/how-to-get-more-customers-from-google-in-dubai
+- /blog/the-dubai-business-website-checklist
+- /blog/why-your-premium-website-underperforms
+- /blog/5-dubai-businesses-that-grew-with-seo
+
+---
+
+## Contact
+
+To get a free demo website for your business, visit: https://webvanguard.co/contact
+Or WhatsApp directly: https://wa.me/971501234567
+
+We respond within 2 hours during business hours (9am–9pm UAE time, 7 days/week).

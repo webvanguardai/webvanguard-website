@@ -25,6 +25,19 @@
 5. ⬜ Client accepts → update with real data → add to portfolio
 6. ⬜ Repeat. Never stop. Target: 6 sites this week.
 
+## Email Access
+- Zoho SMTP/IMAP configurado y funcional desde 2026-03-24
+- Credenciales en: /home/javibeat/.openclaw/workspace/.email-config
+- SIEMPRE revisar /Enviado en Zoho IMAP antes de asumir que algo no fue enviado
+- Carpetas: INBOX, Enviado, Borrador, WebVanguard, Nibango
+
+## Lead Pipeline — Estado Real (2026-03-25)
+- **pipeline.md:** /home/javibeat/.openclaw/workspace/leads/pipeline.md
+- Emails enviados 24 Mar 2026: Gold Box (heba), 011 Italian (info), Roasters (beans), MindWave (contact x2), TouchLife (gmail)
+- Leila Hariri: enviada por Javi vía WhatsApp. Demo: leila-hariri-dental.vercel.app (Next.js, NOT leila-dental — ese fue un error del 25 Mar)
+- Todos los leads activos están en estado 🟡 Warm
+- Follow-up due: 2026-03-31 para todos
+
 ## Client Sites Pipeline
 - ✅ **01 Lumière Wellness Studio** — luxury spa Dubai Marina → https://lumiere-wellness.vercel.app | proposal: webvanguardai.github.io/proposal-lumiere-wellness
 - ✅ **02 Apex Properties Dubai** — luxury real estate → https://apex-properties.vercel.app | proposal: webvanguardai.github.io/proposal-apex-properties

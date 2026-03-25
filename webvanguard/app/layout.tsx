@@ -101,6 +101,53 @@ export const viewport: Viewport = {
   themeColor: '#FFFFFF',
 }
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How much does a website cost in Dubai?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Web Vanguard websites start from AED 1,500 for a single-page launch site, and AED 2,500 for a full multi-page site with SEO, contact form, WhatsApp button, Google Analytics, and Google Maps. No hidden fees. You own 100% of the code.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does it take to build a website in Dubai?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '48 hours from approval. We build a live working demo of your business first — at no cost — so you can see exactly what you\'re getting before committing. Once approved, your site is live within 48 hours.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I need a website if I have Instagram?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Instagram doesn\'t show up on Google — so customers actively searching for your service in Dubai will never find you. A website captures search traffic 24/7, converts followers into bookings, and gives you data on who\'s visiting and what they want. Instagram is for awareness; your website is where customers convert.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you build a website in Arabic?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, bilingual Arabic/English websites are available. We build fully RTL-compatible Arabic sites and dual-language experiences for businesses serving both Arabic and English-speaking customers across Dubai and the UAE.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What\'s included in a Web Vanguard website?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Every website includes mobile-responsive design, WhatsApp button, contact form, local SEO setup, Google Analytics GA4, Google Maps embed, schema markup, fast-loading optimized code, domain setup, and Vercel hosting. You own 100% of your code and domain from day one.',
+      },
+    },
+  ],
+}
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
@@ -155,6 +202,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </head>
       <body className="overflow-x-hidden">
