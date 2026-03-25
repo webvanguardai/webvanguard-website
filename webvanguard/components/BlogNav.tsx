@@ -2,6 +2,10 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'instagram-is-not-a-website-dubai',
+    title: 'Why Instagram Is Not a Website (And What It\'s Costing Your Dubai Business)',
+  },
+  {
     slug: 'why-dubai-businesses-lose-customers-without-a-website',
     title: 'Why Dubai Businesses Lose Customers Every Day Without a Website',
   },

@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'instagram-is-not-a-website-dubai',
+    title: 'Why Instagram Is Not a Website (And What It\'s Costing Your Dubai Business)',
+    excerpt: "You have 4,800 Instagram followers. Last Tuesday at 9pm, someone in Dubai Marina searched \"best yoga studio near me.\" They found three results. None of them was you. Here's why Instagram can't replace a website — and what to do about it.",
+    date: '2026-03-25',
+    readTime: '6 min read',
+    category: 'Lead Generation',
+  },
+  {
     slug: 'why-dubai-businesses-lose-customers-without-a-website',
     title: 'Why Dubai Businesses Lose Customers Every Day Without a Website (And Don\'t Even Know It)',
     excerpt: "Every night, people in Dubai search Google for your service. They find your competitor. Not because your competitor is better — because they have a website and you don't. Here are the 5 problems costing Dubai businesses real money.",

@@ -1,6 +1,26 @@
 # Web Vanguard — Design Principles
 *Created: 2026-03-25. Apply to EVERY new demo and update.*
 
+## Regla de oro del copy — para todo: web, precios, emails, demos
+
+**El cliente no compra tecnología. Compra resultados.**
+
+❌ "Full SEO setup · OpenGraph · AI SEO (llms.txt)"
+✅ "Customers find you when they search Google · Looks great when shared on WhatsApp"
+
+❌ "WhatsApp Business auto-reply configuration"
+✅ "Customers who message you get an instant reply — even at 2am. No lead goes cold."
+
+❌ "Google Analytics 4 integration"
+✅ "You see exactly how many people visit your site and where they came from"
+
+**La pregunta que hay que hacerse antes de escribir cualquier línea:**
+"¿Le importa esto al dueño de un restaurante en Jumeirah?" Si la respuesta es no, reescribir.
+
+Vender el RESULTADO, no el PROCESO. Siempre.
+
+---
+
 ## El problema que debemos evitar
 Caer en la plantilla: Hero → Stats strip → About → Services grid → Testimonials → Contact.
 Eso es genérico. Funciona, pero no diferencia. Cada demo debe parecer hecho para ese negocio,
