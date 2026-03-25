@@ -194,8 +194,8 @@ export default function Work() {
         >
           <p className="section-label mb-4">Selected work</p>
           <h2 className="font-display font-black text-heading text-text-primary uppercase">
-            {projects.length} businesses.<br />
-            <span className="font-serif italic text-accent normal-case">{projects.length} identities.</span>
+            We built these.<br />
+            <span className="font-serif italic text-accent normal-case">Before anyone paid a cent.</span>
           </h2>
         </motion.div>
 
