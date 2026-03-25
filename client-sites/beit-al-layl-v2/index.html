@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beit Al Layl — Lebanese Fine Dining · Downtown Dubai</title>
+  <meta name="description" content="Lebanese cuisine. Family recipes. Premium execution. Downtown Dubai. Open from sundown." />
+  <meta name="keywords" content="Lebanese restaurant Dubai, Arabic restaurant Downtown Dubai, fine dining Lebanese Dubai, best hummus Dubai" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --night: #0D0B0E;
+      --night2: #13101A;
+      --gold: #C9A55A;
+      --gold-dim: rgba(201,165,90,.35);
+      --cream: #F5F0E8;
+      --cream-dim: rgba(245,240,232,.55);
+      --cream-faint: rgba(245,240,232,.28);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--night);
+      color: var(--cream);
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ══════════════════════════════════════
+       CURSOR
+    ══════════════════════════════════════ */
+    html { cursor: none; }
+    #cur {
+      position: fixed; width: 8px; height: 8px;
+      background: var(--gold); border-radius: 50%;
+      pointer-events: none; z-index: 9999;
+      transform: translate(-50%,-50%);
+      transition: width .12s, height .12s, opacity .12s;
+    }
+    #cur.on { width: 20px; height: 20px; opacity: .4; }
+    @media (max-width:768px) { html{cursor:auto} #cur{display:none} }
+
+    /* ══════════════════════════════════════
+       NAV
+    ══════════════════════════════════════ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 24px 48px;
+      display: flex; align-items: center; justify-content: space-between;
+      transition: background .4s, padding .4s;
+    }
+    nav.scrolled {
+      background: rgba(13,11,14,.92);
+      backdrop-filter: blur(12px);
+      padding: 16px 48px;
+      border-bottom: 1px solid rgba(201,165,90,.12);
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px; font-weight: 600;
+      letter-spacing: .1em;
+      color: var(--cream);
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-links {
+      display: flex; align-items: center; gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 11px; font-weight: 500;
+      letter-spacing: .2em; text-transform: uppercase;
+      color: var(--cream-dim);
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-reserve {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--night);
+      background: var(--gold);
+      padding: 10px 22px;
+      transition: opacity .2s;
+    }
+    .nav-reserve:hover { opacity: .85; }
+    @media (max-width:768px) {
+      nav { padding: 20px 24px; }
+      .nav-links { display: none; }
+    }
+
+    /* ══════════════════════════════════════
+       HERO
+    ══════════════════════════════════════ */
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex; flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 0 80px 0;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1800&q=85');
+      background-size: cover; background-position: center 40%;
+      filter: brightness(.45) saturate(.8);
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 30%, rgba(13,11,14,.6) 70%, var(--night) 100%);
+    }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 0 48px;
+    }
+
+    /* The name — BLEEDS off the right */
+    .hero-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(100px, 18vw, 240px);
+      line-height: .82;
+      letter-spacing: -.01em;
+      color: var(--cream);
+      white-space: nowrap;
+      /* intentional bleed */
+      margin-left: -4px;
+    }
+    .hero-name .arabic-word {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-meta {
+      margin-top: 32px;
+      display: flex; align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap; gap: 24px;
+    }
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(18px, 2.2vw, 26px);
+      color: var(--cream-dim);
+      max-width: 480px;
+      line-height: 1.5;
+    }
+    .hero-cta {
+      display: flex; gap: 16px; flex-wrap: wrap;
+      align-items: center;
+    }
+    .btn-gold {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: .2em; text-transform: uppercase;
+      color: var(--night);
+      background: var(--gold);
+      padding: 14px 28px;
+      transition: opacity .2s;
+      display: inline-block;
+    }
+    .btn-gold:hover { opacity: .85; }
+    .btn-ghost {
+      font-size: 11px; font-weight: 500;
+      letter-spacing: .2em; text-transform: uppercase;
+      color: var(--cream-dim);
+      border: 1px solid rgba(245,240,232,.3);
+      padding: 14px 28px;
+      transition: border-color .2s, color .2s;
+      display: inline-block;
+    }
+    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+    @media (max-width:768px) {
+      .hero-content { padding: 0 24px; }
+      .hero { padding-bottom: 60px; }
+    }
+
+    /* ══════════════════════════════════════
+       TONIGHT'S SPECIALS TICKER
+    ══════════════════════════════════════ */
+    .ticker {
+      overflow: hidden;
+      background: var(--night2);
+      border-top: 1px solid var(--gold-dim);
+      border-bottom: 1px solid var(--gold-dim);
+      padding: 14px 0;
+    }
+    .ticker-inner {
+      display: flex; white-space: nowrap;
+      animation: ticker 28s linear infinite;
+    }
+    .ticker-inner:hover { animation-play-state: paused; }
+    @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+    .ticker-item {
+      display: inline-flex; align-items: center; gap: 20px;
+      padding: 0 32px;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 18px;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+    .ticker-sep {
+      display: inline-block;
+      width: 4px; height: 4px;
+      background: var(--gold-dim);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ══════════════════════════════════════
+       THE TABLE
+    ══════════════════════════════════════ */
+    .table-section {
+      padding: 120px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .table-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      max-width: 1200px;
+    }
+
+    .table-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(22px, 2.8vw, 36px);
+      color: var(--cream);
+      line-height: 1.6;
+      border-left: 1px solid var(--gold-dim);
+      padding-left: 36px;
+    }
+
+    /* The 3 words — STACKED HUGE */
+    .table-values {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .table-word {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(52px, 8vw, 110px);
+      line-height: .88;
+      letter-spacing: -.01em;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(201,165,90,.3);
+      transition: -webkit-text-stroke .3s, color .3s;
+      cursor: default;
+    }
+    .table-word:hover {
+      color: var(--gold);
+      -webkit-text-stroke: 1px transparent;
+    }
+
+    @media (max-width: 768px) {
+      .table-section { padding: 80px 24px; }
+      .table-grid { grid-template-columns: 1fr; gap: 48px; }
+    }
+
+    /* ══════════════════════════════════════
+       MENU
+    ══════════════════════════════════════ */
+    .menu-section {
+      padding: 0 48px 120px;
+    }
+
+    .menu-header {
+      display: flex; align-items: flex-end;
+      justify-content: space-between;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(201,165,90,.15);
+      margin-bottom: 0;
+    }
+    .menu-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(64px, 10vw, 130px);
+      line-height: .85;
+      letter-spacing: -.02em;
+      color: var(--cream);
+    }
+    .menu-note {
+      font-size: 11px; letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--cream-faint);
+      text-align: right;
+      padding-bottom: 8px;
+    }
+
+    .menu-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 80px;
+    }
+
+    .menu-category {
+      padding: 48px 0;
+      border-bottom: 1px solid rgba(201,165,90,.1);
+    }
+    .menu-category:nth-child(odd) { border-right: 1px solid rgba(201,165,90,.08); padding-right: 80px; }
+    .menu-category:nth-child(even) { padding-left: 0; }
+
+    .cat-label {
+      font-size: 9px; font-weight: 600;
+      letter-spacing: .35em; text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 32px;
+      display: block;
+    }
+
+    .dish {
+      margin-bottom: 32px;
+      cursor: default;
+    }
+    .dish-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(26px, 3.5vw, 42px);
+      color: var(--cream);
+      line-height: 1;
+      letter-spacing: -.01em;
+      transition: color .25s;
+    }
+    .dish:hover .dish-name { color: var(--gold); }
+    .dish-desc {
+      font-size: 12px;
+      color: var(--cream-faint);
+      margin-top: 6px;
+      line-height: 1.6;
+      font-style: normal;
+      letter-spacing: .02em;
+    }
+
+    @media (max-width: 768px) {
+      .menu-section { padding: 0 24px 80px; }
+      .menu-body { grid-template-columns: 1fr; gap: 0; }
+      .menu-category:nth-child(odd) { border-right: none; padding-right: 0; }
+    }
+
+    /* ══════════════════════════════════════
+       STORY
+    ══════════════════════════════════════ */
+    .story-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 70vh;
+    }
+
+    .story-image {
+      position: relative;
+      overflow: hidden;
+    }
+    .story-image img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(.75) saturate(.9);
+      transition: transform .6s ease;
+    }
+    .story-section:hover .story-image img { transform: scale(1.03); }
+
+    .story-content {
+      padding: 80px 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: var(--night2);
+      position: relative;
+    }
+
+    /* Gold corner accent */
+    .story-content::before {
+      content: '';
+      position: absolute;
+      top: 40px; left: 40px;
+      width: 48px; height: 48px;
+      border-top: 1px solid var(--gold-dim);
+      border-left: 1px solid var(--gold-dim);
+    }
+
+    .story-label {
+      font-size: 9px; font-weight: 600;
+      letter-spacing: .35em; text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+    .story-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(20px, 2.2vw, 28px);
+      color: var(--cream);
+      line-height: 1.7;
+    }
+    .story-sub {
+      font-size: 12px;
+      color: var(--cream-faint);
+      margin-top: 28px;
+      line-height: 1.8;
+      letter-spacing: .02em;
+    }
+
+    @media (max-width: 768px) {
+      .story-section { grid-template-columns: 1fr; }
+      .story-image { min-height: 300px; }
+      .story-content { padding: 48px 24px; }
+    }
+
+    /* ══════════════════════════════════════
+       RESERVE
+    ══════════════════════════════════════ */
+    .reserve-section {
+      padding: 120px 48px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .reserve-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(64px, 10vw, 120px);
+      line-height: .85;
+      letter-spacing: -.02em;
+      color: var(--cream);
+      margin-bottom: 12px;
+    }
+    .reserve-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 18px;
+      color: var(--cream-faint);
+      margin-bottom: 64px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .form-field {
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .form-field label {
+      font-size: 9px; font-weight: 600;
+      letter-spacing: .3em; text-transform: uppercase;
+      color: var(--cream-faint);
+    }
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(245,240,232,.2);
+      padding: 12px 0;
+      color: var(--cream);
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      outline: none;
+      transition: border-color .2s;
+      width: 100%;
+    }
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-color: var(--gold);
+    }
+    .form-field select option { background: var(--night); }
+    .form-field textarea { resize: none; min-height: 80px; }
+    .form-full { grid-column: 1 / -1; }
+
+    .form-submit {
+      margin-top: 32px;
+      display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap; gap: 20px;
+    }
+    .reserve-alt {
+      font-size: 12px; color: var(--cream-faint);
+      display: flex; align-items: center; gap: 12px;
+    }
+    .reserve-alt a { color: var(--gold); transition: opacity .2s; }
+    .reserve-alt a:hover { opacity: .7; }
+
+    .reserve-walkin {
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(201,165,90,.1);
+      font-size: 12px; color: var(--cream-faint);
+      letter-spacing: .08em;
+    }
+    .reserve-walkin span { color: var(--gold); }
+
+    @media (max-width: 768px) {
+      .reserve-section { padding: 80px 24px; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    /* ══════════════════════════════════════
+       MAP
+    ══════════════════════════════════════ */
+    .map-section {
+      height: 340px;
+      filter: invert(90%) hue-rotate(180deg) saturate(.4) brightness(.7);
+    }
+    .map-section iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+    /* ══════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════ */
+    footer {
+      background: var(--night2);
+      border-top: 1px solid rgba(201,165,90,.12);
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 32px;
+    }
+    .footer-left {
+      font-size: 11px; color: var(--cream-faint);
+      letter-spacing: .05em; line-height: 1.8;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px; font-weight: 300;
+      text-align: center;
+      letter-spacing: .1em;
+    }
+    .footer-logo span { color: var(--gold); font-style: italic; }
+    .footer-right {
+      text-align: right;
+      font-size: 11px; color: var(--cream-faint);
+      letter-spacing: .05em; line-height: 1.8;
+    }
+    .footer-right a { color: var(--gold); transition: opacity .2s; }
+    .footer-right a:hover { opacity: .7; }
+    .footer-credit {
+      font-size: 10px; color: rgba(245,240,232,.18);
+      letter-spacing: .05em;
+      margin-top: 4px;
+    }
+    @media (max-width: 768px) {
+      footer { grid-template-columns: 1fr; text-align: center; padding: 36px 24px; }
+      .footer-right { text-align: center; }
+    }
+
+    /* ══════════════════════════════════════
+       WHATSAPP FLOAT
+    ══════════════════════════════════════ */
+    .wa-btn {
+      position: fixed; bottom: 28px; right: 28px;
+      width: 52px; height: 52px;
+      background: #25D366; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,.35);
+      z-index: 90;
+      transition: transform .2s;
+    }
+    .wa-btn:hover { transform: scale(1.08); }
+    .wa-btn svg { width: 26px; height: 26px; fill: #fff; }
+
+    /* ══════════════════════════════════════
+       SCROLL REVEAL
+    ══════════════════════════════════════ */
+    [data-reveal] {
+      opacity: 0; transition: opacity .6s ease, transform .6s ease;
+    }
+    [data-reveal="up"]    { transform: translateY(30px); }
+    [data-reveal="left"]  { transform: translateX(-30px); }
+    [data-reveal="right"] { transform: translateX(30px); }
+    [data-reveal].show    { opacity: 1; transform: none; }
+    .d1{transition-delay:.08s} .d2{transition-delay:.16s} .d3{transition-delay:.24s}
+  </style>
+</head>
+<body>
+
+<div id="cur"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">Beit <span>Al Layl</span></div>
+  <ul class="nav-links">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#reserve">Reserve</a></li>
+  </ul>
+  <a href="#reserve" class="nav-reserve">Reserve a Table</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1 class="hero-name" data-reveal="up">
+      Beit <span class="arabic-word">Al&nbsp;Layl</span>
+    </h1>
+    <div class="hero-meta" data-reveal="up">
+      <p class="hero-tagline">
+        Where every table<br>tells a story.
+      </p>
+      <div class="hero-cta">
+        <a href="#reserve" class="btn-gold">Reserve Tonight</a>
+        <a href="#menu" class="btn-ghost">See the Menu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner">
+    <span class="ticker-item">Ouzi Al Layl — tonight only<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Fresh sea bass from Dibba Bay<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Homemade knafeh<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Live oud music from 9pm<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Rooftop terrace open<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Lebanese wine list<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Ouzi Al Layl — tonight only<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Fresh sea bass from Dibba Bay<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Homemade knafeh<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Live oud music from 9pm<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Rooftop terrace open<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Lebanese wine list<span class="ticker-sep"></span></span>
+  </div>
+</div>
+
+<!-- THE TABLE -->
+<section class="table-section">
+  <div class="table-grid">
+    <blockquote class="table-quote" data-reveal="left">
+      The bread comes out hot.<br>
+      The mezze arrives before you ask.<br>
+      The music changes as the night deepens.
+    </blockquote>
+    <div class="table-values" data-reveal="right">
+      <div class="table-word">Abundance</div>
+      <div class="table-word">Warmth</div>
+      <div class="table-word">Craft</div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-section" id="menu">
+  <div class="menu-header" data-reveal="up">
+    <h2 class="menu-title">The<br>Menu.</h2>
+    <p class="menu-note">All dishes made in-house.<br>Sharing encouraged.</p>
+  </div>
+
+  <div class="menu-body">
+
+    <div class="menu-category" data-reveal="up">
+      <span class="cat-label">Mezze — Cold</span>
+      <div class="dish">
+        <div class="dish-name">Hummus Beiruty</div>
+        <div class="dish-desc">Stone-ground chickpeas, 24 hours, nothing else.</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">Kibbeh Nayeh</div>
+        <div class="dish-desc">Raw. Traditional. Not for the faint of heart.</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">Fattoush Al Layl</div>
+        <div class="dish-desc">Our version. Sumac-forward, pomegranate finish.</div>
+      </div>
+    </div>
+
+    <div class="menu-category" data-reveal="up" style="transition-delay:.08s">
+      <span class="cat-label">Mezze — Hot</span>
+      <div class="dish">
+        <div class="dish-name">Rekakat Jibneh</div>
+        <div class="dish-desc">Fried cheese pastries. Order two.</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">Batata Harra</div>
+        <div class="dish-desc">Spiced, crispy, impossible to stop.</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">Arayes</div>
+        <div class="dish-desc">Minced lamb, pressed and grilled. A Lebanese staple.</div>
+      </div>
+    </div>
+
+    <div class="menu-category" data-reveal="up" style="transition-delay:.12s">
+      <span class="cat-label">Mains</span>
+      <div class="dish">
+        <div class="dish-name">Ouzi Al Layl</div>
+        <div class="dish-desc">Slow-roasted lamb shoulder. 8 hours. Serves 2–4.</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">Samkeh Harra</div>
+        <div class="dish-desc">Whole sea bass, Tripoli-style. Walnut, coriander, chilli.</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">Djej Mishwi</div>
+        <div class="dish-desc">Charcoal chicken, marinated overnight. The one everyone orders.</div>
+      </div>
+    </div>
+
+    <div class="menu-category" data-reveal="up" style="transition-delay:.2s">
+      <span class="cat-label">Desserts</span>
+      <div class="dish">
+        <div class="dish-name">Knafeh Nabulsieh</div>
+        <div class="dish-desc">You'll think about this on the drive home.</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">Mouhallabieh</div>
+        <div class="dish-desc">Rose water milk pudding. Light enough after the ouzi.</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">Baklawa Assortment</div>
+        <div class="dish-desc">Made in-house. Petit fours for the table.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story-section" id="story">
+  <div class="story-image">
+    <img
+      src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=85"
+      alt="Lebanese food at Beit Al Layl"
+      loading="lazy"
+    />
+  </div>
+  <div class="story-content" data-reveal="right">
+    <span class="story-label">Our Story</span>
+    <p class="story-text">
+      "Beit Al Layl started as a family argument about whose grandmother made the better hummus. It ended with a restaurant."
+    </p>
+    <p class="story-sub">
+      The recipes are hers. The space is ours. Every dish on this menu was tested at a kitchen table in Beirut before it was ever served in Dubai. We haven't changed them. We never will.
+    </p>
+  </div>
+</section>
+
+<!-- RESERVE -->
+<section class="reserve-section" id="reserve">
+  <h2 class="reserve-title" data-reveal="up">The table<br>is yours.</h2>
+  <p class="reserve-sub" data-reveal="up">Downtown Dubai — open from sundown.</p>
+
+  <form action="https://formspree.io/f/xpzgkqvd" method="POST" data-reveal="up">
+    <div class="form-row">
+      <div class="form-field">
+        <label>Your Name</label>
+        <input type="text" name="name" required placeholder="First & last name" />
+      </div>
+      <div class="form-field">
+        <label>Date</label>
+        <input type="date" name="date" required />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-field">
+        <label>Party Size</label>
+        <select name="party_size" required>
+          <option value="" disabled selected>Select</option>
+          <option>1–2 guests</option>
+          <option>3–4 guests</option>
+          <option>5–6 guests</option>
+          <option>7+ guests</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Phone / WhatsApp</label>
+        <input type="tel" name="phone" placeholder="+971 — — —" />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-field form-full">
+        <label>Special Requests</label>
+        <textarea name="requests" placeholder="Dietary requirements, occasions, preferences…"></textarea>
+      </div>
+    </div>
+    <div class="form-submit">
+      <button type="submit" class="btn-gold">Confirm Reservation →</button>
+      <div class="reserve-alt">
+        or <a href="https://wa.me/97140000000" target="_blank">WhatsApp us directly</a>
+      </div>
+    </div>
+    <p class="reserve-walkin">
+      <span>Walk-ins welcome</span> after 10pm · Valet parking available
+    </p>
+  </form>
+</section>
+
+<!-- MAP -->
+<div class="map-section">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178!2d55.274!3d25.197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1cbb7e2!2sDowntown%20Dubai!5e0!3m2!1sen!2sae!4v1"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Beit Al Layl location"
+  ></iframe>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    Downtown Dubai, near Dubai Mall<br>
+    Open daily from sundown<br>
+    hello@beitlayl.ae
+  </div>
+  <div class="footer-logo">
+    Beit <span>Al Layl</span>
+  </div>
+  <div class="footer-right">
+    <a href="https://instagram.com/beitallayldubai" target="_blank">@beitallayldubai</a><br>
+    <a href="https://wa.me/97140000000" target="_blank">+971 4 000 0000</a>
+    <div class="footer-credit">Website by Web Vanguard</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/97140000000" target="_blank" class="wa-btn" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // Cursor
+  const cur = document.getElementById('cur');
+  if (cur) {
+    document.addEventListener('mousemove', e => {
+      cur.style.left = e.clientX + 'px';
+      cur.style.top  = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button, .dish, .table-word').forEach(el => {
+      el.addEventListener('mouseenter', () => cur.classList.add('on'));
+      el.addEventListener('mouseleave', () => cur.classList.remove('on'));
+    });
+  }
+
+  // Sticky nav
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('show'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('[data-reveal]').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>

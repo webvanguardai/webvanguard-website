@@ -114,6 +114,16 @@ const projects = [
     accent: '#D4AF6B',
     bg: '#0A0A0A',
   },
+  {
+    label: '12',
+    name: 'Beit Al Layl',
+    industry: 'Lebanese Fine Dining',
+    location: 'Downtown Dubai',
+    url: 'https://beit-al-layl-v2.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://beit-al-layl-v2.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#C9A55A',
+    bg: '#0D0B0E',
+  },
 ]
 
 function ProjectRow({

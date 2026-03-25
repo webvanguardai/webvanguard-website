@@ -2,6 +2,10 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'how-to-get-more-bookings-dubai-restaurant',
+    title: 'How Dubai Restaurants Get More Bookings Online (Without Paying for Ads)',
+  },
+  {
     slug: 'instagram-is-not-a-website-dubai',
     title: 'Why Instagram Is Not a Website (And What It\'s Costing Your Dubai Business)',
   },

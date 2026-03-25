@@ -117,6 +117,50 @@
 - **GitHub:** Public repo — easy for prospects to see tech stack
 - **Notes:** This demo is perfect for outreach to PT studios, boutique fitness gyms, and independent trainers looking for an elite online presence. The aesthetic is premium and results-focused.
 
+### 09 — Beit Al Layl — Lebanese Restaurant (DEMO)
+- **Sector:** Lebanese / Arabic Fine Dining
+- **Location:** Downtown Dubai
+- **Website:** https://beit-al-layl.vercel.app ✅ (LIVE)
+- **Repo:** https://github.com/webvanguardai/beit-al-layl
+- **Built:** 2026-03-25 (Next.js 14 + Tailwind + Framer Motion)
+- **Purpose:** Premium niche demo for Arabic / Lebanese restaurant segment in Dubai
+- **Design brief:** WARM · ABUNDANT · CEREMONIAL — Cinematic editorial, midnight + gold palette
+- **Features:**
+  - Nav + Hero (full viewport + Cormorant headline) + Tonight's Specials ticker
+  - The Table section (editorial philosophy)
+  - Menu (4 categories × 3 dishes — editorial layout, NOT card grid)
+  - Story section (image + origin copy)
+  - Reserve section (Formspree form + WhatsApp + Google Maps embed)
+  - WhatsApp floating button
+  - Full SEO: keywords, meta, OpenGraph, Twitter cards, robots.txt, sitemap
+  - JSON-LD Restaurant schema
+  - GA4 ready (G-PLACEHOLDER)
+- **Target Market:** Lebanese, Arabic, Levantine restaurants in Dubai — especially Downtown, DIFC, JBR
+- **Available For:** Any premium Arabic / Middle Eastern restaurant looking for editorial-level online presence
+- **Status:** ✅ DEMO READY
+- **Live URL:** https://beit-al-layl.vercel.app
+- **Deployment:** Vercel (alias: beit-al-layl.vercel.app)
+- **Notes:** Reference design for F&B outreach. Differentiates from generic food website templates. Strong for restaurants that want a Zuma/Nobu-level digital presence.
+
+### 10 — @dxb_fit_pt (Personal Trainer)
+- **Sector:** Personal Training
+- **Location:** Dubai
+- **Contact:** Instagram @dxb_fit_pt — 23K followers, no website, WhatsApp in bio
+- **Demo:** https://apex-training-rust.vercel.app
+- **Pain point:** 23,000 followers but invisible on Google. Zero capture of people searching "personal trainer Dubai" at night.
+- **Priority:** 🔥 HIGH — large following, clear pain point
+- **Status:** 🔴 Cold — Instagram DM pending
+- **Last contact:** —
+
+### 11 — @coach.freddydxb (Personal Trainer)
+- **Sector:** Personal Training
+- **Location:** Dubai Marina
+- **Contact:** Instagram @coach.freddydxb — no website found
+- **Demo:** https://apex-training-rust.vercel.app
+- **Pain point:** Dubai Marina PT with no Google presence
+- **Status:** 🔴 Cold
+- **Last contact:** —
+
 ---
 
 ## Email Templates

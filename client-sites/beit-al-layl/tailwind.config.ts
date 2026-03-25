@@ -16,8 +16,8 @@ const config: Config = {
         "midnight-light": "#1A1720",
       },
       fontFamily: {
-        cormorant: ["var(--font-cormorant)", "Georgia", "serif"],
-        inter: ["var(--font-inter)", "system-ui", "sans-serif"],
+        cormorant: ["'Cormorant Garamond'", "Georgia", "serif"],
+        inter: ["'Inter'", "system-ui", "sans-serif"],
       },
       animation: {
         ticker: "ticker 30s linear infinite",

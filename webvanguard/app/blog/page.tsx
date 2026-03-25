@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'how-to-get-more-bookings-dubai-restaurant',
+    title: 'How Dubai Restaurants Get More Bookings Online (Without Paying for Ads)',
+    excerpt: "It's 7pm at Dubai Mall. A tourist searches 'Lebanese restaurant nearby.' Three results come up. One has a website with a reservation form. That's where they go. Here's how your restaurant can be that result — without spending on ads.",
+    date: '2026-03-26',
+    readTime: '6 min read',
+    category: 'F&B',
+  },
+  {
     slug: 'instagram-is-not-a-website-dubai',
     title: 'Why Instagram Is Not a Website (And What It\'s Costing Your Dubai Business)',
     excerpt: "You have 4,800 Instagram followers. Last Tuesday at 9pm, someone in Dubai Marina searched \"best yoga studio near me.\" They found three results. None of them was you. Here's why Instagram can't replace a website — and what to do about it.",
