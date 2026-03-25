@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Proposal — Gold Box Roastery × Web Vanguard</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0A0A0A;
+      --surface: #111111;
+      --border: #1E1E1E;
+      --accent: #D4956B;
+      --text: #F5F5F5;
+      --muted: #888;
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+    /* NAV */
+    nav { padding: 24px 0; border-bottom: 1px solid var(--border); }
+    nav .container { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: 'Playfair Display', serif; font-size: 18px; letter-spacing: 0.05em; color: var(--text); }
+    .logo span { color: var(--accent); }
+
+    /* HERO */
+    .hero { padding: 80px 0 60px; }
+    .hero-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(36px, 6vw, 72px); font-weight: 900; line-height: 1.05; text-transform: uppercase; margin-bottom: 24px; }
+    .hero h1 em { font-style: italic; color: var(--accent); text-transform: none; }
+    .hero-sub { font-size: 17px; color: var(--muted); max-width: 540px; }
+
+    /* PAIN POINTS */
+    .pain { padding: 60px 0; border-top: 1px solid var(--border); }
+    .section-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 32px; }
+    .pain-list { display: flex; flex-direction: column; gap: 16px; }
+    .pain-item { display: flex; gap: 16px; align-items: flex-start; padding: 20px; border: 1px solid var(--border); }
+    .pain-num { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--border); font-weight: 900; line-height: 1; min-width: 40px; }
+    .pain-text { font-size: 15px; color: var(--muted); padding-top: 4px; }
+
+    /* DEMO */
+    .demo { padding: 60px 0; border-top: 1px solid var(--border); }
+    .demo h2 { font-family: 'Playfair Display', serif; font-size: 32px; text-transform: uppercase; margin-bottom: 32px; }
+    .demo-preview { position: relative; border: 1px solid var(--border); overflow: hidden; }
+    .demo-preview img { width: 100%; display: block; }
+    .demo-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 24px; background: linear-gradient(transparent, rgba(0,0,0,0.9)); display: flex; align-items: center; justify-content: space-between; }
+    .demo-url { font-size: 13px; color: var(--muted); }
+    .demo-link { font-size: 13px; color: var(--accent); text-decoration: none; border: 1px solid var(--accent); padding: 6px 16px; }
+    .demo-link:hover { background: var(--accent); color: #000; }
+
+    /* INCLUDES */
+    .includes { padding: 60px 0; border-top: 1px solid var(--border); }
+    .includes h2 { font-family: 'Playfair Display', serif; font-size: 32px; text-transform: uppercase; margin-bottom: 32px; }
+    .includes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 600px) { .includes-grid { grid-template-columns: 1fr; } }
+    .include-item { display: flex; gap: 12px; align-items: flex-start; padding: 16px; border: 1px solid var(--border); }
+    .include-check { color: var(--accent); font-size: 16px; }
+    .include-text { font-size: 14px; color: var(--muted); }
+
+    /* PRICING */
+    .pricing { padding: 60px 0; border-top: 1px solid var(--border); }
+    .pricing h2 { font-family: 'Playfair Display', serif; font-size: 32px; text-transform: uppercase; margin-bottom: 32px; }
+    .price-card { border: 1px solid var(--accent); padding: 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .price-name { font-family: 'Playfair Display', serif; font-size: 28px; }
+    .price-desc { font-size: 14px; color: var(--muted); margin-top: 6px; }
+    .price-amount { font-family: 'Playfair Display', serif; font-size: 48px; color: var(--accent); font-weight: 900; white-space: nowrap; }
+    .price-note { font-size: 12px; color: var(--muted); margin-top: 16px; }
+
+    /* CTA */
+    .cta { padding: 80px 0; border-top: 1px solid var(--border); text-align: center; }
+    .cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 48px); text-transform: uppercase; margin-bottom: 12px; }
+    .cta h2 em { font-style: italic; color: var(--accent); text-transform: none; }
+    .cta p { color: var(--muted); margin-bottom: 40px; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: #000; padding: 14px 28px; font-size: 14px; font-weight: 600; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; }
+    .btn-outline { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border); color: var(--muted); padding: 14px 28px; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* FOOTER */
+    footer { padding: 32px 0; border-top: 1px solid var(--border); }
+    footer .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer p { font-size: 12px; color: var(--muted); }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="logo">WEB<span>V</span></div>
+    <p style="font-size:12px;color:var(--muted);">Confidential proposal · 24 March 2026</p>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <p class="hero-label">Web Proposal · Specialty Coffee · Dubai</p>
+    <h1>
+      A website built<br>for <em>Gold Box Roastery.</em>
+    </h1>
+    <p class="hero-sub">We already built it. Here's what your business could look like online — before you commit to anything.</p>
+  </div>
+</section>
+
+
+<section class="pain">
+  <div class="container">
+    <p class="section-label">What we noticed</p>
+    <div class="pain-list">
+      
+      <div class="pain-item">
+        <div class="pain-num">01</div>
+        <p class="pain-text">Not appearing on Google for "specialty coffee Dubai" — competitors are capturing that traffic daily.</p>
+      </div>
+      <div class="pain-item">
+        <div class="pain-num">02</div>
+        <p class="pain-text">No WhatsApp button — customers in Dubai expect instant messaging before visiting or ordering.</p>
+      </div>
+      <div class="pain-item">
+        <div class="pain-num">03</div>
+        <p class="pain-text">Missing local SEO structure — Google can't properly index what you do or where you are.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="demo">
+  <div class="container">
+    <h2>Your website,<br><em style="font-style:italic;color:var(--accent);">ready to launch.</em></h2>
+    <div class="demo-preview">
+      <img src="https://api.microlink.io/?url=https%3A%2F%2Fqahwa-house.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900" alt="Gold Box Roastery website concept" loading="lazy">
+      <div class="demo-overlay">
+        <span class="demo-url">qahwa-house.vercel.app</span>
+        <a href="https://qahwa-house.vercel.app" target="_blank" class="demo-link">View live →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="includes">
+  <div class="container">
+    <h2>Everything<br><em style="font-style:italic;color:var(--accent);">included.</em></h2>
+    <div class="includes-grid">
+      
+      <div class="include-item">
+        <span class="include-check">✓</span>
+        <span class="include-text">Custom responsive website (mobile-first)</span>
+      </div>
+      <div class="include-item">
+        <span class="include-check">✓</span>
+        <span class="include-text">Contact form → direct to your email</span>
+      </div>
+      <div class="include-item">
+        <span class="include-check">✓</span>
+        <span class="include-text">WhatsApp click-to-chat button</span>
+      </div>
+      <div class="include-item">
+        <span class="include-check">✓</span>
+        <span class="include-text">Google Maps embed</span>
+      </div>
+      <div class="include-item">
+        <span class="include-check">✓</span>
+        <span class="include-text">Full local SEO (title, meta, keywords)</span>
+      </div>
+      <div class="include-item">
+        <span class="include-check">✓</span>
+        <span class="include-text">Google Analytics GA4</span>
+      </div>
+      <div class="include-item">
+        <span class="include-check">✓</span>
+        <span class="include-text">Structured data (Google-ready)</span>
+      </div>
+      <div class="include-item">
+        <span class="include-check">✓</span>
+        <span class="include-text">Fast load times — optimised for UAE mobile</span>
+      </div>
+      <div class="include-item">
+        <span class="include-check">✓</span>
+        <span class="include-text">48h delivery from approval</span>
+      </div>
+      <div class="include-item">
+        <span class="include-check">✓</span>
+        <span class="include-text">You own 100% of the code</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="container">
+    <h2>Investment</h2>
+    <div class="price-card">
+      <div>
+        <p class="price-name">Launch Plan</p>
+        <p class="price-desc">Multi-page · Form · Full SEO · GA4</p>
+      </div>
+      <p class="price-amount">AED 2,500</p>
+    </div>
+    <p class="price-note">50% on approval · 50% on delivery. You own the code and domain from day one.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Ready to put your<br><em>name on it?</em></h2>
+    <p>No tech jargon. No long contracts. Just a website that works.</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/971501234567?text=Hi%2C%20I%20saw%20the%20proposal%20for%20Gold%20Box%20Roastery%20and%20I%27m%20interested" class="btn-primary">
+        WhatsApp us →
+      </a>
+      <a href="mailto:hello@webvanguard.co?subject=Proposal%20for%20Gold%20Box%20Roastery" class="btn-outline">
+        Email us
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© Web Vanguard 2026 · <a href="https://webvanguard.co">webvanguard.co</a></p>
+    <p>hello@webvanguard.co</p>
+  </div>
+</footer>
+
+</body>
+</html>

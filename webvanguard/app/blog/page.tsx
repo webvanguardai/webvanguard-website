@@ -20,13 +20,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'the-dubai-business-website-checklist',
+    title: 'The Dubai Business Website Checklist (2026): 15 Things Killing Your Online Revenue',
+    excerpt: "Most Dubai business websites are quietly losing money every month. Not because they look bad — because they fail on basics Google and real customers care about. Run through this 15-point checklist to find exactly where the leaks are.",
+    date: '2026-03-25',
+    readTime: '8 min read',
+    category: 'Conversion',
+    featured: true,
+  },
+  {
     slug: 'how-to-get-more-customers-from-google-in-dubai',
     title: 'How to Get More Customers From Google in Dubai (Without Paid Ads)',
     excerpt: "Every day, thousands of people in Dubai search Google for exactly what you sell. Most of them never find you. Here are 5 practical steps to rank on Google and attract customers — without spending on ads.",
     date: '2026-03-24',
     readTime: '7 min read',
     category: 'SEO',
-    featured: true,
+    featured: false,
   },
   {
     slug: '5-dubai-businesses-that-grew-with-seo',

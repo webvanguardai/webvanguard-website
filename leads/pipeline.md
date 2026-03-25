@@ -17,8 +17,9 @@
 - **Contact:** heba@goldboxroastery.com
 - **Website:** goldboxroastery.com (basic Shopify store — no SEO, no local presence, no WhatsApp button)
 - **Demo:** https://qahwa-house.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-gold-box-roastery/
 - **Pain point:** Shopify template with zero local SEO. Searching "specialty coffee Dubai" they don't appear. Missing WhatsApp button — losing impulse customers.
-- **Status:** 🔴 Cold
+- **Status:** 🔴 Cold — proposal ready, pending outreach email
 - **Last contact:** —
 
 ### 02 — TouchLife Spa
