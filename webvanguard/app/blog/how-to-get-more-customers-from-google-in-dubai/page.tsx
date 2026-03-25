@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import BlogNav from '@/components/BlogNav'
 
 export const metadata: Metadata = {
   title: 'How to Get More Customers From Google in Dubai (2026 Guide) | Web Vanguard',
@@ -425,6 +426,8 @@ export default function ArticlePage() {
             </div>
 
           </article>
+
+          <BlogNav currentSlug="how-to-get-more-customers-from-google-in-dubai" />
 
           {/* CTA */}
           <div className="mt-20 pt-12 border-t border-border">

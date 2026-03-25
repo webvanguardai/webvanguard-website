@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import BlogNav from '@/components/BlogNav'
 
 export const metadata: Metadata = {
   title: '5 Types of Dubai Businesses That Transformed Their Revenue With SEO | Web Vanguard',
@@ -445,6 +446,8 @@ export default function ArticlePage() {
             </p>
 
           </article>
+
+          <BlogNav currentSlug="5-dubai-businesses-that-grew-with-seo" />
 
           {/* CTA */}
           <div className="mt-20 pt-12 border-t border-border">

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import BlogNav from '@/components/BlogNav'
 
 export const metadata: Metadata = {
   title: 'The Dubai Business Website Checklist (2026): 15 Things Killing Your Revenue | Web Vanguard',
@@ -586,6 +587,8 @@ export default function ArticlePage() {
             </p>
 
           </article>
+
+          <BlogNav currentSlug="the-dubai-business-website-checklist" />
 
           {/* CTA */}
           <div className="mt-20 pt-12 border-t border-border">
