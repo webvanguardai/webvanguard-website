@@ -6,37 +6,39 @@ const plans = [
   {
     name: 'Starter',
     price: 'AED 1,500',
+    tagline: 'Get found. Get contacted.',
     includes: [
-      '1-page landing site',
-      'WhatsApp button',
-      'Basic SEO',
-      'Mobile responsive',
-      'Contact form',
+      'Your business shows up on Google',
+      'Customers reach you via WhatsApp in one tap',
+      'Works perfectly on any phone',
+      'Contact form — leads go straight to your email',
+      'Looks professional from day one',
     ],
     highlighted: false,
   },
   {
     name: 'Launch',
     price: 'AED 2,500',
+    tagline: 'The complete package.',
     includes: [
-      'Multi-page website',
-      'Full SEO setup',
-      'Google Analytics 4',
-      'WhatsApp integration',
-      'Contact form',
-      'AI SEO (llms.txt)',
-      'OpenGraph / social sharing',
+      'Everything in Starter',
+      'Multiple pages — services, about, contact',
+      'Customers find you when they search Google',
+      'You see exactly how many people visit your site',
+      'Looks great when shared on WhatsApp or Instagram',
+      'Works for both humans and AI search (ChatGPT, Perplexity)',
     ],
     highlighted: true,
   },
   {
     name: 'Growth',
     price: 'AED 4,500',
+    tagline: 'Built to grow over time.',
     includes: [
       'Everything in Launch',
-      'Blog setup',
-      '3 months support',
-      'Analytics dashboard',
+      'Blog — new content keeps you ranking higher every month',
+      '3 months of support — we fix anything that needs fixing',
+      'Monthly report: who visited, where they came from, what they did',
     ],
     highlighted: false,
   },
@@ -48,28 +50,28 @@ const addons = [
     price: 'AED 300',
     period: 'one-time',
     description:
-      'We configure WhatsApp Business with auto-reply, business hours, and away message. Customers get an instant response even when you\'re not available.',
+      'Customers who message you get an instant reply — even at 2am. We set up your auto-response, business hours, and away message so no lead goes cold.',
   },
   {
-    name: 'Arabic/English Bilingual',
+    name: 'Arabic + English Website',
     price: 'AED 500',
     period: 'one-time',
     description:
-      'Full bilingual website — Arabic RTL + English. Reach both local and expat customers.',
+      'Your full website in both Arabic and English. Reach Emirati and Arab customers who prefer browsing in Arabic — a market most businesses completely ignore.',
   },
   {
-    name: 'Monthly SEO Content',
+    name: 'Monthly Blog Article',
     price: 'AED 600',
     period: '/month',
     description:
-      'One blog article per month targeting high-intent Dubai keywords. Builds organic traffic over time.',
+      'We write one article per month targeting what your customers actually search for on Google. More articles = more people finding you without paying for ads.',
   },
   {
     name: 'Google Ads Setup',
     price: 'AED 800',
     period: 'one-time',
     description:
-      'We set up and configure your first Google Ads campaign. Ad spend is separate.',
+      'We build your first Google Ads campaign so your business appears at the top when someone searches for exactly what you offer. You control the daily budget.',
   },
 ]
 
@@ -115,9 +117,10 @@ export default function Pricing() {
               )}
 
               <div className="mb-6">
-                <h3 className="font-display font-black text-xl uppercase text-text-primary mb-3">
+                <h3 className="font-display font-black text-xl uppercase text-text-primary mb-1">
                   {plan.name}
                 </h3>
+                <p className="text-xs text-text-muted font-body mb-3">{plan.tagline}</p>
                 <p className="font-display font-black text-4xl text-text-primary">
                   {plan.price}
                 </p>
