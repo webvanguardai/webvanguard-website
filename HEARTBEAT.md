@@ -2,8 +2,16 @@
 
 ## Cada heartbeat (~30 min, 8am-10pm Dubai)
 
-Chequeo rápido mental: ¿hay algo urgente? ¿alguna idea que ejecutar ahora?
-Si no hay nada urgente → HEARTBEAT_OK. No desperdiciar tokens.
+NO esperar a que Javi pregunte qué estás haciendo. Si no hay subagentes activos → arrancar trabajo autónomo inmediatamente.
+
+**Prioridad de trabajo autónomo:**
+1. Prospecting: buscar nuevos leads, analizar webs con Playwright, preparar emails
+2. Blog: escribir artículos SEO si no hay uno en los últimos 2 días
+3. Demos: nuevo demo si hay vertical sin cubrir
+4. Mejoras técnicas: fixes, optimizaciones, actualizaciones
+
+Si hay subagentes activos → HEARTBEAT_OK (ya se está trabajando).
+Si es tarde (22:00-08:00) → HEARTBEAT_OK.
 
 ## Cron de 6h (8:00, 14:00, 20:00 Dubai) — ya configurado
 

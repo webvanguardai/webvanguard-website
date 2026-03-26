@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'why-dubai-businesses-lose-customers-at-night',
+    title: 'Why Dubai Businesses Lose Customers at Night',
+    excerpt: "It's 11pm. You're asleep. Someone in Dubai Marina just searched for your service, found your competitor's website, and booked. You'll never know this happened — but it's happening every single night. Here's the hidden cost of going offline after dark.",
+    date: '2026-03-26',
+    readTime: '7 min read',
+    category: 'Lead Generation',
+  },
+  {
     slug: 'google-business-profile-vs-website-dubai',
     title: 'Google Business Profile vs Website: What Every Dubai Business Needs in 2026',
     excerpt: "You're on Google Maps. Customers can find you. So why aren't they calling? Here's why GBP and a website aren't alternatives — they're a system. And why Dubai businesses that skip one are leaving leads on the table.",
