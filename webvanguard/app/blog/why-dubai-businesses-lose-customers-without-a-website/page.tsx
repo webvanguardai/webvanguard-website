@@ -388,7 +388,7 @@ export default function ArticlePage() {
             <p>
               A professionally built website from Web Vanguard starts at AED 1,500 for a
               single-page launch site. A full multi-page site with SEO, analytics, contact form,
-              WhatsApp integration, and Google Maps is AED 2,500.
+              WhatsApp integration, and Google Maps is AED 3,000.
             </p>
             <p>
               Compare that to the AED 3,000–10,000/month you might be losing in invisible

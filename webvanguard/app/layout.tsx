@@ -110,7 +110,7 @@ const faqJsonLd = {
       name: 'How much does a website cost in Dubai?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Web Vanguard websites start from AED 1,500 for a single-page launch site, and AED 2,500 for a full multi-page site with SEO, contact form, WhatsApp button, Google Analytics, and Google Maps. No hidden fees. You own 100% of the code.',
+        text: 'Web Vanguard websites start from AED 2,000 for a single-page launch site, and AED 3,000 for a full multi-page site with SEO, contact form, WhatsApp button, Google Analytics, and Google Maps. No hidden fees. You own 100% of the code.',
       },
     },
     {

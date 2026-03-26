@@ -81,7 +81,7 @@ export default function Hero() {
             { value: '10', label: 'Projects live' },
             { value: 'Dubai', label: 'Our market' },
             { value: '48h', label: 'First draft' },
-            { value: 'AED 1,500', label: 'Starting from' },
+            { value: 'AED 2,000', label: 'Starting from' },
           ].map((stat, i) => (
             <motion.div
               key={stat.label}

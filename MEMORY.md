@@ -1,5 +1,26 @@
 # MEMORY.md
 
+## CriptoLearn — Trading Bot (CRÍTICO: leer siempre)
+
+- **Proyecto:** CriptoBot — paper trading bot que aprende solo
+- **Path en la Pi:** `/home/javibeat/cripto/`
+- **Backend:** FastAPI + Python, puerto 8080 → `/home/javibeat/cripto/backend/`
+- **Frontend:** Next.js, puerto 3001 → `/home/javibeat/cripto/frontend/`
+- **Start manual:** `bash /home/javibeat/cripto/start.sh`
+- **Servicio systemd:** `~/.config/systemd/user/criptobot.service` (habilitado, arranca con la Pi)
+- **Dashboard LAN:** http://192.168.70.142:3001
+- **Dashboard Tailscale:** http://100.82.177.85:3001
+- **API:** http://192.168.70.142:8080
+- **Logs backend:** `/home/javibeat/cripto/backend.log`
+- **Logs frontend:** `/home/javibeat/cripto/frontend.log`
+- **Grupo Telegram:** CriptoLearn — este grupo es exclusivamente para este bot
+- **Cómo aprende:** auto-feedback cada 4h (compara precio entrada vs actual), ajusta 7 parámetros (RSI, confianza, position size, stop loss, trailing stop, EMA)
+- **Símbolos:** BTC, ETH, SOL, DOGE, ADA y altcoins detectadas por scanner
+- **Fase actual:** Phase 1 — paper trading (sin dinero real)
+- **⚠️ DEBE estar corriendo 24/7** — si el bot está caído, arrancarlo inmediatamente con start.sh
+- **Restart automático:** systemd `Restart=on-failure` habilitado — pero si peta sin error, revisar manualmente
+- **TODO pendiente:** cambiar `Restart=on-failure` a `Restart=always` para mayor robustez
+
 ## Identity & tone
 - User: **Javibeat** (lives in **Dubai**, timezone **Asia/Dubai**).
 - From: **Mallorca**.
@@ -69,7 +90,8 @@ Each site must include ALL of the following before deploy:
 ## Pricing Strategy
 | Plan | Price (AED) | What's included |
 |------|-------------|-----------------|
-| Launch | 2,500 | Web + form + WhatsApp + SEO basic |
+| Starter | 2,000 | 1-page landing + WhatsApp + SEO básico |
+| Launch | 3,000 | Web + form + WhatsApp + SEO completo + GA4 |
 | Growth | 4,500 | All + Analytics + 3 months support |
 | Premium | 8,000+ | All + content strategy + Google Ads setup |
 
@@ -107,8 +129,8 @@ Each site must include ALL of the following before deploy:
 ### Pricing Table (AED)
 | Plan | Price | What's included |
 |------|-------|-----------------|
-| Starter | 1,500 | 1-page landing, WhatsApp button, SEO básico, mobile responsive |
-| Launch | 2,500 | Multi-page web, contact form, WhatsApp, SEO completo, GA4 |
+| Starter | 2,000 | 1-page landing, WhatsApp button, SEO básico, mobile responsive |
+| Launch | 3,000 | Multi-page web, contact form, WhatsApp, SEO completo, GA4 |
 | Growth | 4,500 | Launch + blog, 3 months support, Analytics setup, OG/AI SEO |
 | Premium | 8,000+ | Growth + Google Ads setup, content strategy, monthly reporting |
 

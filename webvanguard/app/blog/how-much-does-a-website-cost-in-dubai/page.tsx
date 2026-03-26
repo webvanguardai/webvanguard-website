@@ -309,7 +309,7 @@ export default function ArticlePage() {
               Bottom line
             </h2>
             <p>
-              For most Dubai small businesses, AED 1,500–2,500 is the right budget for a
+              For most Dubai small businesses, AED 2,000–3,000 is the right budget for a
               website that actually works. Spending less usually means rebuilding sooner.
               Spending more usually means paying for things you don&apos;t need.
             </p>
