@@ -156,7 +156,7 @@ const jsonLd = {
   url: 'https://webvanguard.co',
   logo: 'https://webvanguard.co/logo.png',
   image: 'https://webvanguard.co/og-image.png',
-  telephone: '+971501234567',
+  telephone: '+971585324519',
   email: 'hello@webvanguard.co',
   address: {
     '@type': 'PostalAddress',
