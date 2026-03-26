@@ -62,7 +62,7 @@ export default function Reserve() {
                   WhatsApp
                 </p>
                 <a
-                  href="https://wa.me/97140000000"
+                  href="https://wa.me/971585324519"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-cormorant italic text-cream/80 text-xl hover:text-gold transition-colors duration-300"

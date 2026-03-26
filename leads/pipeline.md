@@ -216,3 +216,47 @@ Just checking — did you get a chance to see the demo?
 Happy to answer any questions.
 
 — Web Vanguard
+
+---
+
+## Batch 03 — March 26, 2026 (Evening)
+
+### 12 — FloBerry Boutique
+- **Sector:** Florist / Flower delivery
+- **Contact:** coo@floberry.ae
+- **Website:** floberry.ae (CAÍDA — error "Not paid")
+- **Demo:** https://celeste-events.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-celeste-events/
+- **Pain points:** Web completamente caída, sin WhatsApp, sin meta
+- **Status:** 🟡 Warm — email enviado 26 Mar 2026
+- **Follow-up due:** 2026-04-02
+
+### 13 — Kamie Photography & Films
+- **Sector:** Commercial Photography
+- **Contact:** info@kamiephotography.com
+- **Website:** kamiephotography.com
+- **Demo:** https://lumina-lens-six.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-lumina-lens/
+- **Pain points:** Sin WhatsApp, sin form, sin booking
+- **Status:** 🟡 Warm — email enviado 26 Mar 2026
+- **Follow-up due:** 2026-04-02
+
+### 14 — MyGlow Dubai
+- **Sector:** Reformer Pilates Studio
+- **Contact:** hello@myglowdubai.com
+- **Website:** myglowdubai.com
+- **Demo:** https://aura-fitness-henna.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-aura-fitness/
+- **Pain points:** Sin WhatsApp, sin Google Maps
+- **Status:** 🟡 Warm — email enviado 26 Mar 2026
+- **Follow-up due:** 2026-04-02
+
+### 15 — Wellness By Miia
+- **Sector:** Sports Nutritionist / Nutrition Coach
+- **Contact:** hello@wellnessbymiia.com
+- **Website:** wellnessbymiia.com
+- **Demo:** https://lumiere-wellness.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-lumiere-wellness/
+- **Pain points:** Sin WhatsApp, sin form, template DIY, look poco premium
+- **Status:** 🟡 Warm — email enviado 26 Mar 2026
+- **Follow-up due:** 2026-04-02

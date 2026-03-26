@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'google-business-profile-vs-website-dubai',
+    title: 'Google Business Profile vs Website: What Every Dubai Business Needs in 2026',
+    excerpt: "You're on Google Maps. Customers can find you. So why aren't they calling? Here's why GBP and a website aren't alternatives — they're a system. And why Dubai businesses that skip one are leaving leads on the table.",
+    date: '2026-03-26',
+    readTime: '7 min read',
+    category: 'SEO',
+  },
+  {
     slug: 'how-dubai-real-estate-agents-get-more-leads',
     title: 'How Dubai Real Estate Agents Get More Leads From Their Website',
     excerpt: "Every year, Dubai real estate agents pay six figures to Bayut and Property Finder — platforms that own the relationship with your buyers. Here's how to stop renting leads and start owning your pipeline.",

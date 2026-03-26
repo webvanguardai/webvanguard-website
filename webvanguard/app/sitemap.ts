@@ -68,5 +68,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://webvanguard.co/blog/google-business-profile-vs-website-dubai',
+      lastModified: new Date('2026-03-26'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 }

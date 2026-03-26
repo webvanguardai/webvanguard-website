@@ -34,7 +34,7 @@ export default function Footer() {
               @beitallayldubai
             </a>
             <a
-              href="https://wa.me/97140000000"
+              href="https://wa.me/971585324519"
               target="_blank"
               rel="noopener noreferrer"
               className="font-inter text-xs text-cream/40 hover:text-gold transition-colors tracking-wider"

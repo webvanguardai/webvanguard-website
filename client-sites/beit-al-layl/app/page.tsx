@@ -518,7 +518,7 @@ export default function Home() {
 
                 <div className="mt-6 flex items-center gap-4">
                   <a
-                    href="https://wa.me/971XXXXXXXXX"
+                    href="https://wa.me/971585324519"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-5 py-2.5 border border-charcoal/10 rounded-full text-sm text-charcoal hover:border-terracotta hover:text-terracotta transition-colors"
@@ -575,7 +575,7 @@ export default function Home() {
 
       {/* ─── WHATSAPP FLOATING BUTTON ─── */}
       <a
-        href="https://wa.me/971XXXXXXXXX"
+        href="https://wa.me/971585324519"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-terracotta text-white rounded-full flex items-center justify-center shadow-lg hover:bg-terracotta-dark transition-colors hover:scale-110"

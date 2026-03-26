@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/97140000000?text=Hello%2C%20I%27d%20like%20to%20make%20a%20reservation%20at%20Beit%20Al%20Layl"
+      href="https://wa.me/971585324519text=Hello%2C%20I%27d%20like%20to%20make%20a%20reservation%20at%20Beit%20Al%20Layl"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contact us on WhatsApp"
