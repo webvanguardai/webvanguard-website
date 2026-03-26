@@ -1,0 +1,20 @@
+# Beit Al Layl — Modern Lebanese Restaurant
+
+> Modern Lebanese cuisine in the heart of Downtown Dubai.
+
+Beit Al Layl is a contemporary Lebanese restaurant located in Downtown Dubai, UAE. We serve modern interpretations of classic Levantine dishes — mezze, charcoal-grilled meats, fresh seafood, and traditional desserts — in a bright, Mediterranean-inspired setting.
+
+## Menu Highlights
+- Mezze: Hummus Beiruti, Fattoush Garden, Muhammara
+- Mains: Lamb Kofta Tagine, Sea Bass Sayadieh, Chicken Shawarma Royale
+- Charcoal Grill: Mixed Grill Platter, Wagyu Arayes, Whole Grilled Prawns
+- Desserts: Knafeh, Rose Water Panna Cotta, Baklava Selection
+
+## Location
+Downtown Dubai, UAE
+
+## Reservations
+Book via our website or WhatsApp.
+
+## Links
+- Website: https://beit-al-layl.vercel.app

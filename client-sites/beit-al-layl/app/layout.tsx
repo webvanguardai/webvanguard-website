@@ -1,47 +1,62 @@
 import type { Metadata } from "next";
+import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Beit Al Layl — Lebanese Fine Dining, Downtown Dubai",
+  title: "Beit Al Layl — Modern Lebanese Restaurant Dubai | Downtown",
   description:
-    "Authentic Lebanese cuisine in the heart of Downtown Dubai. Family recipes, premium execution. Open from sundown. Reserve your table at Beit Al Layl.",
+    "Modern Lebanese cuisine in the heart of Downtown Dubai. Where Beirut meets the table — family recipes, contemporary execution. Reserve your table today.",
   keywords: [
     "Lebanese restaurant Dubai",
-    "Arabic restaurant Downtown Dubai",
-    "fine dining Lebanese Dubai",
+    "modern Lebanese cuisine Downtown Dubai",
     "Beit Al Layl",
-    "Lebanese food Dubai Mall",
-    "authentic Lebanese cuisine UAE",
     "mezze Dubai",
-    "Arabic fine dining Downtown Dubai",
+    "charcoal grill Dubai",
+    "Mediterranean restaurant Dubai",
+    "Lebanese food Dubai Mall",
+    "best Lebanese restaurant Dubai",
+    "Downtown Dubai dining",
+    "rooftop restaurant Dubai",
   ],
   authors: [{ name: "Beit Al Layl" }],
   creator: "Beit Al Layl",
   openGraph: {
     type: "website",
     locale: "en_AE",
-    url: "https://beitallaylae.com",
+    url: "https://beit-al-layl.vercel.app",
     siteName: "Beit Al Layl",
-    title: "Beit Al Layl — Lebanese Fine Dining, Downtown Dubai",
+    title: "Beit Al Layl — Modern Lebanese Restaurant Dubai | Downtown",
     description:
-      "Authentic Lebanese cuisine in the heart of Downtown Dubai. Family recipes, premium execution. Open from sundown.",
+      "Modern Lebanese cuisine in the heart of Downtown Dubai. Where Beirut meets the table.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85",
+        url: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=85",
         width: 1200,
         height: 630,
-        alt: "Beit Al Layl — Lebanese Fine Dining",
+        alt: "Beit Al Layl — Modern Lebanese Restaurant",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Beit Al Layl — Lebanese Fine Dining, Downtown Dubai",
+    title: "Beit Al Layl — Modern Lebanese Restaurant Dubai | Downtown",
     description:
-      "Authentic Lebanese cuisine in the heart of Downtown Dubai. Family recipes, premium execution.",
+      "Modern Lebanese cuisine in the heart of Downtown Dubai. Where Beirut meets the table.",
     images: [
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85",
+      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=85",
     ],
   },
   robots: {
@@ -62,16 +77,16 @@ const jsonLd = {
   "@type": "Restaurant",
   name: "Beit Al Layl",
   description:
-    "Lebanese fine dining in Downtown Dubai. Family recipes, premium execution. Open from sundown.",
-  url: "https://beitallaylae.com",
-  telephone: "+97140000000",
-  email: "hello@beitllayl.com",
+    "Modern Lebanese cuisine in Downtown Dubai. Where Beirut meets the table — family recipes, contemporary execution.",
+  url: "https://beit-al-layl.vercel.app",
+  telephone: "+971XXXXXXXXX",
   image:
-    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=85",
+    "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=85",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Downtown Dubai",
     addressLocality: "Dubai",
+    addressRegion: "Dubai",
     addressCountry: "AE",
   },
   geo: {
@@ -91,12 +106,12 @@ const jsonLd = {
         "Saturday",
         "Sunday",
       ],
-      opens: "18:00",
-      closes: "02:00",
+      opens: "12:00",
+      closes: "00:00",
     },
   ],
-  servesCuisine: ["Lebanese", "Arabic", "Middle Eastern"],
-  priceRange: "AED 200–400 per person",
+  servesCuisine: ["Lebanese", "Mediterranean", "Middle Eastern"],
+  priceRange: "AED 150–350 per person",
   sameAs: ["https://instagram.com/beitallayldubai"],
 };
 
@@ -106,14 +121,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>
+      <body className="font-dm bg-offwhite text-charcoal antialiased">
         {children}
         {/* GA4 */}
         <Script

@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'how-dubai-real-estate-agents-get-more-leads',
+    title: 'How Dubai Real Estate Agents Get More Leads From Their Website',
+    excerpt: "Every year, Dubai real estate agents pay six figures to Bayut and Property Finder — platforms that own the relationship with your buyers. Here's how to stop renting leads and start owning your pipeline.",
+    date: '2026-03-26',
+    readTime: '8 min read',
+    category: 'Lead Generation',
+  },
+  {
     slug: 'how-to-get-more-bookings-dubai-restaurant',
     title: 'How Dubai Restaurants Get More Bookings Online (Without Paying for Ads)',
     excerpt: "It's 7pm at Dubai Mall. A tourist searches 'Lebanese restaurant nearby.' Three results come up. One has a website with a reservation form. That's where they go. Here's how your restaurant can be that result — without spending on ads.",

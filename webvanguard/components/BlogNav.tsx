@@ -2,6 +2,10 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'how-dubai-real-estate-agents-get-more-leads',
+    title: 'How Dubai Real Estate Agents Get More Leads From Their Website',
+  },
+  {
     slug: 'how-to-get-more-bookings-dubai-restaurant',
     title: 'How Dubai Restaurants Get More Bookings Online (Without Paying for Ads)',
   },

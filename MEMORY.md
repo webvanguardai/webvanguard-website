@@ -74,10 +74,18 @@ Each site must include ALL of the following before deploy:
 | Premium | 8,000+ | All + content strategy + Google Ads setup |
 
 ## Outreach Rules — NON NEGOTIABLE
-1. **Demo FIRST, email SECOND** — never send an outreach email without having the specific demo built and live first
-2. **Match the demo to the vertical** — don't send a spa demo to a therapy practice, a barber demo to a restaurant, etc.
-3. **Verify email exists** before sending (test with a check or lookup)
-4. **One follow-up max** — 5 days after no reply, then stop
+### Flujo completo (en este orden, sin saltarse pasos):
+1. **ANALIZAR** — verificar la web del prospecto con Playwright. Identificar: qué le falta (WA, form, maps, SEO), su estética, tono, pain points reales
+2. **DEMO** — construir inspirado en su vertical, visualmente superior a lo que tienen
+3. **PROPUESTA** — crear en GitHub Pages con pain points reales + link al demo + pricing
+4. **ANALIZAR DE NUEVO** — segunda pasada con Playwright justo antes de escribir el email. Confirmar que los pain points siguen siendo correctos y no nos hemos dejado nada
+5. **EMAIL** — enviar con los DOS links (propuesta + demo). Solo mencionar pain points confirmados en el segundo análisis
+
+### Reglas adicionales:
+- **Match the demo to the vertical** — no mandar demo de spa a clínica dental, barbería a restaurante, etc.
+- **Verify email exists** before sending
+- **One follow-up max** — 5 days after no reply, then stop
+- **Nunca inventar pain points** — si Playwright no lo confirma, no lo mencionas
 
 ## Sales Pitch
 "We already built your website. You just need to put your name on it."

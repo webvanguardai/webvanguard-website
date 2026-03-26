@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://beitallaylae.com/sitemap.xml
+Sitemap: https://beit-al-layl.vercel.app/sitemap.xml

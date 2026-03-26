@@ -9,28 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        midnight: "#0D0B0E",
-        gold: "#C9A55A",
-        cream: "#F5F0E8",
-        "gold-light": "#D4B87A",
-        "midnight-light": "#1A1720",
+        offwhite: "#FAF7F2",
+        terracotta: "#C4622D",
+        olive: "#2D3B2D",
+        cream: "#F0EBE0",
+        charcoal: "#1A1A1A",
+        "terracotta-dark": "#A8521F",
+        "olive-light": "#3D4F3D",
       },
       fontFamily: {
-        cormorant: ["'Cormorant Garamond'", "Georgia", "serif"],
-        inter: ["'Inter'", "system-ui", "sans-serif"],
+        playfair: ["var(--font-playfair)", "Georgia", "serif"],
+        dm: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
       },
       animation: {
-        ticker: "ticker 30s linear infinite",
-        "fade-up": "fadeUp 0.8s ease forwards",
+        ticker: "ticker 40s linear infinite",
       },
       keyframes: {
         ticker: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
-        },
-        fadeUp: {
-          "0%": { opacity: "0", transform: "translateY(30px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
     },
