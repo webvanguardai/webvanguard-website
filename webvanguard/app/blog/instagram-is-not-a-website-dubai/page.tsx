@@ -440,7 +440,7 @@ export default function ArticlePage() {
                 <span>Get a free demo</span>
               </Link>
               <a
-                href="https://wa.me/971501234567?text=Hi%2C%20I%20read%20your%20article%20about%20Instagram%20vs%20website%20and%20want%20to%20know%20more"
+                href="https://wa.me/971585324519?text=Hi%2C%20I%20read%20your%20article%20about%20Instagram%20vs%20website%20and%20want%20to%20know%20more"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-border text-text-secondary hover:border-accent hover:text-accent transition-all duration-300 text-sm font-body uppercase tracking-wider"

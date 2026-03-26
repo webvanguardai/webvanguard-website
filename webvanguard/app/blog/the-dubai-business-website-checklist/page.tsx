@@ -606,7 +606,7 @@ export default function ArticlePage() {
                 <span>Request a free audit</span>
               </Link>
               <a
-                href="https://wa.me/971501234567?text=Hi%2C%20I%20ran%20through%20your%20website%20checklist%20and%20want%20a%20free%20audit%20of%20my%20site"
+                href="https://wa.me/971585324519?text=Hi%2C%20I%20ran%20through%20your%20website%20checklist%20and%20want%20a%20free%20audit%20of%20my%20site"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-border text-text-secondary hover:border-accent hover:text-accent transition-all duration-300 text-sm font-body uppercase tracking-wider"
