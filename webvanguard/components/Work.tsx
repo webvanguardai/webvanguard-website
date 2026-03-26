@@ -124,6 +124,16 @@ const projects = [
     accent: '#C9A55A',
     bg: '#0D0B0E',
   },
+  {
+    label: '13',
+    name: 'Saffron House',
+    industry: 'Boutique Hotel',
+    location: 'Al Fahidi, Old Dubai',
+    url: 'https://saffron-house-nu.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://saffron-house-nu.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#E8A422',
+    bg: '#0E0C08',
+  },
 ]
 
 function ProjectRow({
