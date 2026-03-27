@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'why-dubai-coworking-spaces-lose-members-without-a-good-website',
+    title: 'Why Dubai Co-Working Spaces Lose Members Without a Great Website',
+    excerpt: "The competition for co-working members doesn't happen at a viewing. It happens at 9pm when someone Googles and clicks the first three results. If your site can't answer \"is this right for me?\" in 10 seconds, they're gone.",
+    date: '2026-03-27',
+    readTime: '7 min read',
+    category: 'Workspace Marketing',
+  },
+  {
     slug: 'how-architecture-interior-design-studios-get-more-clients',
     title: 'How Architecture & Interior Design Studios in Dubai Get More High-Value Clients',
     excerpt: "Boutique design studios in Dubai do incredible work. But most are invisible online. Your ideal clients search for you before they call. If you don't rank on Google, they find your competitors instead. Here's how to change that.",

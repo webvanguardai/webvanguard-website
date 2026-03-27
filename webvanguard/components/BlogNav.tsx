@@ -2,6 +2,10 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'why-dubai-coworking-spaces-lose-members-without-a-good-website',
+    title: 'Why Dubai Co-Working Spaces Lose Members Without a Great Website',
+  },
+  {
     slug: 'how-architecture-interior-design-studios-get-more-clients',
     title: 'How Architecture & Interior Design Studios in Dubai Get More High-Value Clients',
   },

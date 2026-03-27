@@ -306,9 +306,10 @@ Happy to answer any questions.
 - **Pain points:** No WhatsApp visible, minimal SEO for "co-working Dubai women", no booking form on site
 - **Founders:** Rhea & Nikita (co-founders + sisters)
 - **Priority:** 🔥 HIGH — women-owned boutique, clear audience, good story
-- **Status:** 🔴 Cold
-- **Last contact:** —
-- **Notes:** Demo for this vertical still needs to be built
+- **Status:** 🟡 Warm — email enviado 27 Mar 2026
+- **Last contact:** 2026-03-27
+- **Follow-up due:** 2026-04-03
+- **Demo:** https://the-collective-three.vercel.app ✅
 
 ### 20 — LOCI Design Studio
 - **Sector:** Architecture & Interior Design  
