@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'how-dubai-salons-get-more-bookings',
+    title: 'How Dubai Salons Get More Bookings Without Paying for Instagram Ads',
+    excerpt: "You've tried boosted posts. You've spent on influencer reposts. The bookings trickle in, then stop. Here's the 4-step system that fills your appointment book without ad spend — using Google, WhatsApp, and a website that works while you sleep.",
+    date: '2026-03-27',
+    readTime: '7 min read',
+    category: 'Beauty & Wellness',
+  },
+  {
     slug: 'why-dubai-coworking-spaces-lose-members-without-a-good-website',
     title: 'Why Dubai Co-Working Spaces Lose Members Without a Great Website',
     excerpt: "The competition for co-working members doesn't happen at a viewing. It happens at 9pm when someone Googles and clicks the first three results. If your site can't answer \"is this right for me?\" in 10 seconds, they're gone.",

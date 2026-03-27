@@ -86,5 +86,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://webvanguard.co/blog/how-dubai-salons-get-more-bookings',
+      lastModified: new Date('2026-03-27'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://webvanguard.co/blog/why-dubai-coworking-spaces-lose-members-without-a-good-website',
+      lastModified: new Date('2026-03-27'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 }
