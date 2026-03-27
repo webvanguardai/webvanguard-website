@@ -332,3 +332,19 @@ Happy to answer any questions.
 - **Status:** 🔴 Cold
 - **Priority:** Medium
 
+
+---
+
+## Batch 05 — March 27, 2026 (Afternoon)
+
+### 22 — Dubai Hills Tattoo
+- **Sector:** Tattoo Studio (premium, international artists)
+- **Location:** Dubai Hills
+- **Contact:** bookings@dubaihillstattoo.com ✅
+- **Website:** dubaihillstattoo.com (exists but doesn't match studio quality)
+- **Instagram:** @dubaihillstattoo — 69K followers
+- **Demo:** https://noir-studio-sigma.vercel.app
+- **Pain points:** Web quality doesn't match 69K IG following + international artist roster. No editorial feel, corporate template vs. premium studio.
+- **Status:** 🟡 Warm — email enviado 27 Mar 2026
+- **Follow-up due:** 2026-04-03
+
