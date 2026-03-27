@@ -154,6 +154,16 @@ const projects = [
     accent: '#C9A96E',
     bg: '#0C0C0C',
   },
+  {
+    label: '16',
+    name: 'Prestige Drive',
+    industry: 'Luxury Car Rental',
+    location: 'Dubai',
+    url: 'https://prestige-drive-beta.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://prestige-drive-beta.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#E63946',
+    bg: '#080808',
+  },
 ]
 
 function ProjectRow({
