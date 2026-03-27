@@ -184,6 +184,16 @@ const projects = [
     accent: '#0EA5E9',
     bg: '#050A14',
   },
+  {
+    label: '19',
+    name: 'NOIR Studio',
+    industry: 'Visual Artist & Creative Director',
+    location: 'Dubai',
+    url: 'https://noir-studio-sigma.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://noir-studio-sigma.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#FF0040',
+    bg: '#000000',
+  },
 ]
 
 function ProjectRow({
