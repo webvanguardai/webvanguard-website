@@ -174,6 +174,16 @@ const projects = [
     accent: '#6B5B3E',
     bg: '#F4F2EE',
   },
+  {
+    label: '18',
+    name: 'Apex Capital',
+    industry: 'Fintech & Digital Assets',
+    location: 'DIFC, Dubai',
+    url: 'https://apex-fintech.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://apex-fintech.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#0EA5E9',
+    bg: '#050A14',
+  },
 ]
 
 function ProjectRow({

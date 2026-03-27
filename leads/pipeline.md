@@ -317,7 +317,9 @@ Happy to answer any questions.
 - **Demo:** https://atelier-forma-three.vercel.app ✅
 - **Proposal:** https://webvanguardai.github.io/proposal-loci ✅
 - **Email draft:** architect-outreach-emails.md ✅ READY TO SEND
-- **Status:** 🔴 Cold — Email READY, awaiting send
+- **Status:** 🟡 Warm — email enviado 27 Mar 2026 (Zoho SMTP)
+- **Last contact:** 2026-03-27
+- **Follow-up due:** 2026-04-03
 - **Priority:** 🔥 HIGH
 
 ### 21 — BALCON Interior Design Studio  
