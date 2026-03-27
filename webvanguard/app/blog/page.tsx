@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'how-architecture-interior-design-studios-get-more-clients',
+    title: 'How Architecture & Interior Design Studios in Dubai Get More High-Value Clients',
+    excerpt: "Boutique design studios in Dubai do incredible work. But most are invisible online. Your ideal clients search for you before they call. If you don't rank on Google, they find your competitors instead. Here's how to change that.",
+    date: '2026-03-27',
+    readTime: '8 min read',
+    category: 'Design Studio Marketing',
+  },
+  {
     slug: 'why-dubai-businesses-lose-customers-at-night',
     title: 'Why Dubai Businesses Lose Customers at Night',
     excerpt: "It's 11pm. You're asleep. Someone in Dubai Marina just searched for your service, found your competitor's website, and booked. You'll never know this happened — but it's happening every single night. Here's the hidden cost of going offline after dark.",

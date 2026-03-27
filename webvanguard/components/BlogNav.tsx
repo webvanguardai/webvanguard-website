@@ -2,6 +2,10 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'how-architecture-interior-design-studios-get-more-clients',
+    title: 'How Architecture & Interior Design Studios in Dubai Get More High-Value Clients',
+  },
+  {
     slug: 'how-dubai-real-estate-agents-get-more-leads',
     title: 'How Dubai Real Estate Agents Get More Leads From Their Website',
   },
