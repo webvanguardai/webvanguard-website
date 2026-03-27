@@ -85,7 +85,7 @@
   - [x] Blog — "Why your premium website underperforms" LIVE (2026-03-23)
   - [ ] **Automatizar generación de métricas semanales** ← **NEXT**
   - [ ] A/B testing: hero con números vs sin
-  - [ ] Dominio personalizado: webvanguard.ai
+  - [ ] Dominio personalizado: webvanguard.co
 
 ### Next Executable Task
 **Build blog article #3: "Why Dubai Co-Working Spaces Lose Members Without a Great Website"**
@@ -95,7 +95,7 @@ Status: This article appears to already exist on the live blog (dated 2026-03-27
 **Recommendation:** 
 1. ✅ Verify article source (confirm it's in repo)
 2. If not in repo, add to GitHub + commit
-3. Move focus to **A/B testing variant** (hero with numbers vs without) or **webvanguard.ai domain setup**
+3. Move focus to **A/B testing variant** (hero with numbers vs without) or **webvanguard.co domain setup**
 
 ---
 
@@ -126,7 +126,7 @@ None required — all systems healthy.
 ## 8. Next Steps (Recommended)
 1. **Follow-ups:** 2026-03-31 for Batch 01 leads (if no reply in past 24h)
 2. **Blog content:** Confirm co-working article is committed to repo
-3. **Domain setup:** Begin webvanguard.ai DNS + Vercel configuration
+3. **Domain setup:** Begin webvanguard.co DNS + Vercel configuration
 4. **A/B testing:** Design hero variant without large numbers for conversion testing
 5. **Sales focus:** Batch 04 leads (The Bureau, LOCI) — both high-priority, high-intent
 

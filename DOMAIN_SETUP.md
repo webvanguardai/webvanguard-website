@@ -1,7 +1,7 @@
 # Domain Setup - WebVanguard
 
 ## Goal
-Point your custom domain (e.g., `webvanguard.ai` or `javibeat.com`) to the Vercel project `webvanguard-website`.
+Point your custom domain (e.g., `webvanguard.co` or `javibeat.com`) to the Vercel project `webvanguard-website`.
 
 ## Steps
 
@@ -9,7 +9,7 @@ Point your custom domain (e.g., `webvanguard.ai` or `javibeat.com`) to the Verce
 1. Open https://vercel.com/teams/webvanguardai-2631s-projects/projects/webvanguard-website
 2. Go to **Settings** → **Domains**.
 3. Click **Add Domain**.
-4. Type your domain (e.g., `webvanguard.ai` or `www.webvanguard.ai`). Click **Add**.
+4. Type your domain (e.g., `webvanguard.co` or `www.webvanguard.co`). Click **Add**.
 5. Vercel will show DNS records to configure (usually a CNAME to `cname.vercel-dns.com`, or A records to `76.76.21.21` etc). Copy them.
 
 ### 2. Configure DNS at your registrar
@@ -20,7 +20,7 @@ Where you bought the domain (GoDaddy, Namecheap, etc.), set the following:
   - Value/Target: `cname.vercel-dns.com` (or the value Vercel provided)
   - TTL: default
 
-- If using the root/apex domain (`webvanguard.ai`), create **A** records:
+- If using the root/apex domain (`webvanguard.co`), create **A** records:
   - Name/Host: `@` or leave blank
   - Value: `76.76.21.21` (Vercel’s IPs – check latest in Vercel docs)
   - TTL: default

@@ -29,6 +29,11 @@
 - Preferred communication: **calm but sharp, creative, honest, no bullshit** + a touch of **dry humor** when it fits.
 - Language: **Spanish preferred** by default.
 
+## ⚠️ CRÍTICO — DOMINIO WEB VANGUARD
+**El dominio es webvanguard.CO — NO .ai, NO .com**
+Si escribes webvanguard.co en cualquier contexto (emails, demos, código, docs) ES UN ERROR.
+Siempre: **webvanguard.co** y **hello@webvanguard.co**
+
 ## Web Vanguard — Status (2026-03-24)
 - **Website LIVE:** https://webvanguard.co (también en webvanguard.vercel.app)
 - **Repo:** github.com/webvanguardai/webvanguard-website

@@ -38,8 +38,8 @@ nohup cloudflared tunnel --url http://127.0.0.1:3100 --no-autoupdate > /tmp/clou
 - WEB-1: Research 20 Dubai businesses without websites
 - WEB-2: Write 5 WhatsApp pitches with demo site URLs
 - WEB-3: Build demo site for next F&B target
-- WEB-4: Purchase domain webvanguard.ai (**BLOCKED — needs Javi**)
-- WEB-5: Set up hello@webvanguard.ai email
+- WEB-4: Purchase domain webvanguard.co (**BLOCKED — needs Javi**)
+- WEB-5: Set up hello@webvanguard.co email
 - WEB-6: Blog post #2 — Dubai restaurants
 - WEB-7: Blog post #3 — Dubai real estate
 - WEB-8: Install Google Analytics (**BLOCKED — needs GA4 ID**)
