@@ -161,6 +161,38 @@
 - **Status:** 🔴 Cold
 - **Last contact:** —
 
+### 16 — LOCI Design Studio
+- **Sector:** Architecture & Interior Design
+- **Location:** Dubai
+- **Website:** loci.co (strong visual, minimal copy)
+- **Contact:** Contact form on website
+- **Demo:** https://atelier-forma-three.vercel.app ✅ (NUEVO)
+- **Proposal:** To be created
+- **Pain points:** No WhatsApp, no email in header, no contact form call-out, dense portfolio (hard to scan for specific project type)
+- **Priority:** 🔥 HIGH — established studio, good web presence but missing conversion elements
+- **Status:** 🔴 Cold
+- **Last contact:** —
+
+### 17 — BALCON Studio
+- **Sector:** Interior Design
+- **Location:** Dubai
+- **Website:** balconstudio.com (adequate but dated)
+- **Contact:** Contact page exists
+- **Demo:** https://atelier-forma-three.vercel.app
+- **Pain points:** No WhatsApp, portfolio not organized by project type, missing case study depth
+- **Status:** 🔴 Cold
+- **Last contact:** —
+
+### 18 — Al Mujassam Architects
+- **Sector:** Architecture & Interior Design
+- **Location:** Dubai
+- **Website:** almujassam.ae (strong branding)
+- **Contact:** Contact form exists
+- **Demo:** https://atelier-forma-three.vercel.app
+- **Pain points:** Portfolio layout is generic, no WhatsApp, missing SEO for specific verticals (villas, commercial, landscape)
+- **Status:** 🔴 Cold
+- **Last contact:** —
+
 ---
 
 ## Email Templates
