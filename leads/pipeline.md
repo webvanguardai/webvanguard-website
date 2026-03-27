@@ -348,3 +348,23 @@ Happy to answer any questions.
 - **Status:** 🟡 Warm — email enviado 27 Mar 2026
 - **Follow-up due:** 2026-04-03
 
+
+### 23 — Events by Saniya
+- **Sector:** Wedding & Event Planning
+- **Location:** Dubai
+- **Contact:** info@eventsbysaniya.com ✅ (from Instagram bio)
+- **Instagram:** @eventsbysaniya — 17K followers
+- **Demo:** https://celeste-events.vercel.app
+- **Pain points:** No WhatsApp button, web no refleja el nivel de 10+ años experiencia + 17K IG
+- **Status:** 🟡 Warm — email enviado 27 Mar 2026
+- **Follow-up due:** 2026-04-03
+
+### 24 — Private Chefs Atelier
+- **Sector:** Luxury Private Chef / Catering
+- **Location:** Dubai (UAE-wide)
+- **Contact:** info@privatechefsatelier.com ✅
+- **Demo:** https://levant-co.vercel.app
+- **Pain points:** Booking path tiene fricción, podría ser más directo con WhatsApp
+- **Status:** 🟡 Warm — email enviado 27 Mar 2026
+- **Follow-up due:** 2026-04-03
+
