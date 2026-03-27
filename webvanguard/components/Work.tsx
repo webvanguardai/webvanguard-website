@@ -134,6 +134,26 @@ const projects = [
     accent: '#E8A422',
     bg: '#0E0C08',
   },
+  {
+    label: '14',
+    name: 'Atelier Forma',
+    industry: 'Architecture & Interior Design',
+    location: 'DIFC, Dubai',
+    url: 'https://atelier-forma-three.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://atelier-forma-three.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#C4A882',
+    bg: '#F5F3EF',
+  },
+  {
+    label: '15',
+    name: 'Stella Atelier',
+    industry: 'Luxury Fashion Boutique',
+    location: 'DIFC, Dubai',
+    url: 'https://stella-atelier.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://stella-atelier.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#C9A96E',
+    bg: '#0C0C0C',
+  },
 ]
 
 function ProjectRow({
