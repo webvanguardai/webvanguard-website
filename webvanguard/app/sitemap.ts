@@ -74,5 +74,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://webvanguard.co/blog/why-dubai-businesses-lose-customers-at-night',
+      lastModified: new Date('2026-03-27'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://webvanguard.co/blog/how-architecture-interior-design-studios-get-more-clients',
+      lastModified: new Date('2026-03-27'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 }
