@@ -164,6 +164,16 @@ const projects = [
     accent: '#E63946',
     bg: '#080808',
   },
+  {
+    label: '17',
+    name: 'The Collective',
+    industry: 'Boutique Co-Working Space',
+    location: 'DIFC, Dubai',
+    url: 'https://the-collective-three.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://the-collective-three.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#6B5B3E',
+    bg: '#F4F2EE',
+  },
 ]
 
 function ProjectRow({

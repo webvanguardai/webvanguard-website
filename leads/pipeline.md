@@ -292,3 +292,40 @@ Happy to answer any questions.
 - **Pain points:** Sin WhatsApp, sin form, template DIY, look poco premium
 - **Status:** 🟡 Warm — email enviado 26 Mar 2026
 - **Follow-up due:** 2026-04-02
+
+---
+
+## Batch 04 — March 27, 2026 (Morning Prospecting)
+
+### 19 — The Bureau Business Center
+- **Sector:** Co-working / Boutique Workspace (female-focused)
+- **Location:** Dubai
+- **Website:** thebureaubc.com — exists but minimal, needs SEO + WhatsApp
+- **Contact:** hello@thebureaubc.com (inferred from pattern) OR contact form
+- **Demo:** To build — co-working demo needed
+- **Pain points:** No WhatsApp visible, minimal SEO for "co-working Dubai women", no booking form on site
+- **Founders:** Rhea & Nikita (co-founders + sisters)
+- **Priority:** 🔥 HIGH — women-owned boutique, clear audience, good story
+- **Status:** 🔴 Cold
+- **Last contact:** —
+- **Notes:** Demo for this vertical still needs to be built
+
+### 20 — LOCI Design Studio
+- **Sector:** Architecture & Interior Design  
+- **Location:** Dubai (Al Quoz + Business Bay)
+- **Contact:** info@loci.ae ✅ CONFIRMED
+- **Demo:** https://atelier-forma-three.vercel.app ✅
+- **Proposal:** https://webvanguardai.github.io/proposal-loci ✅
+- **Email draft:** architect-outreach-emails.md ✅ READY TO SEND
+- **Status:** 🔴 Cold — Email READY, awaiting send
+- **Priority:** 🔥 HIGH
+
+### 21 — BALCON Interior Design Studio  
+- **Sector:** Interior Design
+- **Location:** Dubai
+- **Website:** balconstudio.com
+- **Contact:** Contact form on website
+- **Demo:** https://atelier-forma-three.vercel.app
+- **Status:** 🔴 Cold
+- **Priority:** Medium
+
