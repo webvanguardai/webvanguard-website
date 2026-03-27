@@ -368,3 +368,23 @@ Happy to answer any questions.
 - **Status:** 🟡 Warm — email enviado 27 Mar 2026
 - **Follow-up due:** 2026-04-03
 
+
+### 25 — Pure Motion Pilates Studio
+- **Sector:** Boutique Pilates & Yoga
+- **Location:** Jumeirah Golf Estates, Dubai
+- **Contact:** info@puremotion.ae (inferred)
+- **Instagram:** @puremotion.ae — 2,580 followers
+- **Demo:** https://lumiere-wellness.vercel.app
+- **Pain points:** Sin WhatsApp button
+- **Status:** 🟡 Warm — email enviado 27 Mar 2026
+- **Follow-up due:** 2026-04-03
+
+### 26 — Amara Aesthetic Studio
+- **Sector:** Aesthetic & Wellness Clinic
+- **Location:** Dubai
+- **Contact:** info@amaraclinics.ae (inferred)
+- **Demo:** https://noor-clinic.vercel.app
+- **Pain points:** Booking flow solo formulario, sin WhatsApp
+- **Status:** 🟡 Warm — email enviado 27 Mar 2026
+- **Follow-up due:** 2026-04-03
+
