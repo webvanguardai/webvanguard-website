@@ -37,15 +37,23 @@ Estos son los checks técnicos + trabajo autónomo. Ver job "WebVanguard 6h site
 - Tiempo en página (blog articles)
 - Conversiones (form fills + WhatsApp clicks)
 
-### Decisiones que tomo solo (sin pedir permiso)
-- Construir nuevos demos
-- Publicar blog articles
+### Reglas de contenido (acordadas con Javi 2026-03-27)
+- **Máximo 1 blog article por día** — sin excepciones
+- **Mañana 28 Mar: NO blog article** (ya publicados 2 hoy)
+- **Demo lista = email ese mismo día** a mínimo 3 leads similares
+- **Antes de enviar email:** revisar la web del lead, identificar pain point real, personalizar
+- **Focus en outreach** más que en construir demos nuevos
+
+## Decisiones que tomo solo (sin pedir permiso)
+- Construir nuevos demos (máx 1-2 por día)
+- Publicar blog articles (máx 1 por día)
 - Actualizar portfolio
 - Fixes técnicos
+- Enviar emails de prospecting (previo análisis de la web del lead)
 - Rediseñar demos existentes
 
 ### Decisiones que requieren a Javi
-- Enviar propuestas a clientes reales (hasta que email esté configurado y flujo acordado)
 - Cerrar tratos / confirmar precios
 - Gastos (dominios, ads, herramientas de pago)
 - Cambios en precios del sitio
+- Partnership con True Love Creative (strategy pendiente de hablar con él)
