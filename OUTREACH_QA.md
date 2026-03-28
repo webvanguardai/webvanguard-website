@@ -69,25 +69,24 @@ Resultado esperado: `200` + `200` + MX records existentes.
 ## FLUJO CORRECTO (de principio a fin)
 
 ```
-1. FIND — Identificar lead
+1. FIND — Identificar lead con email verificado
          ↓
-2. ANALYZE — Revisar su web HOY
+2. BUILD DEMO — Construir demo del vertical correcto
          ↓
-3. BUILD DEMO — Construir demo del vertical correcto
+3. BUILD PROPOSAL — Crear propuesta específica para ese lead
          ↓
-4. BUILD PROPOSAL — Crear propuesta específica para ese lead
+4. VERIFY — curl demo + proposal. Ambas 200 OK. Email domain MX válido.
          ↓
-5. VERIFY — curl en demo + proposal. Ambas 200 OK.
+5. ANALYZE — Revisar la web del lead HOY. Identificar pain points reales.
          ↓
-6. WRITE — Redactar email con pain points reales + links verificados
+6. WRITE — Redactar email con esos pain points + links verificados
          ↓
-7. CHECK — Abrir cada URL del email manualmente y confirmar
+7. SEND — Enviar por Zoho
          ↓
-8. SEND — Enviar por Zoho
-         ↓
-9. LOG — Añadir al pipeline.md
+8. LOG — Añadir al pipeline.md
 ```
 
+⛔ Un solo análisis de la web del lead — en el paso 5, justo antes de escribir.
 ⛔ NO escribir el email hasta que demo Y propuesta existan y estén verificadas.
 
 ---
