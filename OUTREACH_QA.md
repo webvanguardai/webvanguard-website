@@ -98,3 +98,18 @@ Resultado esperado: `200` + `200` + MX records existentes.
 ---
 
 *Regla final: La velocidad no vale si el email llega roto, al negocio equivocado, o con el demo caído.*
+
+---
+
+## LOG DE ERRORES (actualizado 2026-03-28)
+
+| Fecha | Error | Lección |
+|-------|-------|---------|
+| 2026-03-25 | Demo `leila-dental` con URL incorrecta | Verificar alias Vercel post-deploy |
+| 2026-03-28 | Atlas Legal en 401 durante días | Verificar URL pública post-deploy |
+| 2026-03-28 | **Email a Studio ALOI con proposal de forma-studio (interior design)**. Tuve que mandar email de corrección. | **Leer el email completo en voz alta antes de enviar. Verificar CADA link manualmente con curl.** |
+
+## REGLA AÑADIDA (post-error 28 Mar)
+
+> **Antes de hacer clic en Enviar, abrir cada URL del email en el navegador y confirmar que es el correcto.**
+> Un email de corrección = credibilidad dañada. No hay segunda oportunidad con un lead frío.
