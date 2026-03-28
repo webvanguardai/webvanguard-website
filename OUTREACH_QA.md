@@ -1,0 +1,94 @@
+# OUTREACH QA — Zero Error Protocol
+## "If in doubt, don't send."
+
+---
+
+## PRE-SEND CHECKLIST (ejecutar en orden, sin saltarse pasos)
+
+### 1. VERIFICACIÓN TÉCNICA
+- [ ] Demo URL responde 200 OK → `curl -s -o /dev/null -w "%{http_code}" [URL]`
+- [ ] Proposal URL carga en browser (GitHub Pages)
+- [ ] Demo es del vertical correcto (spa demo → spa lead, etc.)
+
+### 2. VERIFICACIÓN DEL LEAD
+- [ ] Email del lead existe → dominio MX válido, no typo
+- [ ] Web del lead revisada HOY (no de memoria de otro día)
+- [ ] Pain points son específicos a ese negocio (no copy-paste genérico)
+- [ ] No hay email previo enviado a este negocio (revisar /Enviado Zoho)
+
+### 3. VERIFICACIÓN DEL EMAIL
+- [ ] Nombre del negocio correcto en subject y body
+- [ ] Demo URL en el email coincide con el demo real
+- [ ] Proposal URL en el email coincide con la propuesta real
+- [ ] Sin typos en el nombre del contacto
+- [ ] El pain point mencionado es real (verificado en su web)
+
+### 4. REGLA DE ORO
+> **Una empresa = un email = un demo = un vertical**
+> 
+> Si cualquiera de los 3 no coincide, no se envía.
+
+---
+
+## SCRIPT DE VERIFICACIÓN RÁPIDA
+
+```bash
+# Antes de enviar, ejecutar:
+DEMO_URL="https://xxx.vercel.app"
+PROPOSAL_URL="https://webvanguardai.github.io/proposal-xxx/"
+LEAD_EMAIL="contact@business.com"
+
+echo "Demo:" && curl -s -o /dev/null -w "%{http_code}\n" "$DEMO_URL"
+echo "Proposal:" && curl -s -o /dev/null -w "%{http_code}\n" "$PROPOSAL_URL"
+echo "Email domain MX:" && dig MX $(echo $LEAD_EMAIL | cut -d@ -f2) +short | head -3
+```
+
+Resultado esperado: `200` + `200` + MX records existentes.
+
+---
+
+## ERRORES A EVITAR (ya cometidos o en riesgo)
+
+| Error | Consecuencia | Prevención |
+|-------|-------------|------------|
+| Demo URL 404 | Lead hace clic, página rota, pérdida de credibilidad | Verificar 200 OK antes de enviar |
+| Demo mal asignado (spa → barbershop) | Email genérico, sin personalización | Revisar que demo coincide con vertical |
+| Email incorrecto/rebota | Zoho blacklist, reputación dañada | Verificar dominio con dig MX |
+| Doble email al mismo lead | Spam, quema el contacto | Revisar /Enviado antes de enviar |
+| Pain point inventado | Lead responde "eso no es correcto" | Solo pain points verificados en su web ese día |
+| Nombre del negocio erróneo | Falta de profesionalismo básico | Copiar exactamente del sitio web del lead |
+
+---
+
+## FLUJO CORRECTO (de principio a fin)
+
+```
+1. FIND — Identificar lead (Google Maps / Instagram)
+         ↓
+2. ANALYZE — Revisar su web HOY
+         ↓
+3. MATCH — Confirmar demo + vertical coinciden
+         ↓
+4. VERIFY — Ejecutar script de verificación
+         ↓
+5. WRITE — Redactar email con pain points reales
+         ↓
+6. CHECK — Leer email completo antes de enviar
+         ↓
+7. SEND — Enviar por Zoho
+         ↓
+8. LOG — Añadir al pipeline.md + CRM
+```
+
+---
+
+## LOG DE ERRORES ANTERIORES
+
+| Fecha | Error | Lección |
+|-------|-------|---------|
+| 2026-03-25 | Demo `leila-dental` desplegado con URL incorrecta (`leila-dental` vs `leila-hariri-dental`) | Siempre verificar alias Vercel |
+| 2026-03-28 | Atlas Legal deployments en 401 (protected) durante días | Verificar alias público post-deploy |
+
+---
+
+*Regla final: La velocidad no vale si el email llega roto, al negocio equivocado, o con el demo caído.*
