@@ -104,6 +104,13 @@ Resultado esperado: `200` + `200` + MX records existentes.
 
 ---
 
+## REGLA GENERAL — ANTES DE CUALQUIER ACCIÓN EXTERNA
+> **PARAR → VERIFICAR → EJECUTAR**
+> Si hay duda → no ejecutar → preguntar primero.
+> Aplica a: emails, mensajes a Javi, publicaciones, deploys.
+
+---
+
 ## LOG DE ERRORES (actualizado 2026-03-28)
 
 | Fecha | Error | Lección |
@@ -116,3 +123,5 @@ Resultado esperado: `200` + `200` + MX records existentes.
 
 > **Antes de hacer clic en Enviar, abrir cada URL del email en el navegador y confirmar que es el correcto.**
 > Un email de corrección = credibilidad dañada. No hay segunda oportunidad con un lead frío.
+
+| 2026-03-28 | Mensaje duplicado x3 a Javi (misma pregunta enviada 3 veces) | Revisar historial antes de mandar cualquier mensaje. Si no estás seguro de si ya lo mandaste → no lo mandes de nuevo. |
