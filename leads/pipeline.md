@@ -403,3 +403,19 @@ Happy to answer any questions.
 - **Status:** 🟡 Warm — email enviado 28 Mar 2026
 - **Last contact:** 2026-03-28
 - **Follow-up due:** 2026-04-04
+
+---
+
+## Batch 07 — March 28, 2026 (Late Morning)
+
+### 28 — Studio ALOI
+- **Sector:** Bespoke Fine Jewelry Atelier
+- **Location:** Dubai (Cluster Y)
+- **Contact:** info@myaloi.com ✅ CONFIRMED
+- **Website:** studioaloi.com (Squarespace — functional but doesn't match the premium positioning)
+- **Demo:** https://maison-joelle.vercel.app ✅ (NEW — jewelry vertical)
+- **Proposal:** https://webvanguardai.github.io/proposal-studio-aloi/ ✅
+- **Pain points:** Squarespace template looks generic vs. the high-jewelry bespoke atelier they are. Doesn't convey the intimacy and craftsmanship of their work visually.
+- **Status:** 🟡 Warm — 2 emails enviados 28 Mar 2026 (first had wrong links, correction sent)
+- **Last contact:** 2026-03-28
+- **Follow-up due:** 2026-04-04
