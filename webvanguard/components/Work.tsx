@@ -214,6 +214,16 @@ const projects = [
     accent: '#E8C4B5',
     bg: '#FFF8F5',
   },
+  {
+    label: '22',
+    name: 'Maison Joëlle',
+    industry: 'Bespoke Fine Jewelry',
+    location: 'Dubai',
+    url: 'https://maison-joelle.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://maison-joelle.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#C9A96E',
+    bg: '#0A0808',
+  },
 ]
 
 function ProjectRow({
