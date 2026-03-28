@@ -99,6 +99,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://webvanguard.co/blog/arabic-website-dubai',
+      lastModified: new Date('2026-03-28'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://webvanguard.co/web-design-dubai',
       lastModified: new Date('2026-03-28'),
       changeFrequency: 'monthly',
