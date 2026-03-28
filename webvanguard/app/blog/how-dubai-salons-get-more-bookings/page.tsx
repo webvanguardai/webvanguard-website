@@ -282,16 +282,7 @@ export default function ArticlePage() {
 
           </article>
 
-          <BlogNav
-            prev={{
-              slug: 'how-to-get-more-bookings-dubai-restaurant',
-              title: 'How Dubai Restaurants Get More Bookings Online',
-            }}
-            next={{
-              slug: 'why-dubai-businesses-lose-customers-at-night',
-              title: 'Why Dubai Businesses Lose Customers at Night',
-            }}
-          />
+          <BlogNav currentSlug="how-dubai-salons-get-more-bookings" />
         </div>
       </main>
       <Footer />
