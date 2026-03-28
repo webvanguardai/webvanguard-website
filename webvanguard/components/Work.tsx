@@ -224,6 +224,16 @@ const projects = [
     accent: '#C9A96E',
     bg: '#0A0808',
   },
+  {
+    label: '23',
+    name: 'Sakura Studio',
+    industry: 'Yoga & Aerial Yoga Studio',
+    location: 'Business Bay, Dubai',
+    url: 'https://sakura-studio.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://sakura-studio.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#C9956B',
+    bg: '#1A2E1A',
+  },
 ]
 
 function ProjectRow({

@@ -419,3 +419,21 @@ Happy to answer any questions.
 - **Status:** 🟡 Warm — 2 emails enviados 28 Mar 2026 (first had wrong links, correction sent)
 - **Last contact:** 2026-03-28
 - **Follow-up due:** 2026-04-04
+
+---
+
+## Batch 08 — March 28, 2026 (Midday Prospecting)
+
+### 29 — Maya Blu
+- **Sector:** Yoga & Aerial Yoga Studio
+- **Location:** Business Bay, Dubai
+- **Website:** themayablu.com (basic, no booking system, Gmail email)
+- **Contact:** themayablu@gmail.com ⚠️ (Gmail — no professional domain)
+- **Pain points:** No booking online, email not professional, no clear CTA, generic web
+- **Demo needed:** Yoga/wellness vertical (no tenemos demo específico aún)
+- **Demo:** https://sakura-studio.vercel.app ✅
+- **Proposal:** https://webvanguardai.github.io/proposal-maya-blu/ ✅
+- **Status:** 🟡 Warm — email enviado 28 Mar 2026
+- **Last contact:** 2026-03-28
+- **Follow-up due:** 2026-04-04
+- **Note:** No contactar hasta tener demo de yoga. Flujo: demo → propuesta → análisis → email.
