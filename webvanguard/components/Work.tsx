@@ -194,6 +194,26 @@ const projects = [
     accent: '#FF0040',
     bg: '#000000',
   },
+  {
+    label: '20',
+    name: 'Atlas Legal Group',
+    industry: 'DIFC Law Firm',
+    location: 'Dubai',
+    url: 'https://atlas-legal.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://atlas-legal.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#C9956B',
+    bg: '#0A0A0A',
+  },
+  {
+    label: '21',
+    name: 'Leila Hariri Dental',
+    industry: 'Aesthetic Dentistry',
+    location: 'Dubai',
+    url: 'https://leila-hariri-dental.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://leila-hariri-dental.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#E8C4B5',
+    bg: '#FFF8F5',
+  },
 ]
 
 function ProjectRow({

@@ -388,3 +388,18 @@ Happy to answer any questions.
 - **Status:** 🟡 Warm — email enviado 27 Mar 2026
 - **Follow-up due:** 2026-04-03
 
+
+---
+
+## Batch 06 — March 28, 2026 (Morning)
+
+### 27 — BALCON Interior Design Studio
+- **Sector:** Interior Design
+- **Location:** Dubai
+- **Contact:** sales@balconstudio.com ✅ CONFIRMED
+- **Demo:** https://atelier-forma-three.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-balcon-studio/ ✅
+- **Pain points:** Generic hero copy repeating keywords, weak CTA, complex 9-item nav, no clear conversion path
+- **Status:** 🟡 Warm — email enviado 28 Mar 2026
+- **Last contact:** 2026-03-28
+- **Follow-up due:** 2026-04-04
