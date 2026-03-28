@@ -98,5 +98,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: 'https://webvanguard.co/web-design-dubai',
+      lastModified: new Date('2026-03-28'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://webvanguard.co/seo-dubai',
+      lastModified: new Date('2026-03-28'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://webvanguard.co/brand-identity-dubai',
+      lastModified: new Date('2026-03-28'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
   ]
 }
