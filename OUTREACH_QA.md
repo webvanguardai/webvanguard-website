@@ -23,10 +23,16 @@
 - [ ] Sin typos en el nombre del contacto
 - [ ] El pain point mencionado es real (verificado en su web)
 
-### 4. REGLA DE ORO
+### 4. REGLAS DE ORO
+
 > **Una empresa = un email = un demo = un vertical**
-> 
 > Si cualquiera de los 3 no coincide, no se envía.
+
+> **Canal único: EMAIL.**
+> Sin WhatsApp, sin DMs, sin vídeos, sin Loom. Solo email.
+
+> **Follow-up: 1 solo, a los 5 días.**
+> Sin respuesta → lead ❌ Discarded. No se insiste más. Nunca.
 
 ---
 
