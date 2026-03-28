@@ -437,3 +437,75 @@ Happy to answer any questions.
 - **Last contact:** 2026-03-28
 - **Follow-up due:** 2026-04-04
 - **Note:** No contactar hasta tener demo de yoga. Flujo: demo → propuesta → análisis → email.
+
+---
+
+## Batch 09 — March 28, 2026 (Afternoon)
+
+### Lead 1: Bolle Italian Restaurant
+- **Website:** bolledubai.com
+- **Contact:** info@bolledubai.com
+- **Pain points:** Site routes visitors to Tripadvisor for reviews instead of capturing bookings on-site; no clear reservation CTA; basic layout that doesn't match the DIFC premium positioning
+- **Demo:** https://osteria-milano.vercel.app ✅ (Italian fine dining demo)
+- **Status:** 🟡 Warm — email enviado 28 Mar 2026
+- **Last contact:** 2026-03-28
+- **Follow-up due:** 2026-04-04
+
+### Lead 2: Beige Beauty Salon
+- **Website:** beige-beauty.com
+- **Contact:** info@beigebeauty.ae
+- **Pain points:** 240+ Fresha reviews but zero social proof on website; booking redirects to external Fresha platform instead of converting on-site; site reads more corporate than luxury
+- **Demo:** https://noor-clinic.vercel.app ✅
+- **Status:** 🟡 Warm — email enviado 28 Mar 2026
+- **Last contact:** 2026-03-28
+- **Follow-up due:** 2026-04-04
+
+### Lead 3: MelRish Studio (Wedding Photography)
+- **Website:** melrishweddings.com
+- **Contact:** arish@melrish.com
+- **Pain points:** Award-winning 17yr studio with 1,000+ weddings but text-heavy layout; no cinematic hero section; design doesn't match the quality of their storytelling work
+- **Demo:** https://lumina-lens-six.vercel.app ✅
+- **Status:** 🟡 Warm — email enviado 28 Mar 2026
+- **Last contact:** 2026-03-28
+- **Follow-up due:** 2026-04-04
+
+### Lead 4: Settle Architects
+- **Website:** settlecreate.com
+- **Contact:** info@settlecreate.com
+- **Pain points:** Website is essentially just a contact form — no portfolio showcased, no case studies, no design story; strong Instagram presence not reflected on the site at all
+- **Demo:** https://atelier-forma-three.vercel.app ✅
+- **Status:** 🟡 Warm — email enviado 28 Mar 2026
+- **Last contact:** 2026-03-28
+- **Follow-up due:** 2026-04-04
+
+### Lead 5: Mu-Kii Pan-Asian Restaurant
+- **Website:** mu-kii.ae
+- **Contact:** dubai@mu-kii.ae
+- **Pain points:** 3 Dubai locations (JBR, Marina, JLT) but site sends guests to OpenTable/external bookings; no brand storytelling around the all-you-can-eat tapas concept; minimal web presence for a multi-location brand
+- **Demo:** https://zen-house.vercel.app ✅ (Pan-Asian restaurant demo)
+- **Status:** 🟡 Warm — email enviado 28 Mar 2026
+- **Last contact:** 2026-03-28
+- **Follow-up due:** 2026-04-04
+
+---
+
+## Correcciones 28 Mar 2026 (noche) — Auditoría completa
+
+### Propuestas añadidas (leads contactados sin propuesta):
+- TouchLife Spa → https://webvanguardai.github.io/proposal-touchlife-spa/
+- 011 Italian Grooming → https://webvanguardai.github.io/proposal-011-italian-grooming/
+- Roasters Coffee → https://webvanguardai.github.io/proposal-roasters-coffee/
+- The Bureau → https://webvanguardai.github.io/proposal-the-bureau/
+- Dubai Hills Tattoo → https://webvanguardai.github.io/proposal-dubai-hills-tattoo/
+- Events by Saniya → https://webvanguardai.github.io/proposal-events-by-saniya/
+- Pure Motion Pilates → https://webvanguardai.github.io/proposal-pure-motion-pilates/
+- Amara Aesthetic → https://webvanguardai.github.io/proposal-amara-aesthetic/
+- Private Chefs Atelier → https://webvanguardai.github.io/proposal-private-chefs-atelier/
+
+### Demos nuevos construidos:
+- Osteria Milano (italiano) → https://osteria-milano.vercel.app — para Bolle Italian
+- Zen House (pan-asiático) → https://zen-house.vercel.app — para Mu-Kii
+
+### Demos Bolle Italian y Mu-Kii corregidos:
+- Bolle Italian → demo correcto: https://osteria-milano.vercel.app (PENDIENTE propuesta)
+- Mu-Kii → demo correcto: https://zen-house.vercel.app (PENDIENTE propuesta)
