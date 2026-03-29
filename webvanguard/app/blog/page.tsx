@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'wedding-planner-website-dubai',
+    title: 'Why Dubai Wedding Planners Lose Clients Without a Professional Website',
+    excerpt: "Couples planning a Dubai wedding spend weeks researching online before making a single call. If your business doesn't have a professional website, you don't exist in their world. Here's what a high-converting wedding planning site does for your bookings.",
+    date: '2026-03-29',
+    readTime: '9 min read',
+    category: 'Events & Weddings',
+  },
+  {
     slug: 'how-dubai-salons-get-more-bookings',
     title: 'How Dubai Salons Get More Bookings Without Paying for Instagram Ads',
     excerpt: "You've tried boosted posts. You've spent on influencer reposts. The bookings trickle in, then stop. Here's the 4-step system that fills your appointment book without ad spend — using Google, WhatsApp, and a website that works while you sleep.",
