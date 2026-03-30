@@ -3,12 +3,15 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 
+type Category = 'F&B' | 'Wellness' | 'Creative' | 'Business' | 'Lifestyle'
+
 const projects = [
   {
     label: '01',
     name: 'Lumière Wellness Studio',
     industry: 'Luxury Spa',
     location: 'Dubai Marina',
+    category: 'Wellness' as Category,
     url: 'https://lumiere-wellness.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://lumiere-wellness.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#D4AF37',
@@ -19,6 +22,7 @@ const projects = [
     name: 'Apex Properties',
     industry: 'Real Estate',
     location: 'DIFC',
+    category: 'Business' as Category,
     url: 'https://apex-properties.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://apex-properties.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#3B82F6',
@@ -29,6 +33,7 @@ const projects = [
     name: 'Qahwa House',
     industry: 'Specialty Coffee',
     location: 'D3',
+    category: 'F&B' as Category,
     url: 'https://qahwa-house.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://qahwa-house.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#C4956A',
@@ -39,6 +44,7 @@ const projects = [
     name: 'Zafran Barber',
     industry: 'Premium Grooming',
     location: 'DIFC',
+    category: 'Lifestyle' as Category,
     url: 'https://zafran-barber.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://zafran-barber.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#E8C872',
@@ -49,6 +55,7 @@ const projects = [
     name: 'Lumina Lens Studio',
     industry: 'Photography',
     location: 'Dubai',
+    category: 'Creative' as Category,
     url: 'https://lumina-lens-six.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://lumina-lens-six.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#E0E0E0',
@@ -59,6 +66,7 @@ const projects = [
     name: 'Levant & Co.',
     industry: 'Fine Dining',
     location: 'DIFC',
+    category: 'F&B' as Category,
     url: 'https://levant-co.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://levant-co.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#C9956B',
@@ -69,6 +77,7 @@ const projects = [
     name: 'Solara Music',
     industry: 'Electronic Music & DJ',
     location: 'Dubai',
+    category: 'Creative' as Category,
     url: 'https://solara-music-chi.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://solara-music-chi.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#7B68EE',
@@ -79,6 +88,7 @@ const projects = [
     name: 'Céleste Events',
     industry: 'Luxury Event Design',
     location: 'Dubai',
+    category: 'Creative' as Category,
     url: 'https://celeste-events.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://celeste-events.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#C9956B',
@@ -89,6 +99,7 @@ const projects = [
     name: 'Noor Clinic',
     industry: 'Aesthetic Medicine',
     location: 'Business Bay',
+    category: 'Wellness' as Category,
     url: 'https://noor-clinic.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://noor-clinic.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#C9A96E',
@@ -96,155 +107,151 @@ const projects = [
   },
   {
     label: '10',
-    name: 'Serenity Wellness',
-    industry: 'Therapy & Wellness',
-    location: 'London, UK',
-    url: 'https://mindwave-nu.vercel.app',
-    thumbnail: 'https://api.microlink.io/?url=https://mindwave-nu.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
-    accent: '#8FAF9F',
-    bg: '#2D4A3E',
-  },
-  {
-    label: '11',
     name: 'APEX Training',
     industry: 'Elite Personal Training',
     location: 'Dubai Marina',
+    category: 'Wellness' as Category,
     url: 'https://apex-training-rust.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://apex-training-rust.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#D4AF6B',
     bg: '#0A0A0A',
   },
   {
-    label: '12',
-    name: 'Beit Al Layl',
-    industry: 'Lebanese Fine Dining',
-    location: 'Downtown Dubai',
-    url: 'https://beit-al-layl-v2.vercel.app',
-    thumbnail: 'https://api.microlink.io/?url=https://beit-al-layl-v2.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
-    accent: '#C9A55A',
-    bg: '#0D0B0E',
-  },
-  {
-    label: '13',
+    label: '11',
     name: 'Saffron House',
     industry: 'Boutique Hotel',
     location: 'Al Fahidi, Old Dubai',
+    category: 'Lifestyle' as Category,
     url: 'https://saffron-house-nu.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://saffron-house-nu.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#E8A422',
     bg: '#0E0C08',
   },
   {
-    label: '14',
+    label: '12',
     name: 'Atelier Forma',
     industry: 'Architecture & Interior Design',
     location: 'DIFC, Dubai',
+    category: 'Business' as Category,
     url: 'https://atelier-forma-three.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://atelier-forma-three.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#C4A882',
     bg: '#F5F3EF',
   },
   {
-    label: '15',
+    label: '13',
     name: 'Stella Atelier',
     industry: 'Luxury Fashion Boutique',
     location: 'DIFC, Dubai',
+    category: 'Lifestyle' as Category,
     url: 'https://stella-atelier.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://stella-atelier.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#C9A96E',
     bg: '#0C0C0C',
   },
   {
-    label: '16',
+    label: '14',
     name: 'Prestige Drive',
     industry: 'Luxury Car Rental',
     location: 'Dubai',
+    category: 'Lifestyle' as Category,
     url: 'https://prestige-drive-beta.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://prestige-drive-beta.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#E63946',
     bg: '#080808',
   },
   {
-    label: '17',
+    label: '15',
     name: 'The Collective',
     industry: 'Boutique Co-Working Space',
     location: 'DIFC, Dubai',
+    category: 'Business' as Category,
     url: 'https://the-collective-three.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://the-collective-three.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#6B5B3E',
     bg: '#F4F2EE',
   },
   {
-    label: '18',
+    label: '16',
     name: 'Apex Capital',
     industry: 'Fintech & Digital Assets',
     location: 'DIFC, Dubai',
+    category: 'Business' as Category,
     url: 'https://apex-fintech.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://apex-fintech.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#0EA5E9',
     bg: '#050A14',
   },
   {
-    label: '19',
+    label: '17',
     name: 'NOIR Studio',
     industry: 'Visual Artist & Creative Director',
     location: 'Dubai',
+    category: 'Creative' as Category,
     url: 'https://noir-studio-sigma.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://noir-studio-sigma.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#FF0040',
     bg: '#000000',
   },
   {
-    label: '20',
+    label: '18',
     name: 'Atlas Legal Group',
     industry: 'DIFC Law Firm',
     location: 'Dubai',
+    category: 'Business' as Category,
     url: 'https://atlas-legal.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://atlas-legal.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#C9956B',
     bg: '#0A0A0A',
   },
   {
-    label: '21',
+    label: '19',
     name: 'Leila Hariri Dental',
     industry: 'Aesthetic Dentistry',
     location: 'Dubai',
+    category: 'Lifestyle' as Category,
     url: 'https://leila-hariri-dental.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://leila-hariri-dental.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#E8C4B5',
     bg: '#FFF8F5',
   },
   {
-    label: '22',
+    label: '20',
     name: 'Maison Joëlle',
     industry: 'Bespoke Fine Jewelry',
     location: 'Dubai',
+    category: 'Creative' as Category,
     url: 'https://maison-joelle.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://maison-joelle.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#C9A96E',
     bg: '#0A0808',
   },
   {
-    label: '23',
+    label: '21',
     name: 'Sakura Studio',
     industry: 'Yoga & Aerial Yoga Studio',
     location: 'Business Bay, Dubai',
+    category: 'Wellness' as Category,
     url: 'https://sakura-studio.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://sakura-studio.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#C9956B',
     bg: '#1A2E1A',
   },
   {
-    label: '24',
+    label: '22',
     name: 'The Dark Passage',
     industry: 'Horror Escape Room',
     location: 'Dubai',
+    category: 'Creative' as Category,
     url: 'https://the-dark-passage.vercel.app',
     thumbnail: 'https://api.microlink.io/?url=https://the-dark-passage.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#CC0000',
     bg: '#050505',
   },
 ]
+
+type FilterCategory = 'All' | Category
+const FILTER_CATEGORIES: FilterCategory[] = ['All', 'F&B', 'Wellness', 'Creative', 'Business', 'Lifestyle']
 
 function ProjectRow({
   project,
@@ -281,7 +288,7 @@ function ProjectRow({
           {project.name}
         </h3>
 
-        {/* Industry + Location — hidden on mobile */}
+        {/* Industry + Location + Category — hidden on mobile */}
         <div className="hidden md:flex items-center gap-6 shrink-0">
           <span className="text-sm text-text-secondary font-body">
             {project.industry}
@@ -289,6 +296,10 @@ function ProjectRow({
           <span className="text-text-muted">·</span>
           <span className="text-sm text-text-secondary font-body">
             {project.location}
+          </span>
+          <span className="text-text-muted">·</span>
+          <span className="font-body text-[10px] tracking-widest uppercase text-text-secondary">
+            {project.category}
           </span>
         </div>
 
@@ -303,6 +314,8 @@ function ProjectRow({
         <span className="text-xs text-text-muted">{project.industry}</span>
         <span className="text-text-muted text-xs">·</span>
         <span className="text-xs text-text-muted">{project.location}</span>
+        <span className="text-text-muted text-xs">·</span>
+        <span className="font-body text-[10px] tracking-widest uppercase text-text-secondary">{project.category}</span>
       </div>
     </motion.a>
   )
@@ -310,6 +323,11 @@ function ProjectRow({
 
 export default function Work() {
   const [hoveredProject, setHoveredProject] = useState<typeof projects[0] | null>(null)
+  const [activeFilter, setActiveFilter] = useState<FilterCategory>('All')
+
+  const filteredProjects = activeFilter === 'All'
+    ? projects
+    : projects.filter((p) => p.category === activeFilter)
 
   return (
     <section id="work" className="py-section">
@@ -322,24 +340,66 @@ export default function Work() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="section-label mb-4">Selected work</p>
+          <div className="flex items-center gap-4 mb-4">
+            <p className="section-label">Selected work</p>
+            <span className="font-body text-xs tracking-widest uppercase text-text-secondary">
+              — {filteredProjects.length} projects
+            </span>
+          </div>
           <h2 className="font-display font-black text-heading text-text-primary uppercase">
             We built these.<br />
             <span className="font-serif italic text-accent normal-case">Before anyone paid a cent.</span>
           </h2>
         </motion.div>
 
+        {/* Category filters */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="flex flex-wrap gap-2 mb-8"
+        >
+          {FILTER_CATEGORIES.map((cat) => {
+            const isActive = activeFilter === cat
+            return (
+              <button
+                key={cat}
+                onClick={() => setActiveFilter(cat)}
+                className={[
+                  'font-body text-xs tracking-widest uppercase px-4 py-2 border rounded-full transition-all duration-200',
+                  isActive
+                    ? 'border-accent text-accent bg-accent/10'
+                    : 'border-border text-text-secondary bg-transparent hover:text-text-primary',
+                ].join(' ')}
+              >
+                {cat}
+              </button>
+            )
+          })}
+        </motion.div>
+
         {/* Project list */}
         <div className="border-t border-border">
-          {projects.map((project, i) => (
-            <ProjectRow
-              key={project.label}
-              project={project}
-              index={i}
-              onHover={() => setHoveredProject(project)}
-              onLeave={() => setHoveredProject(null)}
-            />
-          ))}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeFilter}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            >
+              {filteredProjects.map((project, i) => (
+                <ProjectRow
+                  key={project.label}
+                  project={project}
+                  index={i}
+                  onHover={() => setHoveredProject(project)}
+                  onLeave={() => setHoveredProject(null)}
+                />
+              ))}
+            </motion.div>
+          </AnimatePresence>
         </div>
 
         {/* Footer */}
