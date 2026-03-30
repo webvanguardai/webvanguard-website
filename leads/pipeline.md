@@ -595,7 +595,9 @@ Happy to answer any questions.
   - Sin SEO local (no rankea por "barbershop Dubai")
   - No refleja el tamaño real de la marca — parece una barbería pequeña de barrio
   - Instagram (8.8K followers) más activo que su web
-- Status: 🔴 Cold
+- **Demo:** https://zafran-barber.vercel.app
+- **Email draft:** outreach-batch-2026-03-30.md ✅
+- Status: 🔴 Cold — email preparado, pendiente aprobación Javi
 - Encontrado: 2026-03-30
 
 ## Maris Clinic — Clínica Estética
@@ -608,8 +610,13 @@ Happy to answer any questions.
   - Sin Google Maps embed
   - Sin galería de resultados/before-after visible en la portada
   - No hay CTA claro above the fold — el hero no invita a reservar
-- Status: 🔴 Cold
-- Encontrado: 2026-03-30
+- Demo: https://noor-clinic.vercel.app
+- Proposal: https://webvanguardai.github.io/proposal-maris-clinic/
+- Status: 🟡 Warm — WhatsApp pendiente de envío por Javi (2026-03-30)
+- Nota: email info@marisclinic.com rebota — contacto por WhatsApp +971 50 531 0298
+- Mensaje aprobado: "Hi Mari 👋 Sorry for reaching out on WhatsApp — tried your website email but it bounced, so here I am. I was looking at Maris Clinic and honestly love the concept — the only Brazilian aesthetic clinic in the UAE is such a strong story. 82K on Instagram too, clearly people connect with what you do. I work in web design and out of curiosity I put together a concept for what your site could look like. No agenda, just wanted to show you: 👉 https://noor-clinic.vercel.app — More detail here if you're curious: https://webvanguardai.github.io/proposal-maris-clinic/ — Javi, Web Vanguard"
+- Last contact: 2026-03-30
+- Follow-up due: 2026-04-06
 
 ## MAKID — DJ / Productor Musical
 - URL actual: no tiene web
@@ -636,21 +643,24 @@ Happy to answer any questions.
   - Sin caso de estudio o testimonios de agencias inmobiliarias en portada
   - Sin WhatsApp button visible
   - El copy es genérico ("Top-Rated Real Estate Photography") — falta identidad de marca
-- Status: 🔴 Cold
+- **Demo:** https://lumina-lens-six.vercel.app
+- **Email draft:** outreach-batch-2026-03-30.md ✅
+- Status: 🔴 Cold — email preparado, pendiente aprobación Javi
 - Encontrado: 2026-03-30
 
 ## Lila Taqueria — Restaurante Mexicano (F&B)
 - URL actual: https://www.lilataqueria.com
-- Email: hello@lilataqueria.com
-- Pain points:
-  - Web Squarespace minimalista — no captura reservas directas ni correos
-  - Todo el delivery va a Deliveroo (pierde relación directa con el cliente + paga comisión)
-  - Sin WhatsApp button para reservas de catering
-  - Sin galería de fotos del local en portada — la experiencia del restaurante no se ve
-  - Sin newsletter/captación de leads para eventos y catering
-  - CNTraveller & press coverage impresionante, pero la web no lo exhibe
-- Status: 🔴 Cold
-- Encontrado: 2026-03-30
+- Ubicación: 786 Jumeirah Beach Road, Umm Suqeim 3
+- Email: hello@lilataqueria.com ✅
+- Pain points reales (verificados):
+  - "Reserve Now" enlaza a teléfono — sin booking online real
+  - Delivery exclusivamente via Deliveroo — sin pedido directo
+  - Sin WhatsApp button
+- Demo: https://casa-maiz.vercel.app ✅
+- Proposal: https://webvanguardai.github.io/proposal-lila-taqueria/ ✅
+- Status: 🟡 Warm — email enviado 2026-03-30
+- Last contact: 2026-03-30
+- Follow-up due: 2026-04-06
 
 ---
 

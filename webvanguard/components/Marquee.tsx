@@ -3,7 +3,7 @@
 export default function Marquee() {
   const topItems = [
     'SEE IT BEFORE YOU PAY',
-    'FROM AED 2,000',
+    'FROM AED 1,500',
     'RESULTS, NOT PAGES',
   ]
 

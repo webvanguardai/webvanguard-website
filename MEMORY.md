@@ -51,6 +51,10 @@ Siempre: **webvanguard.co** y **hello@webvanguard.co**
 5. ⬜ Client accepts → update with real data → add to portfolio
 6. ⬜ Repeat. Never stop. Target: 6 sites this week.
 
+## Contacto Web Vanguard
+- **WhatsApp:** +971585324519 — usar en TODAS las propuestas y demos. NUNCA placeholders como 971000000000.
+- **Email:** hello@webvanguard.co
+
 ## Email Access
 - Zoho SMTP/IMAP configurado y funcional desde 2026-03-24
 - Credenciales en: /home/javibeat/.openclaw/workspace/.email-config
@@ -95,8 +99,8 @@ Each site must include ALL of the following before deploy:
 ## Pricing Strategy
 | Plan | Price (AED) | What's included |
 |------|-------------|-----------------|
-| Starter | 2,000 | 1-page landing + WhatsApp + SEO básico |
-| Launch | 3,000 | Web + form + WhatsApp + SEO completo + GA4 |
+| Starter | 1,500 | 1-page landing + WhatsApp + SEO básico |
+| Launch | 2,500 | Web + form + WhatsApp + SEO completo + GA4 |
 | Growth | 4,500 | All + Analytics + 3 months support |
 | Premium | 8,000+ | All + content strategy + Google Ads setup |
 
@@ -121,6 +125,32 @@ Each site must include ALL of the following before deploy:
 - **Nunca inventar pain points** — solo mencionar lo que has confirmado visitando su web
 - **Demos — revisar antes de dar por terminado:** links funcionando, formulario activo, WhatsApp correcto, imágenes cargando, mobile responsive
 
+### ⛔ PROCESO DE CALIDAD — DOBLE REVISIÓN OBLIGATORIA
+
+#### FASE 1 — Antes de hacer deploy (en el código)
+- [ ] ❌ El demo NO usa el nombre real del cliente — siempre marca ficticia
+- [ ] ❌ El demo NO es un clone con colores cambiados — concepto visualmente distinto
+- [ ] grep -ri "[nombre anterior]" en TODOS los archivos: .tsx, .ts, .css, .html, .xml, .txt, .json
+- [ ] Imagen hero apropiada para el vertical — web_fetch o image tool para confirmarlo
+- [ ] Meta title, meta description, og:title, og:description, JSON-LD name — todos con nombre ficticio
+- [ ] robots.txt y sitemap.xml apuntan al dominio correcto
+- [ ] Formulario Formspree activo, WhatsApp link correcto, Google Maps correcto
+
+#### FASE 2 — Después del deploy (verificar lo que está LIVE, no el código)
+- [ ] web_fetch sobre la URL live — confirmar que el título que aparece es el ficticio
+- [ ] web_fetch sobre /robots.txt y /sitemap.xml — confirmar dominio correcto
+- [ ] Confirmar HTTP 200
+- [ ] Confirmar que la URL del demo NO coincide con otro demo ya enviado a otro cliente
+
+#### FASE 3 — Antes de presentar a Javi
+- [ ] Abrir propuesta (web_fetch) y confirmar que el pain points son reales y verificados
+- [ ] Preparar los 3 elementos juntos: demo URL + propuesta URL + email exacto
+- [ ] Releer el email como si fuera el cliente recibiéndolo — ¿tiene sentido? ¿es correcto?
+- [ ] Solo entonces presentar a Javi — todo junto, no por partes
+
+#### ⛔ REGLA DE ORO
+**Si no has completado las 3 fases, NO presentas. Sin excepciones. Javi no revisa — revisas tú.**
+
 ## Sales Pitch
 "We already built your website. You just need to put your name on it."
 - Show them the demo live URL
@@ -141,8 +171,8 @@ Each site must include ALL of the following before deploy:
 ### Pricing Table (AED)
 | Plan | Price | What's included |
 |------|-------|-----------------|
-| Starter | 2,000 | 1-page landing, WhatsApp button, SEO básico, mobile responsive |
-| Launch | 3,000 | Multi-page web, contact form, WhatsApp, SEO completo, GA4 |
+| Starter | 1,500 | 1-page landing, WhatsApp button, SEO básico, mobile responsive |
+| Launch | 2,500 | Multi-page web, contact form, WhatsApp, SEO completo, GA4 |
 | Growth | 4,500 | Launch + blog, 3 months support, Analytics setup, OG/AI SEO |
 | Premium | 8,000+ | Growth + Google Ads setup, content strategy, monthly reporting |
 
