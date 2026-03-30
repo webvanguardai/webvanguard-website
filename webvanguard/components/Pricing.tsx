@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const plans = [
   {
     name: 'Starter',
-    price: 'AED 1,500',
+    price: 'AED 2,000',
     tagline: 'Get found. Get contacted.',
     includes: [
       'Your business shows up on Google',
@@ -18,7 +18,7 @@ const plans = [
   },
   {
     name: 'Launch',
-    price: 'AED 2,500',
+    price: 'AED 3,000',
     tagline: 'The complete package.',
     includes: [
       'Everything in Starter',
