@@ -234,6 +234,16 @@ const projects = [
     accent: '#C9956B',
     bg: '#1A2E1A',
   },
+  {
+    label: '24',
+    name: 'The Dark Passage',
+    industry: 'Horror Escape Room',
+    location: 'Dubai',
+    url: 'https://the-dark-passage.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://the-dark-passage.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#CC0000',
+    bg: '#050505',
+  },
 ]
 
 function ProjectRow({

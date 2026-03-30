@@ -241,22 +241,22 @@ export default function Home() {
         {/* ─── HERO ─── */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&q=80"
-            alt="Bright restaurant interior with natural light"
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=85"
+            alt="Premium dark fine dining restaurant interior with gold accents"
             fill
             priority
             className="object-cover"
             sizes="100vw"
           />
-          {/* Light warm overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-offwhite/60 via-offwhite/30 to-offwhite/70" />
+          {/* Dark cinematic overlay for text legibility */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-black/65" />
 
           <div className="relative z-10 text-center px-6 max-w-4xl">
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="font-playfair text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-charcoal leading-[1.1] mb-6"
+              className="font-playfair text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white leading-[1.1] mb-6"
             >
               Where Beirut
               <br />
@@ -266,7 +266,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-lg md:text-xl text-charcoal/70 mb-10 max-w-2xl mx-auto"
+              className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto"
             >
               Modern Lebanese cuisine in the heart of Downtown Dubai.
             </motion.p>
@@ -284,7 +284,7 @@ export default function Home() {
               </a>
               <a
                 href="#menu"
-                className="px-8 py-3.5 border-2 border-charcoal text-charcoal rounded-full text-sm tracking-wide hover:bg-charcoal hover:text-offwhite transition-colors"
+                className="px-8 py-3.5 border-2 border-white/60 text-white rounded-full text-sm tracking-wide hover:bg-white hover:text-charcoal transition-colors"
               >
                 See the Menu
               </a>

@@ -13,7 +13,7 @@ function classify(from, subject, body) {
   if (text.includes('nibango') || text.includes('nibango.com')) return 'nibango';
   const webVanguardKeywords = ['web vanguard', 'webvanguard', 'web design', 'website', 'proposal', 'pricing', 'quote', 'client inquiry'];
   if (webVanguardKeywords.some(k => text.includes(k))) return 'webvanguard';
-  const spamKeywords = ['unsubscribe', 'newsletter', 'no-reply', 'noreply', 'notification', 'alert', 'automated', 'do not reply', 'donotreply', 'verify your email', 'confirm your', 'password reset', 'billing receipt', 'invoice from', 'your receipt'];
+  const spamKeywords = ['unsubscribe', 'newsletter', 'no-reply', 'noreply', 'notification', 'alert', 'automated', 'do not reply', 'donotreply', 'verify your email', 'confirm your', 'password reset', 'billing receipt', 'invoice from', 'your receipt', 'dmarc', 'dmarc-support', 'report domain', 'aggregate report', 'google.com/postmaster'];
   if (spamKeywords.some(k => text.includes(k))) return 'spam';
   return 'unclear';
 }

@@ -18,8 +18,9 @@ _Archivo dedicado a beatLabs. Separado de Web Vanguard y contexto personal._
 
 ## Email
 
-- **Dirección:** info@beatlabs.ae
-- **Setup:** Alias en Zoho Mail sobre el mismo buzón que hello@webvanguard.co
+- **Dirección principal:** info@beatlabs.ae
+- **Alias adicional:** developer@beatlabs.ae ✅ (creado 2026-03-29)
+- **Setup:** Aliases en Zoho Mail sobre el mismo buzón que hello@webvanguard.co
 - **Carpeta IMAP:** BeatLabs (creada en buzón Zoho)
 - **DNS verificado:** MX ✅ SPF ✅ DKIM ✅ (configurado 2026-03-26 en Tasjeel)
 - **Estado:** ✅ Funcional — envío y recepción probados 2026-03-26

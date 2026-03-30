@@ -102,17 +102,24 @@ Each site must include ALL of the following before deploy:
 
 ## Outreach Rules — NON NEGOTIABLE
 ### Flujo completo (en este orden, sin saltarse pasos):
-1. **ANALIZAR** — verificar la web del prospecto con Playwright. Identificar: qué le falta (WA, form, maps, SEO), su estética, tono, pain points reales
+1. **ANALIZAR** — verificar la web del prospecto. Identificar: qué le falta (WA, form, maps, SEO), su estética, tono, pain points reales
 2. **DEMO** — construir inspirado en su vertical, visualmente superior a lo que tienen
 3. **PROPUESTA** — crear en GitHub Pages con pain points reales + link al demo + pricing
-4. **ANALIZAR DE NUEVO** — segunda pasada con Playwright justo antes de escribir el email. Confirmar que los pain points siguen siendo correctos y no nos hemos dejado nada
-5. **EMAIL** — enviar con los DOS links (propuesta + demo). Solo mencionar pain points confirmados en el segundo análisis
+4. **ANALIZAR DE NUEVO** — segunda pasada justo antes de escribir el email. Confirmar que los pain points siguen siendo correctos y no nos hemos dejado nada
+5. **PRESENTAR A JAVI** — mostrar el email preparado y esperar aprobación explícita
+6. **EMAIL** — enviar SOLO cuando Javi diga explícitamente "ok" o "envía". Nunca antes.
+
+### ⛔ REGLA ABSOLUTA — EMAILS
+**NUNCA enviar un email de outreach de forma autónoma. Sin excepciones. Sin importar lo urgente o lo perfecto que parezca.**
+- Preparar ✅ | Verificar ✅ | Presentar a Javi ✅ | Esperar su ok ✅ | Enviar ✅
+- Enviar por iniciativa propia, heartbeat, o subagente autónomo ❌ PROHIBIDO
 
 ### Reglas adicionales:
 - **Match the demo to the vertical** — no mandar demo de spa a clínica dental, barbería a restaurante, etc.
 - **Verify email exists** before sending
 - **One follow-up max** — 5 days after no reply, then stop
-- **Nunca inventar pain points** — si Playwright no lo confirma, no lo mencionas
+- **Nunca inventar pain points** — solo mencionar lo que has confirmado visitando su web
+- **Demos — revisar antes de dar por terminado:** links funcionando, formulario activo, WhatsApp correcto, imágenes cargando, mobile responsive
 
 ## Sales Pitch
 "We already built your website. You just need to put your name on it."

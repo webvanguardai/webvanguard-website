@@ -49,10 +49,18 @@ Estos son los checks técnicos + trabajo autónomo. Ver job "WebVanguard 6h site
 - Publicar blog articles (máx 1 por día)
 - Actualizar portfolio
 - Fixes técnicos
-- Enviar emails de prospecting (previo análisis de la web del lead)
+- Prospecting: buscar leads, analizar webs, PREPARAR emails (no enviar)
 - Rediseñar demos existentes
 
+## ⛔ REGLA FIJA — NUNCA IGNORAR
+**EMAILS A LEADS/CLIENTES: NUNCA enviar sin aprobación explícita de Javi.**
+- Preparar el email ✅
+- Mostrar a Javi y esperar confirmación ✅
+- Enviar solo cuando Javi diga explícitamente "envía" o "ok" ✅
+- Enviar de forma autónoma por heartbeat o iniciativa propia ❌ PROHIBIDO
+
 ### Decisiones que requieren a Javi
+- **Enviar cualquier email a leads o clientes — siempre**
 - Cerrar tratos / confirmar precios
 - Gastos (dominios, ads, herramientas de pago)
 - Cambios en precios del sitio

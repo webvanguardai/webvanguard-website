@@ -447,6 +447,7 @@ Happy to answer any questions.
 - **Contact:** info@bolledubai.com
 - **Pain points:** Site routes visitors to Tripadvisor for reviews instead of capturing bookings on-site; no clear reservation CTA; basic layout that doesn't match the DIFC premium positioning
 - **Demo:** https://osteria-milano.vercel.app ✅ (Italian fine dining demo)
+- **Proposal:** https://webvanguardai.github.io/proposal-bolle-italian/ ✅
 - **Status:** 🟡 Warm — email enviado 28 Mar 2026
 - **Last contact:** 2026-03-28
 - **Follow-up due:** 2026-04-04
@@ -483,6 +484,7 @@ Happy to answer any questions.
 - **Contact:** dubai@mu-kii.ae
 - **Pain points:** 3 Dubai locations (JBR, Marina, JLT) but site sends guests to OpenTable/external bookings; no brand storytelling around the all-you-can-eat tapas concept; minimal web presence for a multi-location brand
 - **Demo:** https://zen-house.vercel.app ✅ (Pan-Asian restaurant demo)
+- **Proposal:** https://webvanguardai.github.io/proposal-mu-kii/ ✅
 - **Status:** 🟡 Warm — email enviado 28 Mar 2026
 - **Last contact:** 2026-03-28
 - **Follow-up due:** 2026-04-04
@@ -507,5 +509,165 @@ Happy to answer any questions.
 - Zen House (pan-asiático) → https://zen-house.vercel.app — para Mu-Kii
 
 ### Demos Bolle Italian y Mu-Kii corregidos:
-- Bolle Italian → demo correcto: https://osteria-milano.vercel.app (PENDIENTE propuesta)
-- Mu-Kii → demo correcto: https://zen-house.vercel.app (PENDIENTE propuesta)
+- Bolle Italian → demo: https://osteria-milano.vercel.app | propuesta: https://webvanguardai.github.io/proposal-bolle-italian/ ✅
+- Mu-Kii → demo: https://zen-house.vercel.app | propuesta: https://webvanguardai.github.io/proposal-mu-kii/ ✅
+
+---
+
+## Batch 10 — March 29, 2026 (Morning Prospecting)
+
+### 30 — Athena Dermatology Clinic
+- **Sector:** Dermatology Clinic
+- **Location:** The Greens, Dubai
+- **Website:** athenaderma.com (Squarespace)
+- **Contact:** info@athenaderma.com ✅
+- **Demo:** https://noor-clinic.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-athena-dermatology/
+- **Pain points:** Squarespace generic template doesn't match premium positioning; no online booking widget (WhatsApp-only CTA); no Google Maps embed; no pricing visible
+- **Email subject:** Your skin deserves a website as refined as your treatments, Athena
+- **Status:** 🟡 Warm — email enviado 2026-03-29
+- **Last contact:** 2026-03-29
+- **Follow-up due:** 2026-04-05
+
+### 31 — PhysioFit Sports & Rehab Clinic
+- **Sector:** Physiotherapy / Sports Rehab
+- **Location:** Business Bay, Dubai
+- **Website:** physiofitdxb.com (WordPress, basic)
+- **Contact:** info@physiofitdxb.com ✅
+- **Demo:** https://apex-training.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-physiofit-dxb/
+- **Pain points:** Basic WordPress design doesn't match boutique clinic quality; no online booking (WhatsApp-only); no Google Maps embed; reviews not showcased visually
+- **Email subject:** PhysioFit deserves a website as strong as your results
+- **Status:** 🟡 Warm — email enviado 2026-03-29
+- **Last contact:** 2026-03-29
+- **Follow-up due:** 2026-04-05
+
+### 32 — Wooferine Pet Grooming
+- **Sector:** Pet Grooming (mobile + in-store)
+- **Location:** Dubai & Sharjah
+- **Website:** thewooferine.com (very basic)
+- **Contact:** info@thewooferine.com ✅
+- **Demo:** https://lumiere-wellness.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-wooferine/
+- **Pain points:** Extremely basic site; no online booking or pricing; broken JS counters showing "0"; no WhatsApp button; no Google Maps
+- **Email subject:** Wooferine's service is 5-star. Your website, not yet.
+- **Status:** 🟡 Warm — email enviado 2026-03-29
+- **Last contact:** 2026-03-29
+- **Follow-up due:** 2026-04-05
+
+### 33 — Carzilla Car Care
+- **Sector:** Car Detailing / Luxury Auto Care
+- **Location:** Dubai
+- **Website:** carzillacarcare.com (WordPress, Ancora theme)
+- **Contact:** info@carzillacarcare.com ✅
+- **Demo:** https://noor-clinic.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-carzilla/
+- **Pain points:** Generic Ancora WordPress theme; "GET A QUOTE" button links to WhatsApp only; broken counters showing "0+"; footer social links point to AncoraThemes (not their own socials)
+- **Email subject:** A Rolls-Royce deserves better than an Ancora template
+- **Status:** 🟡 Warm — email enviado 2026-03-29
+- **Last contact:** 2026-03-29
+- **Follow-up due:** 2026-04-05
+
+### 34 — Crème Dubai
+- **Sector:** Specialty Dessert / Ice Cream Shop
+- **Location:** Dubai (2 locations)
+- **Website:** uae.cremelondon.com (ultra-minimal subdomain)
+- **Contact:** sendcookies@cremelondonuae.com ✅
+- **Demo:** https://qahwa-house.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-creme-dubai/
+- **Pain points:** Subdomain site (no UAE domain = bad local SEO); almost no content; no menu/prices on site; no WhatsApp; all orders via Talabat/Deliveroo (losing direct relationship + paying commission)
+- **Email subject:** Your cookies are viral. Your website is invisible.
+- **Status:** 🟡 Warm — email enviado 2026-03-29
+- **Last contact:** 2026-03-29
+- **Follow-up due:** 2026-04-05
+
+---
+
+## Batch 11 — March 30, 2026 (Morning Prospecting)
+
+## The Barbershop UAE — Barbería (cadena, 20 locales)
+- URL actual: https://www.thebarbershop.ae
+- Email: info@thebarbershopuae.com
+- Pain points:
+  - Web de una sola página ultra-básica (Wix-style), sin booking online
+  - 20 locales en Dubai pero sin mapa ni listado de sucursales en la web
+  - Sin servicios con precio visible
+  - Sin SEO local (no rankea por "barbershop Dubai")
+  - No refleja el tamaño real de la marca — parece una barbería pequeña de barrio
+  - Instagram (8.8K followers) más activo que su web
+- Status: 🔴 Cold
+- Encontrado: 2026-03-30
+
+## Maris Clinic — Clínica Estética
+- URL actual: https://marisclinic.com
+- Email: info@marisclinic.com
+- Pain points:
+  - Sitio con WordPress básico — no transmite el posicionamiento premium de la clínica
+  - 82K seguidores en Instagram pero web no refleja ese nivel de autoridad
+  - Sin booking online — toda la conversión va a WhatsApp
+  - Sin Google Maps embed
+  - Sin galería de resultados/before-after visible en la portada
+  - No hay CTA claro above the fold — el hero no invita a reservar
+- Status: 🔴 Cold
+- Encontrado: 2026-03-30
+
+## MAKID — DJ / Productor Musical
+- URL actual: no tiene web
+- **Demo URL: https://makid-dj.vercel.app** ✅ (2026-03-30)
+- **GitHub: https://github.com/webvanguardai/makid-dj**
+- Email: djmakid@gmail.com
+- Pain points:
+  - Cero presencia web — solo Instagram (@djmakid, 2.1K followers)
+  - Email de Gmail para bookings = poco profesional para un artista establecido
+  - Residente en The Room DXB y fundador de Makid Factory Music — sin página que lo demuestre
+  - Invisible en búsquedas de tipo "DJ Dubai booking" o "house music DJ Dubai"
+  - Sin EPK (Electronic Press Kit) digital para venues y eventos
+- Status: 🟡 Demo enviado
+- Encontrado: 2026-03-30
+- Demo enviado: 2026-03-30
+
+## San Photography — Fotografía Inmobiliaria
+- URL actual: https://sanphotography.ae
+- Email: info@sanphotography.ae
+- Pain points:
+  - Web WordPress básica sin diferenciación visual — competidores más premium roban clientes
+  - Sin booking/cotización online directa — solo formulario de contacto genérico
+  - Sin portfolio organizado por tipo de propiedad (villa, apartamento, comercial)
+  - Sin caso de estudio o testimonios de agencias inmobiliarias en portada
+  - Sin WhatsApp button visible
+  - El copy es genérico ("Top-Rated Real Estate Photography") — falta identidad de marca
+- Status: 🔴 Cold
+- Encontrado: 2026-03-30
+
+## Lila Taqueria — Restaurante Mexicano (F&B)
+- URL actual: https://www.lilataqueria.com
+- Email: hello@lilataqueria.com
+- Pain points:
+  - Web Squarespace minimalista — no captura reservas directas ni correos
+  - Todo el delivery va a Deliveroo (pierde relación directa con el cliente + paga comisión)
+  - Sin WhatsApp button para reservas de catering
+  - Sin galería de fotos del local en portada — la experiencia del restaurante no se ve
+  - Sin newsletter/captación de leads para eventos y catering
+  - CNTraveller & press coverage impresionante, pero la web no lo exhibe
+- Status: 🔴 Cold
+- Encontrado: 2026-03-30
+
+---
+
+## Batch 12 — March 30, 2026 (Late Morning)
+
+## 40 — Insidious Escape Room — Escape Room / Horror Experience
+- **URL actual:** https://insidiousescaperoom.com (WordPress, basic)
+- **Email:** insidiousescaperoom@gmail.com ✅
+- **Phone:** +971 58 900 9147
+- **Location:** Dubai Motor City
+- **Demo:** https://the-dark-passage.vercel.app ✅
+- **Proposal:** https://webvanguardai.github.io/proposal-insidious-escape-room ✅
+- **Pain points:**
+  - Stats counters (Complex Locks, Survivors) muestran "0" en homepage — cada visitante lo ve antes de reservar
+  - Sin WhatsApp button flotante (solo en footer)
+  - Diseño WordPress genérico no transmite la experiencia de terror inmersiva
+  - Sin galería visual de las salas que genere anticipación
+- **Status:** 🟡 Warm — email enviado 2026-03-30
+- **Last contact:** 2026-03-30
+- **Follow-up due:** 2026-04-06
