@@ -99,8 +99,8 @@ Each site must include ALL of the following before deploy:
 ## Pricing Strategy
 | Plan | Price (AED) | What's included |
 |------|-------------|-----------------|
-| Starter | 1,500 | 1-page landing + WhatsApp + SEO básico |
-| Launch | 2,500 | Web + form + WhatsApp + SEO completo + GA4 |
+| Starter | 2,000 | 1-page landing + WhatsApp + SEO básico |
+| Launch | 3,000 | Web + form + WhatsApp + SEO completo + GA4 |
 | Growth | 4,500 | All + Analytics + 3 months support |
 | Premium | 8,000+ | All + content strategy + Google Ads setup |
 
@@ -171,8 +171,8 @@ Each site must include ALL of the following before deploy:
 ### Pricing Table (AED)
 | Plan | Price | What's included |
 |------|-------|-----------------|
-| Starter | 1,500 | 1-page landing, WhatsApp button, SEO básico, mobile responsive |
-| Launch | 2,500 | Multi-page web, contact form, WhatsApp, SEO completo, GA4 |
+| Starter | 2,000 | 1-page landing, WhatsApp button, SEO básico, mobile responsive |
+| Launch | 3,000 | Multi-page web, contact form, WhatsApp, SEO completo, GA4 |
 | Growth | 4,500 | Launch + blog, 3 months support, Analytics setup, OG/AI SEO |
 | Premium | 8,000+ | Growth + Google Ads setup, content strategy, monthly reporting |
 
