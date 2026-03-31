@@ -41,6 +41,18 @@ const projects = [
   },
   {
     label: '04',
+    name: 'Casa Maíz',
+    industry: 'Mexican Taquería',
+    location: 'Al Quoz, Dubai',
+    category: 'F&B' as Category,
+    url: 'https://casa-maiz.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://casa-maiz.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#E8A020',
+    bg: '#0A0600',
+  },
+
+  {
+    label: '05',
     name: 'Levant & Co.',
     industry: 'Fine Dining',
     location: 'DIFC',
@@ -51,7 +63,7 @@ const projects = [
     bg: '#0D0A08',
   },
   {
-    label: '05',
+    label: '06',
     name: 'Solara Music',
     industry: 'Electronic Music & DJ',
     location: 'Dubai',
@@ -62,7 +74,7 @@ const projects = [
     bg: '#08080F',
   },
   {
-    label: '06',
+    label: '07',
     name: 'Céleste Events',
     industry: 'Luxury Event Design',
     location: 'Dubai',
@@ -73,7 +85,7 @@ const projects = [
     bg: '#0D0A08',
   },
   {
-    label: '07',
+    label: '08',
     name: 'Noor Clinic',
     industry: 'Aesthetic Medicine',
     location: 'Business Bay',
@@ -84,7 +96,7 @@ const projects = [
     bg: '#0A0A0F',
   },
   {
-    label: '08',
+    label: '09',
     name: 'APEX Training',
     industry: 'Elite Personal Training',
     location: 'Dubai Marina',
@@ -95,7 +107,7 @@ const projects = [
     bg: '#0A0A0A',
   },
   {
-    label: '09',
+    label: '10',
     name: 'Saffron House',
     industry: 'Boutique Hotel',
     location: 'Al Fahidi, Old Dubai',
@@ -106,7 +118,7 @@ const projects = [
     bg: '#0E0C08',
   },
   {
-    label: '10',
+    label: '11',
     name: 'Atelier Forma',
     industry: 'Architecture & Interior Design',
     location: 'DIFC, Dubai',
@@ -117,7 +129,7 @@ const projects = [
     bg: '#F5F3EF',
   },
   {
-    label: '11',
+    label: '12',
     name: 'Stella Atelier',
     industry: 'Luxury Fashion Boutique',
     location: 'DIFC, Dubai',
@@ -128,7 +140,7 @@ const projects = [
     bg: '#0C0C0C',
   },
   {
-    label: '12',
+    label: '13',
     name: 'Prestige Drive',
     industry: 'Luxury Car Rental',
     location: 'Dubai',
@@ -139,7 +151,7 @@ const projects = [
     bg: '#080808',
   },
   {
-    label: '13',
+    label: '14',
     name: 'The Collective',
     industry: 'Boutique Co-Working Space',
     location: 'DIFC, Dubai',
@@ -150,7 +162,7 @@ const projects = [
     bg: '#F4F2EE',
   },
   {
-    label: '14',
+    label: '15',
     name: 'Apex Capital',
     industry: 'Fintech & Digital Assets',
     location: 'DIFC, Dubai',
@@ -161,7 +173,7 @@ const projects = [
     bg: '#050A14',
   },
   {
-    label: '15',
+    label: '16',
     name: 'NOIR Studio',
     industry: 'Visual Artist & Creative Director',
     location: 'Dubai',
@@ -172,7 +184,7 @@ const projects = [
     bg: '#000000',
   },
   {
-    label: '16',
+    label: '17',
     name: 'Atlas Legal Group',
     industry: 'DIFC Law Firm',
     location: 'Dubai',
@@ -183,7 +195,7 @@ const projects = [
     bg: '#0A0A0A',
   },
   {
-    label: '17',
+    label: '18',
     name: 'Leila Hariri Dental',
     industry: 'Aesthetic Dentistry',
     location: 'Dubai',
@@ -194,7 +206,7 @@ const projects = [
     bg: '#FFF8F5',
   },
   {
-    label: '18',
+    label: '19',
     name: 'Maison Joëlle',
     industry: 'Bespoke Fine Jewelry',
     location: 'Dubai',
@@ -205,7 +217,7 @@ const projects = [
     bg: '#0A0808',
   },
   {
-    label: '19',
+    label: '20',
     name: 'Sakura Studio',
     industry: 'Yoga & Aerial Yoga Studio',
     location: 'Business Bay, Dubai',
@@ -216,7 +228,7 @@ const projects = [
     bg: '#1A2E1A',
   },
   {
-    label: '20',
+    label: '21',
     name: 'The Dark Passage',
     industry: 'Horror Escape Room',
     location: 'Dubai',
@@ -227,7 +239,7 @@ const projects = [
     bg: '#050505',
   },
   {
-    label: '21',
+    label: '22',
     name: 'Lumière Wellness Studio',
     industry: 'Luxury Spa',
     location: 'Dubai Marina',
@@ -238,7 +250,7 @@ const projects = [
     bg: '#0A0A0A',
   },
   {
-    label: '22',
+    label: '23',
     name: 'Apex Properties',
     industry: 'Real Estate',
     location: 'DIFC',
@@ -247,17 +259,6 @@ const projects = [
     thumbnail: 'https://api.microlink.io/?url=https://apex-properties.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
     accent: '#3B82F6',
     bg: '#0A0A0A',
-  },
-  {
-    label: '24',
-    name: 'Casa Maíz',
-    industry: 'Mexican Taquería',
-    location: 'Al Quoz, Dubai',
-    category: 'F&B' as Category,
-    url: 'https://casa-maiz.vercel.app',
-    thumbnail: 'https://api.microlink.io/?url=https://casa-maiz.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
-    accent: '#E8A020',
-    bg: '#0A0600',
   },
 ]
 
