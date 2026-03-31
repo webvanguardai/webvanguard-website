@@ -226,10 +226,10 @@ Each client gets a personalized proposal page hosted on GitHub Pages:
 - Repo: github.com/webvanguardai/[client-slug]
 
 ## Working style
-- **Opus** handles ALL website code changes (webvanguard portfolio + client sites)
+- **Subagents para código → siempre Opus** (`model: "opus"` en sessions_spawn)
+- **UX/UI decisions → criterio propio** (Sonnet está bien para esto)
 - Claude Code (terminal) handles heavy work: code, deploys, design decisions
 - Telegram bot (this) handles: quick updates, approvals, status checks, communication with Javibeat on the go
-- Sub-agents available: Sonnet/Haiku for parallel tasks
 - NO external API costs — only Claude Max subscription
 - Persist important context in files under `memory/`
 

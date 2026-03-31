@@ -248,6 +248,17 @@ const projects = [
     accent: '#CC0000',
     bg: '#050505',
   },
+  {
+    label: '23',
+    name: 'Casa Maíz',
+    industry: 'Mexican Taquería',
+    location: 'Al Quoz, Dubai',
+    category: 'F&B' as Category,
+    url: 'https://casa-maiz.vercel.app',
+    thumbnail: 'https://api.microlink.io/?url=https://casa-maiz.vercel.app&screenshot=true&embed=screenshot.url&meta=false&type=jpeg&viewport.width=1440&viewport.height=900',
+    accent: '#E8A020',
+    bg: '#0A0600',
+  },
 ]
 
 type FilterCategory = 'All' | Category
