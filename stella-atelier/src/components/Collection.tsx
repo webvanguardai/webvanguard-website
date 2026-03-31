@@ -29,7 +29,7 @@ const pieces = [
     designer: 'Roland Mouret',
     price: 'AED 12,600',
     tag: 'Limited',
-    img: 'https://images.unsplash.com/photo-1566479179817-c0c5a8d5c8e0?w=800&q=80',
+    img: 'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80',
   },
 ];
 
