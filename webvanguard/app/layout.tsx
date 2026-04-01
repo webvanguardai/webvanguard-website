@@ -62,20 +62,13 @@ export const metadata: Metadata = {
     title: 'Web Vanguard — Web Design & Digital Growth Agency in Dubai',
     description: 'We build high-converting websites for businesses in Dubai. Custom design, SEO, branding, and analytics.',
     siteName: 'Web Vanguard',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Web Vanguard — Dubai Web Design Agency',
-      },
-    ],
+
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Web Vanguard — Web Design Agency in Dubai',
     description: 'High-converting websites for businesses. Design, SEO, branding.',
-    images: ['/og-image.png'],
+
   },
   robots: {
     index: true,
