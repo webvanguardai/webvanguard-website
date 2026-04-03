@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'why-dubai-gyms-lose-members-without-a-website',
+    title: 'Why Dubai Gyms and Fitness Studios Are Losing Members Without a Proper Website',
+    excerpt: "Dubai's fitness market is worth over $600 million — but most independent gyms have no website or one so outdated it drives people away. Here's how that invisible problem is costing you members every single week.",
+    date: '2026-04-03',
+    readTime: '9 min read',
+    category: 'Fitness & Wellness',
+  },
+  {
     slug: 'wedding-planner-website-dubai',
     title: 'Why Dubai Wedding Planners Lose Clients Without a Professional Website',
     excerpt: "Couples planning a Dubai wedding spend weeks researching online before making a single call. If your business doesn't have a professional website, you don't exist in their world. Here's what a high-converting wedding planning site does for your bookings.",
