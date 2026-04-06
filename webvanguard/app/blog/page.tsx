@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'why-dubai-logistics-companies-lose-clients',
+    title: 'Why Dubai Logistics Companies Lose B2B Clients Before the First Call',
+    excerpt: "A procurement manager Googles your freight company before calling. If your site shows 'Not Secure', has no quote form, or breaks on mobile — they move on. Here's what most Dubai logistics companies get wrong online.",
+    date: '2026-04-06',
+    readTime: '7 min read',
+    category: 'Logistics & Freight',
+  },
+  {
     slug: 'why-dubai-gyms-lose-members-without-a-website',
     title: 'Why Dubai Gyms and Fitness Studios Are Losing Members Without a Proper Website',
     excerpt: "Dubai's fitness market is worth over $600 million — but most independent gyms have no website or one so outdated it drives people away. Here's how that invisible problem is costing you members every single week.",
