@@ -193,6 +193,18 @@
 - **Status:** 🔴 Cold
 - **Last contact:** —
 
+### Floral Home Beauty
+- **Sector:** Mobile / At-home Spa
+- **Location:** Dubai
+- **Contact:** floralbodytreatments@gmail.com | WhatsApp: +971509261976
+- **Website:** floralbodytreatments.com (single page, /book and /contact → 404)
+- **Demo:** https://lumiere-wellness.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-floral-home-beauty/
+- **Pain points:** Booking page 404, contact page 404, no services/pricing listed, no SEO
+- **Status:** 🟡 Warm — email enviado 2026-04-07
+- **Last contact:** 2026-04-07
+- **Follow-up due:** 2026-04-14
+
 ---
 
 ## Email Templates
@@ -681,3 +693,85 @@ Happy to answer any questions.
 - **Status:** 🟡 Warm — email enviado 2026-03-30
 - **Last contact:** 2026-03-30
 - **Follow-up due:** 2026-04-06
+
+---
+
+### Bellissima Salon (Batch 02 — April 3, 2026)
+- **Sector:** Beauty Salon
+- **Location:** Discovery Gardens, Dubai
+- **Contact:** bellissima.salon.dg@gmail.com
+- **Demo:** https://bella-studio-dubai.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-bellissima-salon/
+- **Pain points:**
+  - Website not updated since 2021 — stale content signals abandonment
+  - No mobile-first design (80%+ of salon traffic is mobile)
+  - No online booking or WhatsApp integration on mobile
+  - Zero SEO (no meta tags, no schema, no keywords) — invisible on Google
+  - Blog posts with numbered titles ("3", "4") — terrible for SEO
+  - Generic design doesn't match premium service quality (balayage, keratin, nail art)
+  - WhatsApp link uses web.whatsapp.com (broken on mobile devices)
+- **Status:** 🔴 Cold — demo + propuesta preparados, esperando aprobación de Javi
+- **Last contact:** —
+
+---
+
+## Batch 02 — April 3, 2026
+
+### VIP Gym Dubai (Batch 02 — April 3, 2026)
+- **Sector:** Fitness / Gym
+- **Location:** Al Mina, Dubai
+- **Contact:** info@vipgymdubai.com
+- **Instagram:** @vipgym.dxb (2.8K followers)
+- **Website:** vipgymdubai.com (exists but incomplete)
+- **Demo:** https://apex-fitness-dubai.vercel.app
+- **Proposal:** https://webvanguardai.github.io/proposal-vip-gym/
+- **Pain points:**
+  - No visible pricing — membership plans redirect to WhatsApp without showing any price
+  - No online booking — every enquiry requires WhatsApp message
+  - No real testimonials — "340 satisfied clients" stat with zero actual reviews
+  - No trainer profiles — coaches completely invisible
+  - No Google Maps embed — text-only address
+  - Filler content (beginner workout blog) dilutes premium positioning
+  - No SEO: no meta tags, no schema, no keywords
+- **Status:** 🔴 Cold — demo + propuesta preparados, esperando aprobación de Javi
+- **Last contact:** —
+
+### FAS Fashion (Batch 02 — April 3, 2026)
+- Sector: Fashion Boutique
+- Location: Dubai Outlet Mall, Dubai
+- Contact: info@fas-fashion.ae
+- Demo: https://maison-dubai-fashion.vercel.app
+- Proposal: https://webvanguardai.github.io/proposal-fas-fashion/
+- Pain points: No e-commerce, generic WordPress template, no visual lookbook, no Instagram integration, no store locator/map, no WhatsApp button, weak SEO (no meta tags, no schema, no sitemap), repetitive/generic content, only 1 testimonial
+- Status: 🔴 Cold — demo + propuesta preparados, esperando aprobación de Javi
+- Last contact: —
+
+### Atlas Laundry (Batch 03 — April 3, 2026)
+- Sector: Laundry / Dry Cleaning
+- Location: Al Karama, Dubai (est. 1992)
+- Contact: contact@atlaslaundrydubai.com
+- Demo: https://prestige-laundry-dubai.vercel.app
+- Proposal: https://webvanguardai.github.io/proposal-atlas-laundry/
+- Pain points: template real estate, 404 contact, sin precios, sin fotos, errores texto
+- Status: 🔴 Cold — demo + propuesta preparados, esperando aprobación de Javi
+- Last contact: —
+
+### Fun and Play JBR (Batch 03 — April 3, 2026)
+- Sector: Nursery / Childcare / Play Centre
+- Location: JBR, Dubai (est. 2008)
+- Contact: info@funandplayjbr.com | WhatsApp: +971 58 572 0516
+- Demo: https://little-explorers-jbr.vercel.app
+- Proposal: https://webvanguardai.github.io/proposal-fun-and-play/
+- Pain points: web Wix genérica, sin galería, sin precios, 404 en /contact, sin FAQ
+- Status: 🔴 Cold — demo + propuesta preparados, esperando aprobación de Javi
+- Last contact: —
+
+### Auto Gleam Car Care (Batch 03 — April 3, 2026)
+- Sector: Car Detailing / Premium Car Care
+- Location: Al Quoz Industrial Area 04, Dubai
+- Contact: info@autogleam.ae | WhatsApp: +971 50 461 7607
+- Demo: https://gleam-auto-studio.vercel.app
+- Proposal: https://webvanguardai.github.io/proposal-auto-gleam/
+- Pain points: 404 en contacto, keyword stuffing, sin galería before/after, sin precios, links rotos
+- Status: 🔴 Cold — demo + propuesta preparados, esperando aprobación de Javi
+- Last contact: —

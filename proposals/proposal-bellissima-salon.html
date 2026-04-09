@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Proposal — Bellissima Salon | Web Vanguard</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0A0A0A;
+      --bg-card: #111111;
+      --bg-card-hover: #1A1A1A;
+      --copper: #D4956B;
+      --copper-light: #E0AD88;
+      --copper-dark: #B87A50;
+      --text: #FFFFFF;
+      --text-muted: #888888;
+      --text-dim: #555555;
+      --border: #222222;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header {
+      padding: 40px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--copper);
+    }
+
+    .prepared-for {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+
+    .hero-label {
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 400;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 em {
+      color: var(--copper);
+      font-style: italic;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    p { margin-bottom: 16px; color: var(--text-muted); font-size: 15px; }
+
+    /* Pain Points */
+    .pain-grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .pain-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      transition: border-color 0.3s;
+    }
+
+    .pain-card:hover { border-color: var(--copper); }
+
+    .pain-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .pain-card h3 { color: var(--text); }
+    .pain-card p { color: var(--text-muted); font-size: 14px; margin-bottom: 0; }
+
+    /* Demo Preview */
+    .demo-preview {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 24px 0;
+    }
+
+    .demo-browser-bar {
+      background: #1A1A1A;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-red { background: #FF5F56; }
+    .dot-yellow { background: #FFBD2E; }
+    .dot-green { background: #27C93F; }
+
+    .demo-url {
+      margin-left: 12px;
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: 'SF Mono', monospace;
+    }
+
+    .demo-body {
+      padding: 40px;
+      text-align: center;
+      background: linear-gradient(135deg, #1A1412 0%, #0A0A0A 100%);
+    }
+
+    .demo-body h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .demo-body p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.3s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-copper {
+      background: var(--copper);
+      color: #0A0A0A;
+    }
+
+    .btn-copper:hover { background: var(--copper-light); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--copper);
+      border: 1px solid var(--copper);
+    }
+
+    .btn-outline:hover { background: var(--copper); color: #0A0A0A; }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .btn-whatsapp:hover { background: #20BD5A; }
+
+    /* Pricing */
+    .price-card {
+      background: var(--bg-card);
+      border: 2px solid var(--copper);
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      position: relative;
+      margin: 24px 0;
+    }
+
+    .price-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--copper);
+      color: #0A0A0A;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 4px 16px;
+      border-radius: 20px;
+    }
+
+    .price-amount {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      color: var(--text);
+      margin: 16px 0 4px;
+    }
+
+    .price-currency {
+      font-size: 20px;
+      color: var(--copper);
+    }
+
+    .price-note {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-bottom: 24px;
+    }
+
+    .features-list {
+      list-style: none;
+      text-align: left;
+      margin: 24px 0;
+    }
+
+    .features-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .features-list li::before {
+      content: '✓';
+      color: var(--copper);
+      font-weight: 700;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    footer p { font-size: 13px; color: var(--text-dim); }
+    footer a { color: var(--copper); text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .hero { padding: 60px 0 40px; }
+      section { padding: 40px 0; }
+      .price-card { padding: 24px; }
+      .price-amount { font-size: 36px; }
+      .demo-body { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <div class="logo">Web Vanguard</div>
+      <p class="prepared-for">Proposal prepared for Bellissima Salon · Discovery Gardens, Dubai</p>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+      <p class="hero-label">Exclusive Proposal</p>
+      <h1>Your Salon Deserves a Website <br>That Feels Like <em>an Experience</em></h1>
+      <p>We analyzed your current online presence and built a custom demo to show you what's possible. No commitment — just a vision of your salon's digital future.</p>
+    </div>
+
+    <!-- Pain Points -->
+    <section>
+      <p class="section-label">The Opportunity</p>
+      <h2>What We Found</h2>
+      <p>We reviewed thebellissimasalon.com and identified key areas where a modern redesign would directly impact your bookings and client experience.</p>
+
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon">📱</div>
+          <h3>Mobile Experience Needs Work</h3>
+          <p>Over 80% of salon clients in Dubai browse on their phones. Your current site wasn't designed mobile-first, which means potential clients are leaving before they book.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">📅</div>
+          <h3>No Online Booking</h3>
+          <p>Clients today expect to book instantly. Without a clear booking flow or WhatsApp integration on mobile, you're losing appointments to competitors who make it easy.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">🔍</div>
+          <h3>Invisible on Google</h3>
+          <p>No SEO optimization, no schema markup, no meta descriptions. When someone searches "salon Discovery Gardens" — your website doesn't show up where it should.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">📝</div>
+          <h3>Outdated Content (Since 2021)</h3>
+          <p>Blog posts with numbered titles, generic descriptions, and no recent updates signal to Google and clients that the site is inactive. Fresh content builds trust.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">🎨</div>
+          <h3>Design Doesn't Match Your Quality</h3>
+          <p>You offer premium services — balayage, keratin, nail art — but the website doesn't communicate that luxury. First impressions happen online now.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo Preview -->
+    <section>
+      <p class="section-label">Your New Website</p>
+      <h2>We Built You a Demo</h2>
+      <p>See what a modern, luxury salon website looks like — designed specifically with your services and location in mind.</p>
+
+      <div class="demo-preview">
+        <div class="demo-browser-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="demo-url">bella-studio-dubai.vercel.app</span>
+        </div>
+        <div class="demo-body">
+          <h3>Bella Studio Dubai</h3>
+          <p>Mobile-first · SEO optimized · Instant WhatsApp booking · Google Maps integrated</p>
+          <a href="https://bella-studio-dubai.vercel.app" target="_blank" class="btn btn-copper">View Live Demo →</a>
+        </div>
+      </div>
+
+      <p style="font-size: 13px; color: var(--text-dim); text-align: center;">
+        This is a concept demo. Your final site will use your real brand, photos, and content.
+      </p>
+    </section>
+
+    <!-- Pricing -->
+    <section>
+      <p class="section-label">Investment</p>
+      <h2>Simple, Transparent Pricing</h2>
+      <p>Everything you need to launch a professional online presence that converts visitors into clients.</p>
+
+      <div class="price-card">
+        <div class="price-badge">Recommended</div>
+        <h3 style="color: var(--copper); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase;">Launch Package</h3>
+        <div class="price-amount"><span class="price-currency">AED</span> 3,000</div>
+        <p class="price-note">One-time investment · Ready in 5–7 days</p>
+
+        <ul class="features-list">
+          <li>Custom responsive design (mobile-first)</li>
+          <li>Up to 5 pages (Home, Services, Gallery, About, Contact)</li>
+          <li>WhatsApp booking integration</li>
+          <li>Google Maps & directions</li>
+          <li>SEO setup (Google-friendly from day one)</li>
+          <li>Contact form with email notifications</li>
+          <li>Google Business Profile optimization</li>
+          <li>SSL certificate & fast hosting (1 year included)</li>
+          <li>Social media links integration</li>
+          <li>30 days free support after launch</li>
+        </ul>
+
+        <p style="font-size: 13px; color: var(--text-dim);">
+          Optional: Monthly maintenance & SEO — AED 500/month
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <p class="section-label">Next Step</p>
+      <h2>Ready to Upgrade Your Online Presence?</h2>
+      <p>Let's have a quick chat — no pressure, no obligation. Just a conversation about what's possible for your salon.</p>
+
+      <div class="cta-buttons">
+        <a href="https://wa.me/971585324519?text=Hi%2C%20I%20saw%20the%20demo%20you%20made%20for%20my%20salon%20and%20I%27m%20interested" target="_blank" class="btn btn-whatsapp">
+          💬 Chat on WhatsApp
+        </a>
+        <a href="mailto:hello@webvanguard.co?subject=Interested%20in%20website%20redesign" class="btn btn-outline">
+          ✉️ Email Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p><strong style="color: var(--copper);">Web Vanguard</strong> · AI-Powered Web Design Agency · Dubai</p>
+      <p style="margin-top: 8px;"><a href="https://webvanguard.co">webvanguard.co</a> · <a href="mailto:hello@webvanguard.co">hello@webvanguard.co</a> · +971 58 532 4519</p>
+      <p style="margin-top: 16px; font-size: 11px; color: var(--text-dim);">This proposal was prepared exclusively for Bellissima Salon. © 2026 Web Vanguard.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

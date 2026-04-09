@@ -110,20 +110,61 @@ Each site must include ALL of the following before deploy:
 2. **DEMO** — construir inspirado en su vertical, visualmente superior a lo que tienen
 3. **PROPUESTA** — crear en GitHub Pages con pain points reales + link al demo + pricing
 4. **ANALIZAR DE NUEVO** — segunda pasada justo antes de escribir el email. Confirmar que los pain points siguen siendo correctos y no nos hemos dejado nada
-5. **PRESENTAR A JAVI** — mostrar el email preparado y esperar aprobación explícita
-6. **EMAIL** — enviar SOLO cuando Javi diga explícitamente "ok" o "envía". Nunca antes.
+5. **PRESENTAR A JAVI** — mostrar el mensaje preparado y esperar aprobación explícita
+6. **ENVIAR** — solo cuando Javi diga explícitamente "ok" o "envía". Nunca antes.
 
-### ⛔ REGLA ABSOLUTA — EMAILS
-**NUNCA enviar un email de outreach de forma autónoma. Sin excepciones. Sin importar lo urgente o lo perfecto que parezca.**
+### ⛔ REGLA ABSOLUTA — CONTACTO CON LEADS
+**NUNCA enviar ningún mensaje (email, WhatsApp, DM) de forma autónoma. Sin excepciones.**
 - Preparar ✅ | Verificar ✅ | Presentar a Javi ✅ | Esperar su ok ✅ | Enviar ✅
 - Enviar por iniciativa propia, heartbeat, o subagente autónomo ❌ PROHIBIDO
 
+### Canal de contacto (en orden de preferencia)
+1. **WhatsApp directo** — si está visible en su web o Instagram. Más personal, más leído.
+2. **Instagram DM** — mencionando algo específico que viste en su feed
+3. **Email** — solo si no hay otra opción
+
+### Tono de outreach — REGLA CRÍTICA (aprendido 2026-04-03)
+Los mensajes tipo "agencia vendiendo a puerta fría" van directos al spam. Javi lo confirmó.
+**Lo que NO funciona:**
+- Estadísticas genéricas inventadas ("80% of your customers search on mobile...")
+- Estructura predecible: "encontré tu negocio → tienes estos problemas → yo tengo la solución"
+- Frases de relleno: "no strings attached", "worth a quick look?", "I'd love 10 minutes"
+- Longitud: más de 5-6 líneas = papelera
+
+**Lo que SÍ funciona:**
+- **Ultra-específico**: mencionar UNA cosa concreta que solo alguien que miró su negocio de verdad sabría
+- **Dar antes de pedir**: el modelo Leila — regalar la web genera confianza y referrals. Funciona.
+- **Pregunta de curiosidad**: *"¿Recibís más reservas por Instagram DM que por vuestra web?"* — el dolor lo declara él, no tú
+- **Vídeo Loom** (cuando sea posible): 60 segundos revisando su web en directo. 3-4x más respuesta que texto
+- **Humano, no corporativo**: firma con nombre real (Javi), no "Web Vanguard Team"
+
+**Plantilla base WhatsApp/email (máx 5 líneas):**
+> *Hola [Nombre], vi [algo MUY específico y real]. Construí algo para vosotros — sin ningún compromiso, solo quería que lo vierais: [link demo]. Si os gusta la dirección, hablamos.*
+> *— Javi, Web Vanguard*
+
 ### Reglas adicionales:
 - **Match the demo to the vertical** — no mandar demo de spa a clínica dental, barbería a restaurante, etc.
-- **Verify email exists** before sending
+- **Verify contact exists** before sending
 - **One follow-up max** — 5 days after no reply, then stop
 - **Nunca inventar pain points** — solo mencionar lo que has confirmado visitando su web
 - **Demos — revisar antes de dar por terminado:** links funcionando, formulario activo, WhatsApp correcto, imágenes cargando, mobile responsive
+
+### 🧠 TONO DE OUTREACH — Actualizado 2026-04-03 (por Javi)
+Los emails tipo "agencia vendiendo a puerta fría" van directos a spam. Reglas nuevas:
+
+**Canal preferido:** WhatsApp > Instagram DM > Email (en ese orden)
+**Longitud:** Máx 5 líneas. Si supera eso, recortar.
+**Estadísticas inventadas:** PROHIBIDO. Nunca poner % sin fuente real.
+**Frases prohibidas:** "No strings attached", "Worth a quick look?", "No commitment", "We built a free demo", "AI-Powered Web Design" en firma
+**Tono:** Humano, directo, curioso — como si un amigo te avisara de algo que vio
+**Pain point:** UNO, específico, confirmado visitando su web en primera persona
+**Estructura ganadora:**
+  1. Algo MUY específico que viste en su negocio (demuestra que miraste)
+  2. Una observación concreta, no un juicio
+  3. Link al demo/propuesta sin dramatizar
+  4. Cierre mínimo: "Si os gusta la dirección, hablamos."
+**Firma:** Solo "Javi / webvanguard.co" — sin títulos corporativos
+**Modelo regalo (Leila):** Para leads de alto valor, regalar la web y pedir referidos. Funciona.
 
 ### ⛔ PROCESO DE CALIDAD — DOBLE REVISIÓN OBLIGATORIA
 

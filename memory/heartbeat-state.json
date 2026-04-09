@@ -1,0 +1,23 @@
+{
+  "lastChecks": {
+    "pipeline_review": 1744185600,
+    "prospecting": 1744087200,
+    "demo_build": 1744015200,
+    "proposal_build": 1744022400,
+    "email": null,
+    "calendar": null,
+    "weather": null
+  },
+  "lastHeartbeatAlert": "2026-04-09T08:40:00+04:00",
+  "activeSubagents": ["blog-aesthetic-clinic-2026-04-09"],
+  "completedToday": [],
+  "pendingJaviApproval": [
+    "Bellissima Salon — email a bellissima.salon.dg@gmail.com",
+    "VIP Gym Dubai — email a info@vipgymdubai.com",
+    "FAS Fashion — email a info@fas-fashion.ae",
+    "Atlas Laundry — email a contact@atlaslaundrydubai.com",
+    "Fun and Play JBR — email a info@funandplayjbr.com",
+    "Auto Gleam Car Care — email a info@autogleam.ae"
+  ],
+  "notes": "Morning 08:40 Apr 9. Blog article subagent running: aesthetic-clinic-website-dubai. 6 cold leads with demos+proposals ready pending Javi approval."
+}

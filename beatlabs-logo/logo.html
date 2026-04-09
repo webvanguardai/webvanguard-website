@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>beatLabs Logo</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    height: 100%;
+  }
+  body {
+    background: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+  }
+  .logo {
+    display: flex;
+    align-items: baseline;
+    gap: 0;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1;
+  }
+  .beat {
+    font-size: 72px;
+    font-weight: 800;
+    color: #C8FF47;
+    letter-spacing: -2px;
+  }
+  .labs {
+    font-size: 72px;
+    font-weight: 400;
+    color: #C8FF47;
+    letter-spacing: -2px;
+    opacity: 0.55;
+  }
+  .cursor {
+    width: 10px;
+    height: 72px;
+    background: #C8FF47;
+    margin-left: 6px;
+    align-self: center;
+    margin-bottom: 4px;
+  }
+</style>
+</head>
+<body>
+  <div class="logo">
+    <span class="beat">beat</span><span class="labs">Labs</span><div class="cursor"></div>
+  </div>
+</body>
+</html>
