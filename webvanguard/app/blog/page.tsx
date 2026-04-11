@@ -20,6 +20,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'why-dubai-law-firms-need-a-professional-website',
+    title: 'Why Dubai Law Firms Need a Professional Website in 2025',
+    excerpt: "A general counsel in DIFC Googles your firm. They find a website that hasn't been updated since 2019 — or no website at all. They move on. Here's why a professional legal website is now a business necessity for Dubai law firms.",
+    date: '2025-04-11',
+    readTime: '8 min read',
+    category: 'Legal Services',
+  },
+  {
     slug: 'why-dubai-logistics-companies-lose-clients',
     title: 'Why Dubai Logistics Companies Lose B2B Clients Before the First Call',
     excerpt: "A procurement manager Googles your freight company before calling. If your site shows 'Not Secure', has no quote form, or breaks on mobile — they move on. Here's what most Dubai logistics companies get wrong online.",

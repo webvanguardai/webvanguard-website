@@ -1,23 +1,37 @@
 {
   "lastChecks": {
     "pipeline_review": 1744185600,
-    "prospecting": 1744087200,
-    "demo_build": 1744015200,
-    "proposal_build": 1744022400,
+    "prospecting": 1775801614,
+    "demo_build": 1744303700,
+    "proposal_build": 1744282260,
     "email": null,
     "calendar": null,
     "weather": null
   },
-  "lastHeartbeatAlert": "2026-04-09T08:40:00+04:00",
-  "activeSubagents": ["blog-aesthetic-clinic-2026-04-09"],
-  "completedToday": [],
+  "lastHeartbeatAlert": "2026-04-11T10:43:00+04:00",
+  "activeSubagents": ["blog-why-dubai-law-firms-need-a-professional-website"],
+  "completedToday": [
+    "blog-aesthetic-clinic-website-dubai",
+    "prospecting-5-new-verticals",
+    "demo-azur-yachts + proposal-champion-yachts",
+    "demo-melodia-music + proposal-cma-dubai",
+    "prospecting-5-new-verticals-apr10",
+    "demo-studio-noor + outreach-rectangle-interiors",
+    "demo-meridian-medical + outreach-msc-dubai",
+    "demo-meridian-legal + outreach-elnaggar"
+  ],
   "pendingJaviApproval": [
+    "Champion Yachts email — info@championyachts.ae",
+    "CMA Dubai email — enquiries@cmadubai.com",
     "Bellissima Salon — email a bellissima.salon.dg@gmail.com",
     "VIP Gym Dubai — email a info@vipgymdubai.com",
     "FAS Fashion — email a info@fas-fashion.ae",
     "Atlas Laundry — email a contact@atlaslaundrydubai.com",
     "Fun and Play JBR — email a info@funandplayjbr.com",
-    "Auto Gleam Car Care — email a info@autogleam.ae"
+    "Auto Gleam Car Care — email a info@autogleam.ae",
+    "Rectangle Interiors email — info@rectangleinterior.com",
+    "MSC Dubai email — info@msc-dubai.com",
+    "Elnaggar & Partners email — info@elnaggarlegal.com"
   ],
-  "notes": "Morning 08:40 Apr 9. Blog article subagent running: aesthetic-clinic-website-dubai. 6 cold leads with demos+proposals ready pending Javi approval."
+  "notes": "10:43 Apr 11. Spawned subagent to write blog: why-dubai-law-firms-need-a-professional-website."
 }
